@@ -1,0 +1,5687 @@
+{
+  "meta": {
+    "indicator_code": "BX.GSR.TOTL.CD",
+    "indicator_name": "Exports of goods and services (current US$)",
+    "indicator_category": "trade",
+    "indicator_unit": "USD",
+    "countries": [
+      {
+        "code": "DZ",
+        "code_a3": "DZA",
+        "name": "Algeria"
+      },
+      {
+        "code": "BH",
+        "code_a3": "BHR",
+        "name": "Bahrain"
+      },
+      {
+        "code": "EG",
+        "code_a3": "EGY",
+        "name": "Egypt"
+      },
+      {
+        "code": "IR",
+        "code_a3": "IRN",
+        "name": "Iran"
+      },
+      {
+        "code": "IQ",
+        "code_a3": "IRQ",
+        "name": "Iraq"
+      },
+      {
+        "code": "JO",
+        "code_a3": "JOR",
+        "name": "Jordan"
+      },
+      {
+        "code": "KW",
+        "code_a3": "KWT",
+        "name": "Kuwait"
+      },
+      {
+        "code": "LB",
+        "code_a3": "LBN",
+        "name": "Lebanon"
+      },
+      {
+        "code": "LY",
+        "code_a3": "LBY",
+        "name": "Libya"
+      },
+      {
+        "code": "MA",
+        "code_a3": "MAR",
+        "name": "Morocco"
+      },
+      {
+        "code": "OM",
+        "code_a3": "OMN",
+        "name": "Oman"
+      },
+      {
+        "code": "QA",
+        "code_a3": "QAT",
+        "name": "Qatar"
+      },
+      {
+        "code": "SA",
+        "code_a3": "SAU",
+        "name": "Saudi Arabia"
+      },
+      {
+        "code": "AE",
+        "code_a3": "ARE",
+        "name": "United Arab Emirates"
+      }
+    ],
+    "date_range": "2000:2024",
+    "fetched_at": "2026-05-17T22:16:05.689602+00:00",
+    "total_records": 350,
+    "source": "World Bank Open Data",
+    "api_base_url": "https://api.worldbank.org/v2"
+  },
+  "records": [
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2024",
+      "value": 696174268209.666,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2023",
+      "value": 623281143635.126,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2022",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2021",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2020",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2019",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2018",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2017",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2016",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2015",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2014",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2013",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2012",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2011",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2010",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2009",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2008",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2007",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2006",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2005",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2004",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2003",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2002",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2000",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2024",
+      "value": 46864627659.5745,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2023",
+      "value": 45290159574.4681,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2022",
+      "value": 48724202127.6595,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2021",
+      "value": 38232712765.9574,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2020",
+      "value": 28197340425.5318,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2019",
+      "value": 32390957446.8085,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2018",
+      "value": 32377393617.0213,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2017",
+      "value": 28840425531.9148,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2016",
+      "value": 26046276595.7447,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2015",
+      "value": 27888067760.4065,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2014",
+      "value": 34205194235.3993,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2013",
+      "value": 36174962300.4804,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2012",
+      "value": 33454032807.244,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2011",
+      "value": 29767819148.9361,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2010",
+      "value": 19347876092.4706,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2009",
+      "value": 17384881832.8323,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2008",
+      "value": 28319383826.1134,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2007",
+      "value": 27687960947.7996,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2006",
+      "value": 23295926212.3131,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2005",
+      "value": 18412687109.4652,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2004",
+      "value": 12881029141.0995,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2003",
+      "value": 9247241353.03838,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2002",
+      "value": 8634902592.28317,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2001",
+      "value": 10400747220.8226,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2000",
+      "value": 13504024037.2187,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2024",
+      "value": 55781935574.3354,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2023",
+      "value": 61794125575.4685,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2022",
+      "value": 70199124677.573,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2021",
+      "value": 42534652502.3852,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2020",
+      "value": 25747760548.7331,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2019",
+      "value": 39593857128.5246,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2018",
+      "value": 45538830402.1984,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2017",
+      "value": 39939802620.5639,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2016",
+      "value": 35171643986.4897,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2015",
+      "value": 40102767889.8764,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2014",
+      "value": 66846165650.0604,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2013",
+      "value": 72135098775.6459,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2012",
+      "value": 79094592945.0749,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2011",
+      "value": 80830581599.2146,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2010",
+      "value": 65168162141.3628,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2009",
+      "value": 52860813856.1446,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2008",
+      "value": 86654862453.6663,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2007",
+      "value": 67127572447.3701,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2006",
+      "value": 59721000000.0026,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2005",
+      "value": 50267999999.9976,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2004",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2003",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2002",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2000",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2024",
+      "value": 66982100000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2023",
+      "value": 70423331022.6167,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2022",
+      "value": 77495369268.8,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2021",
+      "value": 59283604818.5,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2020",
+      "value": 40646263091.3083,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2019",
+      "value": 54570434740.9167,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2018",
+      "value": 52529133911.6667,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2017",
+      "value": 43609300000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2016",
+      "value": 34007200000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2015",
+      "value": 37872900000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2014",
+      "value": 47364800000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2013",
+      "value": 44991700000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2012",
+      "value": 48833600000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2011",
+      "value": 47370800000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2010",
+      "value": 49364900000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2009",
+      "value": 45601000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2008",
+      "value": 57826300000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2007",
+      "value": 47707000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2006",
+      "value": 39240500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2005",
+      "value": 32141200000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2004",
+      "value": 27088400000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2003",
+      "value": 20638700000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2002",
+      "value": 17136100000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2001",
+      "value": 17535600000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2000",
+      "value": 18735000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2023",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2022",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2021",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2020",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2019",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2018",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2017",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2016",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2015",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2014",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2013",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2012",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2011",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2010",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2009",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2008",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2007",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2006",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2005",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2004",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2003",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2002",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2000",
+      "value": 30131000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2024",
+      "value": 115822800000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2023",
+      "value": 112490386393.31,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2022",
+      "value": 128540000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2021",
+      "value": 78762100000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2020",
+      "value": 51539300000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2019",
+      "value": 90614900000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2018",
+      "value": 93097000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2017",
+      "value": 64122856000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2016",
+      "value": 47164500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2015",
+      "value": 56676297777.87,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2014",
+      "value": 89245000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2013",
+      "value": 93857082324.13,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2012",
+      "value": 99120000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2011",
+      "value": 83678000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2010",
+      "value": 56673800000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2009",
+      "value": 45034900000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2008",
+      "value": 69263400000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2007",
+      "value": 42378330000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2006",
+      "value": 32092000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2005",
+      "value": 24732800000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2004",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2003",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2002",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2000",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2024",
+      "value": 24824225352.1127,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2023",
+      "value": 24134507042.2535,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2022",
+      "value": 21817323943.6619,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2021",
+      "value": 14639154929.5774,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2020",
+      "value": 11358309859.1549,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2019",
+      "value": 17440985915.4929,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2018",
+      "value": 16130704225.3521,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2017",
+      "value": 15167746478.8732,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2016",
+      "value": 14298732394.3661,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2015",
+      "value": 14856619718.3098,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2014",
+      "value": 16404929577.4647,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2013",
+      "value": 15021253521.1267,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2012",
+      "value": 14997464788.7323,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2011",
+      "value": 14454197183.0986,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2010",
+      "value": 13639056338.0281,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2009",
+      "value": 12022253521.1267,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2008",
+      "value": 13750696208.6425,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2007",
+      "value": 10683670718.097,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2006",
+      "value": 9143836389.28067,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2005",
+      "value": 7426297602.2567,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2004",
+      "value": 6604973201.69252,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2003",
+      "value": 5380389280.67701,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2002",
+      "value": 5035685057.94689,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2001",
+      "value": 4434391627.80468,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2000",
+      "value": 4206939351.19886,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2024",
+      "value": 129287978357.438,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2023",
+      "value": 133214377732.508,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2022",
+      "value": 142011952612.231,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2021",
+      "value": 104839462108.38,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2020",
+      "value": 86898763628.5232,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2019",
+      "value": 114047916993.557,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2018",
+      "value": 109994381657.444,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2017",
+      "value": 83045210678.2539,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2016",
+      "value": 71340695578.1071,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2015",
+      "value": 78384957849.2059,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2014",
+      "value": 127205336103.765,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2013",
+      "value": 136573740135.812,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2012",
+      "value": 142478227083.975,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2011",
+      "value": 123554663576.152,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2010",
+      "value": 85867391467.0792,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2009",
+      "value": 74750456043.6285,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2008",
+      "value": 112864376539.628,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2007",
+      "value": 89021665749.1752,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2006",
+      "value": 77396761226.7338,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2005",
+      "value": 58099999999.9999,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2004",
+      "value": 38659993213.4373,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2003",
+      "value": 28671039189.8262,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2002",
+      "value": 20730847485.5936,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2001",
+      "value": 23328424153.1664,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2000",
+      "value": 28616641207.2309,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2023",
+      "value": 12628338285.177,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2022",
+      "value": 13254592345.3684,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2021",
+      "value": 9736082790.72035,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2020",
+      "value": 10380554882.0953,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2019",
+      "value": 21303640609.2802,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2018",
+      "value": 21977294492.7993,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2017",
+      "value": 22067628247.16,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2016",
+      "value": 21349104484.33,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2015",
+      "value": 21835979073.9,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2014",
+      "value": 21305016487.49,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2013",
+      "value": 21975760676.36,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2012",
+      "value": 21814279783.61,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2011",
+      "value": 25029480948.6,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2010",
+      "value": 22176907098.2571,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2009",
+      "value": 23137246538.1609,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2008",
+      "value": 24812513692.6208,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2007",
+      "value": 19445495748.9257,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2006",
+      "value": 16926259967.3242,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2005",
+      "value": 14957624741.5385,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2004",
+      "value": 12893145382.8957,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2003",
+      "value": 12662617203.2847,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2002",
+      "value": 6125823686.86907,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2000",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2023",
+      "value": 41787200000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2022",
+      "value": 41679800000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2021",
+      "value": 33250800000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2020",
+      "value": 10711600000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2019",
+      "value": 32483500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2018",
+      "value": 32256900000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2017",
+      "value": 21411500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2016",
+      "value": 8086300000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2015",
+      "value": 13039300000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2014",
+      "value": 21238300000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2013",
+      "value": 48590800000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2012",
+      "value": 63570200000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2011",
+      "value": 20309800000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2010",
+      "value": 51663100000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2009",
+      "value": 39900900000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2008",
+      "value": 66628900000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2007",
+      "value": 51554500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2006",
+      "value": 40142000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2005",
+      "value": 31220000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2004",
+      "value": 19201000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2003",
+      "value": 15009000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2002",
+      "value": 12025000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2001",
+      "value": 11502000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2000",
+      "value": 12933000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2024",
+      "value": 68870813135.7533,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2023",
+      "value": 62912704718.7832,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2022",
+      "value": 59479336973.6839,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2021",
+      "value": 48011260339.7696,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2020",
+      "value": 38322382167.8836,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2019",
+      "value": 44676344434.6344,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2018",
+      "value": 43975495444.857,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2017",
+      "value": 39668698765.3829,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2016",
+      "value": 35134721823.6902,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2015",
+      "value": 33813685968.0386,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2014",
+      "value": 36800964966.1045,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2013",
+      "value": 33085764310.0639,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2012",
+      "value": 32954415684.3752,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2011",
+      "value": 32649115416.821,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2010",
+      "value": 27913409876.2822,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2009",
+      "value": 24924066111.0162,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2008",
+      "value": 31613015288.2864,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2007",
+      "value": 24910303982.9845,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2006",
+      "value": 20165206071.2534,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2005",
+      "value": 17280673506.7239,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2004",
+      "value": 15003362753.0193,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2003",
+      "value": 12704130415.1663,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2002",
+      "value": 10899377679.6448,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2001",
+      "value": 9873657156.63354,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2000",
+      "value": 9127011171.73893,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2024",
+      "value": 71881116006.9591,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2023",
+      "value": 66519801462.5978,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2022",
+      "value": 70134353701.9759,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2021",
+      "value": 48392920193.4323,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2020",
+      "value": 36447887711.8606,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2019",
+      "value": 44803580876.0751,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2018",
+      "value": 47477836899.8415,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2017",
+      "value": 37850147117.5622,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2016",
+      "value": 32009996236.3061,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2015",
+      "value": 39769753629.1685,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2014",
+      "value": 57915698979.2316,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2013",
+      "value": 61336093223.6304,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2012",
+      "value": 55543469073.4631,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2011",
+      "value": 50153138753.1711,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2010",
+      "value": 39179046733.4199,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2009",
+      "value": 30021734309.4928,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2008",
+      "value": 40641628088.4265,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2007",
+      "value": 28535240572.1716,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2006",
+      "value": 24640325097.5292,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2005",
+      "value": 20395838751.6255,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2004",
+      "value": 14879063719.1157,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2003",
+      "value": 12642392717.8153,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2002",
+      "value": 12018205461.6384,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2001",
+      "value": 11986996098.8296,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2000",
+      "value": 12061100000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2024",
+      "value": 144829945054.944,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2023",
+      "value": 145887522791.189,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2022",
+      "value": 175876648351.648,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2021",
+      "value": 115914835164.835,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2020",
+      "value": 81411263736.2636,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2019",
+      "value": 100989560439.56,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2018",
+      "value": 110575000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2017",
+      "value": 93787087912.0879,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2016",
+      "value": 79600274725.2747,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2015",
+      "value": 100084615384.615,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2014",
+      "value": 147625274725.275,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2013",
+      "value": 150901648351.648,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2012",
+      "value": 149394230769.23,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2011",
+      "value": 128004244505.494,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2010",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2009",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2008",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2007",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2006",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2005",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2004",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2003",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2002",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2000",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2024",
+      "value": 408134068105.936,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2023",
+      "value": 409011415056.841,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2022",
+      "value": 477703910615.812,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2021",
+      "value": 315463434722.397,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2020",
+      "value": 206590819237.019,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2019",
+      "value": 310383513720.426,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2018",
+      "value": 335417309877.944,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2017",
+      "value": 259757550981.732,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2016",
+      "value": 222542309535.589,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2015",
+      "value": 244505159875.339,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2014",
+      "value": 382987833163.637,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2013",
+      "value": 413822030808.066,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2012",
+      "value": 423897792832.132,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2011",
+      "value": 396724936985.124,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2010",
+      "value": 279932156368.162,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2009",
+      "value": 221687114059.982,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2008",
+      "value": 344174943154.04,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2007",
+      "value": 264957512336.112,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2006",
+      "value": 235689953575.034,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2005",
+      "value": 197429499085.936,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2004",
+      "value": 136127200000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2003",
+      "value": 101933706666.667,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2002",
+      "value": 81355600000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2001",
+      "value": 77105079466.6666,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BX.GSR.TOTL.CD",
+        "value": "Exports of goods, services and primary income (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2000",
+      "value": 85604266666.6666,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    }
+  ]
+}

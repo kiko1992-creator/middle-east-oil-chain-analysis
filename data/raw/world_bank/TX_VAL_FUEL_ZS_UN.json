@@ -1,0 +1,5687 @@
+{
+  "meta": {
+    "indicator_code": "TX.VAL.FUEL.ZS.UN",
+    "indicator_name": "Fuel exports (% of merchandise exports)",
+    "indicator_category": "trade",
+    "indicator_unit": "percent",
+    "countries": [
+      {
+        "code": "DZ",
+        "code_a3": "DZA",
+        "name": "Algeria"
+      },
+      {
+        "code": "BH",
+        "code_a3": "BHR",
+        "name": "Bahrain"
+      },
+      {
+        "code": "EG",
+        "code_a3": "EGY",
+        "name": "Egypt"
+      },
+      {
+        "code": "IR",
+        "code_a3": "IRN",
+        "name": "Iran"
+      },
+      {
+        "code": "IQ",
+        "code_a3": "IRQ",
+        "name": "Iraq"
+      },
+      {
+        "code": "JO",
+        "code_a3": "JOR",
+        "name": "Jordan"
+      },
+      {
+        "code": "KW",
+        "code_a3": "KWT",
+        "name": "Kuwait"
+      },
+      {
+        "code": "LB",
+        "code_a3": "LBN",
+        "name": "Lebanon"
+      },
+      {
+        "code": "LY",
+        "code_a3": "LBY",
+        "name": "Libya"
+      },
+      {
+        "code": "MA",
+        "code_a3": "MAR",
+        "name": "Morocco"
+      },
+      {
+        "code": "OM",
+        "code_a3": "OMN",
+        "name": "Oman"
+      },
+      {
+        "code": "QA",
+        "code_a3": "QAT",
+        "name": "Qatar"
+      },
+      {
+        "code": "SA",
+        "code_a3": "SAU",
+        "name": "Saudi Arabia"
+      },
+      {
+        "code": "AE",
+        "code_a3": "ARE",
+        "name": "United Arab Emirates"
+      }
+    ],
+    "date_range": "2000:2024",
+    "fetched_at": "2026-05-17T22:16:00.057748+00:00",
+    "total_records": 350,
+    "source": "World Bank Open Data",
+    "api_base_url": "https://api.worldbank.org/v2"
+  },
+  "records": [
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2023",
+      "value": 68.202872587783,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2022",
+      "value": 73.1440771980313,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2021",
+      "value": 70.3219846270872,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2020",
+      "value": 71.434331985329,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2019",
+      "value": 77.8387271988389,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2018",
+      "value": 68.5381737167988,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2017",
+      "value": 35.9982377334342,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2016",
+      "value": 31.5589751074458,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2015",
+      "value": 37.6515533891839,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2014",
+      "value": 50.7904126785472,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2013",
+      "value": 55.8450474819963,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2012",
+      "value": 47.2314196497577,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2011",
+      "value": 53.5351069475687,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2010",
+      "value": 49.9895856498744,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2009",
+      "value": 43.5246022231876,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2008",
+      "value": 62.304908634584,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2007",
+      "value": 63.7197610075105,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2006",
+      "value": 62.2532759092846,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2005",
+      "value": 57.7303108639363,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2004",
+      "value": 54.0586347867889,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2003",
+      "value": 48.2728267331956,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2002",
+      "value": 55.7261089954946,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2001",
+      "value": 91.783197076844,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2000",
+      "value": 93.843835816671,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2024",
+      "value": 0.000371894251415909,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2023",
+      "value": 0.252930709797225,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2022",
+      "value": 0.0426131887253156,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2021",
+      "value": 0.0520982100390362,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2020",
+      "value": 29.8191901321903,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2019",
+      "value": 42.1282144838203,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2018",
+      "value": 53.3203933261076,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2017",
+      "value": 50.1771114184211,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2016",
+      "value": 45.0173153136849,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2015",
+      "value": 50.3566602372733,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2014",
+      "value": 66.8346508823664,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2013",
+      "value": 59.0027891704387,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2012",
+      "value": 64.1472033708371,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2011",
+      "value": 71.8441684413074,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2010",
+      "value": 74.3474756294398,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2009",
+      "value": 68.6020433823247,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2008",
+      "value": 69.062284938086,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2007",
+      "value": 80.8287980658625,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2006",
+      "value": 80.5878626999227,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2005",
+      "value": 78.1592802795663,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2004",
+      "value": 75.5437259663915,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2003",
+      "value": 72.5185966870439,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2002",
+      "value": 69.3664039673791,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2001",
+      "value": 66.9335197582833,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2000",
+      "value": 0.0395462453040678,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2023",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2022",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2021",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2020",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2019",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2018",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2017",
+      "value": 96.1115601990579,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2016",
+      "value": 95.3110605757096,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2015",
+      "value": 95.839787593179,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2014",
+      "value": 97.228399822397,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2013",
+      "value": 98.3397689163232,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2012",
+      "value": 98.4004104735679,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2011",
+      "value": 98.3333229077681,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2010",
+      "value": 98.3108761995675,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2009",
+      "value": 98.33852819805,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2008",
+      "value": 98.1397675706731,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2007",
+      "value": 98.3784356732768,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2006",
+      "value": 98.053114107359,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2005",
+      "value": 98.3968237779365,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2004",
+      "value": 98.1581027723641,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2003",
+      "value": 98.0418496791982,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2002",
+      "value": 96.8525631108902,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2001",
+      "value": 97.6220771184034,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2000",
+      "value": 98.0870247131707,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2024",
+      "value": 12.4540426829027,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2023",
+      "value": 18.1531616111814,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2022",
+      "value": 35.9532117277136,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2021",
+      "value": 31.6971100561669,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2020",
+      "value": 20.6229583667758,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2019",
+      "value": 26.465801966271,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2018",
+      "value": 24.5436332078061,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2017",
+      "value": 19.3528393471568,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2016",
+      "value": 13.7657934284608,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2015",
+      "value": 17.8713832773737,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2014",
+      "value": 23.3551757931695,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2013",
+      "value": 26.0844601901547,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2012",
+      "value": 30.1290625343441,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2011",
+      "value": 29.2504485443273,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2010",
+      "value": 28.675015261694,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2009",
+      "value": 28.5311081758902,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2008",
+      "value": 43.9609378227177,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2007",
+      "value": 52.2178046042278,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2006",
+      "value": 55.4576130325556,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2005",
+      "value": 51.2725247920002,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2004",
+      "value": 43.1044662663056,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2003",
+      "value": 43.0771531636003,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2002",
+      "value": 33.5758472614446,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2001",
+      "value": 40.4973736835231,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2000",
+      "value": 41.9128863608293,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2023",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2022",
+      "value": 56.361512409332,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2021",
+      "value": 47.9119531286438,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2020",
+      "value": 29.1637868954392,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2019",
+      "value": 38.5316504652718,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2018",
+      "value": 68.6777337315966,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2017",
+      "value": 71.0578843095261,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2016",
+      "value": 67.5862230701503,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2015",
+      "value": 57.7930861182423,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2014",
+      "value": 67.7953155547417,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2013",
+      "value": 71.7172687320017,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2012",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2011",
+      "value": 70.5041242804763,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2010",
+      "value": 70.8018189413379,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2009",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2008",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2007",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2006",
+      "value": 83.2838200199219,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2005",
+      "value": 83.0809475304939,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2004",
+      "value": 78.9586877543246,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2003",
+      "value": 79.4780554871552,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2002",
+      "value": 70.3079897892571,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2001",
+      "value": 85.2051131777108,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2000",
+      "value": 88.8675310777915,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2023",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2022",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2021",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2020",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2019",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2018",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2017",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2016",
+      "value": 99.9864810010682,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2015",
+      "value": 99.7872777592791,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2014",
+      "value": 99.8860619088129,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2013",
+      "value": 99.7968723357044,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2012",
+      "value": 99.749740585093,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2011",
+      "value": 99.7790725268102,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2010",
+      "value": 99.7045850237878,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2009",
+      "value": 99.6937150677908,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2008",
+      "value": 99.7568096571184,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2007",
+      "value": 99.6294248203056,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2006",
+      "value": 99.459181622694,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2005",
+      "value": 96.3555657715066,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2004",
+      "value": 96.0061358572201,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2003",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2002",
+      "value": 95.0954914415094,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2001",
+      "value": 95.0066887098728,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2000",
+      "value": 97.0120267860648,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2024",
+      "value": 0.264858580668078,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2023",
+      "value": 0.498739629336105,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2022",
+      "value": 0.917109884625019,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2021",
+      "value": 0.706962713297216,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2020",
+      "value": 1.33182496918067,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2019",
+      "value": 2.03314518398133,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2018",
+      "value": 1.71392273426769,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2017",
+      "value": 0.123590689364973,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2016",
+      "value": 0.104709249071117,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2015",
+      "value": 0.120929763386295,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2014",
+      "value": 0.167919629735253,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2013",
+      "value": 0.173899859349714,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2012",
+      "value": 0.282058142253294,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2011",
+      "value": 0.184803898952021,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2010",
+      "value": 1.07702929489453,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2009",
+      "value": 0.561906843612745,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2008",
+      "value": 0.150133122256453,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2007",
+      "value": 0.827504244451735,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2006",
+      "value": 1.02627219723761,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2005",
+      "value": 0.972445920300149,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2004",
+      "value": 0.681552349591884,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2003",
+      "value": 0.275406105524519,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2002",
+      "value": 0.00638352187104476,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2001",
+      "value": 0.0109858651165525,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2000",
+      "value": 0.0134095616213473,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2024",
+      "value": 90.7321487415169,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2023",
+      "value": 95.5164366055485,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2022",
+      "value": 96.0382613795238,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2021",
+      "value": 94.6305212160108,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2020",
+      "value": 92.8791686402667,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2019",
+      "value": 94.3677444960455,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2018",
+      "value": 90.8951500827978,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2017",
+      "value": 93.5741930367838,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2016",
+      "value": 92.7391106201563,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2015",
+      "value": 92.4993007083526,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2014",
+      "value": 95.2169457886681,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2013",
+      "value": 94.2171787337716,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2012",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2011",
+      "value": 94.8418724155951,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2010",
+      "value": 92.7518711482029,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2009",
+      "value": 93.2082155716075,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2008",
+      "value": 96.4909871739516,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2007",
+      "value": 96.3029607314663,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2006",
+      "value": 96.4752875038565,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2005",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2004",
+      "value": 94.598596572397,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2003",
+      "value": 93.4376463361072,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2002",
+      "value": 92.4986204166316,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2001",
+      "value": 93.2304331284878,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2000",
+      "value": 94.3054880797806,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2024",
+      "value": 7.70940000965568,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2023",
+      "value": 9.88237160097366,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2022",
+      "value": 0.433020096745865,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2021",
+      "value": 0.241436727400156,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2020",
+      "value": 0.340577463595891,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2019",
+      "value": 1.45409543694151,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2018",
+      "value": 0.704025606732419,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2017",
+      "value": 1.51877124152991,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2016",
+      "value": 0.476668921652208,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2015",
+      "value": 0.812714035495173,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2014",
+      "value": 0.975199707169866,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2013",
+      "value": 8.55737748124045,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2012",
+      "value": 2.01796275219873,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2011",
+      "value": 0.098238163773614,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2010",
+      "value": 0.132265054585668,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2009",
+      "value": 0.338561740289721,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2008",
+      "value": 0.33284833912779,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2007",
+      "value": 0.217321452649323,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2006",
+      "value": 0.299487266437649,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2005",
+      "value": 0.34821472762562,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2004",
+      "value": 0.26287180715628,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2003",
+      "value": 0.231199844950283,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2002",
+      "value": 0.44816388749621,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2001",
+      "value": 0.155463709966929,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2000",
+      "value": 0.178629678109887,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2023",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2022",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2021",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2020",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2019",
+      "value": 94.4050188673453,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2018",
+      "value": 95.3967472853869,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2017",
+      "value": 89.0527915280661,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2016",
+      "value": 89.0527915280661,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2015",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2014",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2013",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2012",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2011",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2010",
+      "value": 97.7181660474755,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2009",
+      "value": 97.8939049801398,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2008",
+      "value": 96.7377076938414,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2007",
+      "value": 96.6247227091457,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2006",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2005",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2004",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2003",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2002",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2000",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2024",
+      "value": 0.759031246462188,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2023",
+      "value": 1.21428847268287,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2022",
+      "value": 1.00965161630831,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2021",
+      "value": 0.690786590320233,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2020",
+      "value": 0.515055497762877,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2019",
+      "value": 1.5096725010458,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2018",
+      "value": 1.16507270206512,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2017",
+      "value": 0.915717103285065,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2016",
+      "value": 0.851631730088442,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2015",
+      "value": 1.93131182632741,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2014",
+      "value": 5.06512046366423,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2013",
+      "value": 7.21783053567622,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2012",
+      "value": 5.76450248609948,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2011",
+      "value": 4.34145432822333,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2010",
+      "value": 3.31051983251718,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2009",
+      "value": 3.58160008168939,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2008",
+      "value": 4.18663978615364,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2007",
+      "value": 3.71752760896919,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2006",
+      "value": 3.76178277627632,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2005",
+      "value": 5.0537343655877,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2004",
+      "value": 4.49350581169632,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2003",
+      "value": 2.61513516503521,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2002",
+      "value": 3.66191427532414,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2001",
+      "value": 4.22420824882811,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2000",
+      "value": 3.65699503641464,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2024",
+      "value": 77.1995042110729,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2023",
+      "value": 74.1913838927866,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2022",
+      "value": 74.0383980013691,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2021",
+      "value": 65.2855836380628,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2020",
+      "value": 63.6348897569431,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2019",
+      "value": 76.3087021288282,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2018",
+      "value": 75.1858802471844,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2017",
+      "value": 73.6831825643426,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2016",
+      "value": 76.052172528574,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2015",
+      "value": 76.1568860871844,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2014",
+      "value": 81.6727512854849,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2013",
+      "value": 82.6128731508305,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2012",
+      "value": 83.5370778993057,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2011",
+      "value": 74.3678691335376,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2010",
+      "value": 77.7587802690782,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2009",
+      "value": 74.9705083996091,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2008",
+      "value": 86.3796075991984,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2007",
+      "value": 89.0570672014474,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2006",
+      "value": 91.390046872855,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2005",
+      "value": 91.8263316844317,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2004",
+      "value": 91.0888368510134,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2003",
+      "value": 76.8245303964233,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2002",
+      "value": 77.4715518284881,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2001",
+      "value": 80.5557004195495,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2000",
+      "value": 83.21327323399,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2024",
+      "value": 83.7597865976017,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2023",
+      "value": 86.5414333242433,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2022",
+      "value": 87.2912521641352,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2021",
+      "value": 84.4038969131069,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2020",
+      "value": 81.8145904890777,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2019",
+      "value": 88.8105651715138,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2018",
+      "value": 86.1296391093726,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2017",
+      "value": 87.5565130224043,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2016",
+      "value": 85.0429975482696,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2015",
+      "value": 83.6583736058125,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2014",
+      "value": 87.8136789876161,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2013",
+      "value": 89.9813548660954,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2012",
+      "value": 88.0489136744168,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2011",
+      "value": 92.9962018469401,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2010",
+      "value": 92.5548513080755,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2009",
+      "value": 73.9077903042904,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2008",
+      "value": 92.0990432261148,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2007",
+      "value": 90.657961505625,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2006",
+      "value": 90.8536097539166,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2005",
+      "value": 85.0601617861359,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2004",
+      "value": 87.601550193793,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2003",
+      "value": 92.3240924687122,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2002",
+      "value": 89.3048817670036,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2001",
+      "value": 92.4309598570321,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2000",
+      "value": 91.2266807875303,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2024",
+      "value": 79.3976376511523,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2023",
+      "value": 81.3099851483006,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2022",
+      "value": 82.1937028956426,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2021",
+      "value": 76.6076971781348,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2020",
+      "value": 72.5938015741335,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2019",
+      "value": 80.0531128894226,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2018",
+      "value": 80.9954096508223,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2017",
+      "value": 79.8468152028451,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2016",
+      "value": 77.5498175972453,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2015",
+      "value": 78.4307733758804,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2014",
+      "value": 85.1657914409074,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2013",
+      "value": 87.5705430575713,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2012",
+      "value": 88.6274591343223,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2011",
+      "value": 88.7250786188123,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2010",
+      "value": 87.6208624921467,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2009",
+      "value": 87.8041747949147,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2008",
+      "value": 91.3714832745092,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2007",
+      "value": 90.171950238549,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2006",
+      "value": 90.9813789166803,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2005",
+      "value": 91.041350268177,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2004",
+      "value": 89.8201774712183,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2003",
+      "value": 89.6778492659469,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2002",
+      "value": 89.632681945671,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2001",
+      "value": 89.4709695418731,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "TX.VAL.FUEL.ZS.UN",
+        "value": "Fuel exports (% of merchandise exports)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2000",
+      "value": 92.2645074235409,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    }
+  ]
+}

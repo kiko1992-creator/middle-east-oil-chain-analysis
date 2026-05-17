@@ -1,0 +1,5687 @@
+{
+  "meta": {
+    "indicator_code": "EG.USE.PCAP.KG.OE",
+    "indicator_name": "Energy use (kg of oil equivalent per capita)",
+    "indicator_category": "energy",
+    "indicator_unit": "kg_oe_per_capita",
+    "countries": [
+      {
+        "code": "DZ",
+        "code_a3": "DZA",
+        "name": "Algeria"
+      },
+      {
+        "code": "BH",
+        "code_a3": "BHR",
+        "name": "Bahrain"
+      },
+      {
+        "code": "EG",
+        "code_a3": "EGY",
+        "name": "Egypt"
+      },
+      {
+        "code": "IR",
+        "code_a3": "IRN",
+        "name": "Iran"
+      },
+      {
+        "code": "IQ",
+        "code_a3": "IRQ",
+        "name": "Iraq"
+      },
+      {
+        "code": "JO",
+        "code_a3": "JOR",
+        "name": "Jordan"
+      },
+      {
+        "code": "KW",
+        "code_a3": "KWT",
+        "name": "Kuwait"
+      },
+      {
+        "code": "LB",
+        "code_a3": "LBN",
+        "name": "Lebanon"
+      },
+      {
+        "code": "LY",
+        "code_a3": "LBY",
+        "name": "Libya"
+      },
+      {
+        "code": "MA",
+        "code_a3": "MAR",
+        "name": "Morocco"
+      },
+      {
+        "code": "OM",
+        "code_a3": "OMN",
+        "name": "Oman"
+      },
+      {
+        "code": "QA",
+        "code_a3": "QAT",
+        "name": "Qatar"
+      },
+      {
+        "code": "SA",
+        "code_a3": "SAU",
+        "name": "Saudi Arabia"
+      },
+      {
+        "code": "AE",
+        "code_a3": "ARE",
+        "name": "United Arab Emirates"
+      }
+    ],
+    "date_range": "2000:2024",
+    "fetched_at": "2026-05-17T22:16:01.343852+00:00",
+    "total_records": 350,
+    "source": "World Bank Open Data",
+    "api_base_url": "https://api.worldbank.org/v2"
+  },
+  "records": [
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2023",
+      "value": 9139.5423044996,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2022",
+      "value": 8303.27667116047,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2021",
+      "value": 8500.46410586578,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2020",
+      "value": 8105.43812949633,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2019",
+      "value": 8736.63609388178,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2018",
+      "value": 8363.00928463633,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2017",
+      "value": 8378.97733971587,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2016",
+      "value": 10191.6184664294,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2015",
+      "value": 9973.9828745403,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2014",
+      "value": 9398.40039523838,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2013",
+      "value": 8654.48549263775,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2012",
+      "value": 8466.34602792332,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2011",
+      "value": 8498.19879197847,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2010",
+      "value": 8849.86287819387,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2009",
+      "value": 9445.23902000287,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2008",
+      "value": 9425.05532774732,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2007",
+      "value": 8929.1273242532,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2006",
+      "value": 9239.04144595382,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2005",
+      "value": 9535.07550578601,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2004",
+      "value": 9441.12715739602,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2003",
+      "value": 10102.2168560285,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2002",
+      "value": 10866.2518811768,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2001",
+      "value": 11703.2751045514,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2000",
+      "value": 8956.94929901911,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2023",
+      "value": 10511.6129705274,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2022",
+      "value": 10178.1841297543,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2021",
+      "value": 10665.6287316741,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2020",
+      "value": 10833.6323639495,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2019",
+      "value": 10388.189018559,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2018",
+      "value": 9533.85538285247,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2017",
+      "value": 9444.4239393348,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2016",
+      "value": 9878.66504979139,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2015",
+      "value": 10405.6390717453,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2014",
+      "value": 10257.0253426946,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2013",
+      "value": 11219.433931134,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2012",
+      "value": 9996.52196196405,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2011",
+      "value": 10624.3872166304,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2010",
+      "value": 10317.976004905,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2009",
+      "value": 10432.8967547383,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2008",
+      "value": 11593.7971674415,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2007",
+      "value": 11533.9934710843,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2006",
+      "value": 11582.0205666291,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2005",
+      "value": 11975.4282360997,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2004",
+      "value": 11271.2138903395,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2003",
+      "value": 11894.9484733033,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2002",
+      "value": 12214.6865774264,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2001",
+      "value": 12648.0885082095,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2000",
+      "value": 12833.272118279,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2023",
+      "value": 1503.41406578063,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2022",
+      "value": 1499.50999958517,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2021",
+      "value": 1451.44517709293,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2020",
+      "value": 1373.67832094406,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2019",
+      "value": 1463.50985736009,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2018",
+      "value": 1442.30211193457,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2017",
+      "value": 1380.3468180174,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2016",
+      "value": 1371.20207705232,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2015",
+      "value": 1414.49702064392,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2014",
+      "value": 1358.04787814425,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2013",
+      "value": 1273.72242693806,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2012",
+      "value": 1258.83718458975,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2011",
+      "value": 1174.26806450034,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2010",
+      "value": 1151.13889665565,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2009",
+      "value": 1147.30600554253,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2008",
+      "value": 1070.72807038599,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2007",
+      "value": 1077.66189233078,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2006",
+      "value": 1032.63866815022,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2005",
+      "value": 979.326457769033,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2004",
+      "value": 954.298409338891,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2003",
+      "value": 955.848483496115,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2002",
+      "value": 911.440557642084,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2001",
+      "value": 863.498325342364,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2000",
+      "value": 873.657787057718,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2023",
+      "value": 928.39494742708,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2022",
+      "value": 902.48842991302,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2021",
+      "value": 857.821938469275,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2020",
+      "value": 805.259456646637,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2019",
+      "value": 844.783013447093,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2018",
+      "value": 870.813573488394,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2017",
+      "value": 897.218073562482,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2016",
+      "value": 872.581407763809,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2015",
+      "value": 810.817127279737,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2014",
+      "value": 832.772090858109,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2013",
+      "value": 825.189960336054,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2012",
+      "value": 866.240866672303,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2011",
+      "value": 860.053119855617,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2010",
+      "value": 838.166707475228,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2009",
+      "value": 862.435116243687,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2008",
+      "value": 859.150259001023,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2007",
+      "value": 844.384421346476,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2006",
+      "value": 806.402489163819,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2005",
+      "value": 778.769640304157,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2004",
+      "value": 692.141360028845,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2003",
+      "value": 647.53985335306,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2002",
+      "value": 636.526193894253,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2001",
+      "value": 634.095104088458,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2000",
+      "value": 569.881356092312,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2023",
+      "value": 3399.10476404644,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2022",
+      "value": 3288.17306422824,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2021",
+      "value": 3356.96967009824,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2020",
+      "value": 3256.87632117151,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2019",
+      "value": 3177.85679111808,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2018",
+      "value": 2921.43583957478,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2017",
+      "value": 3026.76271438293,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2016",
+      "value": 2861.01308462065,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2015",
+      "value": 2737.21795051014,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2014",
+      "value": 2883.56133864636,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2013",
+      "value": 2758.63469172941,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2012",
+      "value": 2740.80449432044,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2011",
+      "value": 2658.74959959687,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2010",
+      "value": 2639.53621273079,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2009",
+      "value": 2672.02281312134,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2008",
+      "value": 2711.04099566854,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2007",
+      "value": 2560.85802626139,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2006",
+      "value": 2459.98518383154,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2005",
+      "value": 2404.72248381983,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2004",
+      "value": 2215.26566937508,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2003",
+      "value": 2075.2052424627,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2002",
+      "value": 2030.52201096447,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2001",
+      "value": 1978.89752444269,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2000",
+      "value": 1852.32868023683,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2023",
+      "value": 1506.04801552981,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2022",
+      "value": 1415.17378116176,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2021",
+      "value": 1275.91306536574,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2020",
+      "value": 1142.9073605104,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2019",
+      "value": 1319.49517610224,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2018",
+      "value": 1287.11356086079,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2017",
+      "value": 1185.88106304283,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2016",
+      "value": 1076.45729137323,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2015",
+      "value": 998.349545341439,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2014",
+      "value": 1082.71904877674,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2013",
+      "value": 1175.83271780348,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2012",
+      "value": 1190.03229059907,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2011",
+      "value": 1125.37331940921,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2010",
+      "value": 1064.17152061051,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2009",
+      "value": 995.7798442565,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2008",
+      "value": 962.301839872785,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2007",
+      "value": 909.133658720632,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2006",
+      "value": 916.179043545813,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2005",
+      "value": 949.253481740859,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2004",
+      "value": 980.249444124443,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2003",
+      "value": 939.517629598492,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2002",
+      "value": 1091.28719492902,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2001",
+      "value": 1181.99516468889,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2000",
+      "value": 1089.27326383404,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2023",
+      "value": 767.635457519706,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2022",
+      "value": 757.518049657458,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2021",
+      "value": 741.997765695214,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2020",
+      "value": 754.943831707803,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2019",
+      "value": 811.583012032737,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2018",
+      "value": 869.212005052558,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2017",
+      "value": 917.041568368822,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2016",
+      "value": 887.616759444148,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2015",
+      "value": 903.433667037898,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2014",
+      "value": 930.16049745624,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2013",
+      "value": 966.849898090231,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2012",
+      "value": 1034.50305837685,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2011",
+      "value": 944.486189633114,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2010",
+      "value": 973.413219547318,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2009",
+      "value": 1044.29967184826,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2008",
+      "value": 1011.34553533121,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2007",
+      "value": 1055.84777945071,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2006",
+      "value": 1066.3573147471,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2005",
+      "value": 1107.30679497061,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2004",
+      "value": 1057.17652422962,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2003",
+      "value": 900.985989582586,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2002",
+      "value": 900.964957727455,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2001",
+      "value": 876.037093986667,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2000",
+      "value": 903.243088042685,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2023",
+      "value": 8952.27483065729,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2022",
+      "value": 9132.60590930826,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2021",
+      "value": 8573.69391090114,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2020",
+      "value": 8874.99125301981,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2019",
+      "value": 8355.80189447324,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2018",
+      "value": 9781.8532163362,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2017",
+      "value": 9535.25160630279,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2016",
+      "value": 9693.77926411987,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2015",
+      "value": 9738.48954876555,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2014",
+      "value": 8692.30403888948,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2013",
+      "value": 9778.60747500995,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2012",
+      "value": 10426.982707218,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2011",
+      "value": 10506.465965957,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2010",
+      "value": 11313.7461647106,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2009",
+      "value": 10531.9040890245,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2008",
+      "value": 10651.1238148385,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2007",
+      "value": 9524.11402060719,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2006",
+      "value": 10452.8038422143,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2005",
+      "value": 12019.6254493583,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2004",
+      "value": 10971.4644036465,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2003",
+      "value": 10164.1792837198,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2002",
+      "value": 9714.88959890999,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2001",
+      "value": 9864.90676381762,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2000",
+      "value": 9498.0243597846,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2023",
+      "value": 780.330161504694,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2022",
+      "value": 652.741369292341,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2021",
+      "value": 987.597103750431,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2020",
+      "value": 1251.18116453599,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2019",
+      "value": 1489.87217336526,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2018",
+      "value": 1431.82553489945,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2017",
+      "value": 1475.80821027467,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2016",
+      "value": 1356.17702319106,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2015",
+      "value": 1284.15018153506,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2014",
+      "value": 1192.55300583176,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2013",
+      "value": 1238.32383382097,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2012",
+      "value": 1383.47674048903,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2011",
+      "value": 1257.01533623898,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2010",
+      "value": 1272.70442631431,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2009",
+      "value": 1336.59416990092,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2008",
+      "value": 1061.37912293521,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2007",
+      "value": 823.875004803328,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2006",
+      "value": 985.785471251008,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2005",
+      "value": 1079.47193036728,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2004",
+      "value": 1149.06001925911,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2003",
+      "value": 1157.2988164132,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2002",
+      "value": 1175.25346522376,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2001",
+      "value": 1199.71023584992,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2000",
+      "value": 1136.87014459546,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2023",
+      "value": 2662.16736616396,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2022",
+      "value": 1543.81471951705,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2021",
+      "value": 2102.63589527131,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2020",
+      "value": 1411.0433394018,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2019",
+      "value": 3691.94352087401,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2018",
+      "value": 3345.56282924367,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2017",
+      "value": 3698.16883501654,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2016",
+      "value": 3350.14260585583,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2015",
+      "value": 2942.78950702997,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2014",
+      "value": 3550.5742819662,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2013",
+      "value": 2747.59073791604,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2012",
+      "value": 3101.47681342856,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2011",
+      "value": 2631.72794552167,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2010",
+      "value": 3131.50608317262,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2009",
+      "value": 2784.55454632999,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2008",
+      "value": 2578.95942858435,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2007",
+      "value": 2363.56247489929,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2006",
+      "value": 2733.38300724871,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2005",
+      "value": 3114.98564274947,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2004",
+      "value": 3051.03345536709,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2003",
+      "value": 3033.31081378459,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2002",
+      "value": 3089.63282765671,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2001",
+      "value": 3074.78058753118,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2000",
+      "value": 2976.83650740397,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2023",
+      "value": 600.64391286941,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2022",
+      "value": 602.994477750907,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2021",
+      "value": 616.051393306028,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2020",
+      "value": 575.699296767116,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2019",
+      "value": 614.502733565635,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2018",
+      "value": 577.178572918036,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2017",
+      "value": 577.582098917111,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2016",
+      "value": 558.062023900473,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2015",
+      "value": 563.603106638362,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2014",
+      "value": 555.591040302721,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2013",
+      "value": 554.322076671451,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2012",
+      "value": 559.656539214197,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2011",
+      "value": 559.353279063147,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2010",
+      "value": 526.098528303577,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2009",
+      "value": 504.85859762712,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2008",
+      "value": 507.932323340328,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2007",
+      "value": 495.471813588118,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2006",
+      "value": 486.582730066603,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2005",
+      "value": 484.797908832576,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2004",
+      "value": 463.894860712269,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2003",
+      "value": 399.736368353388,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2002",
+      "value": 406.634838346005,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2001",
+      "value": 405.385733553728,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2000",
+      "value": 387.674326412744,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2023",
+      "value": 5908.4271000367,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2022",
+      "value": 5920.00502494357,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2021",
+      "value": 5956.40935867476,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2020",
+      "value": 5718.76939147626,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2019",
+      "value": 5120.9649038216,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2018",
+      "value": 5549.37287503861,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2017",
+      "value": 5765.68522906846,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2016",
+      "value": 5557.82391970212,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2015",
+      "value": 6027.98246531457,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2014",
+      "value": 6076.73203947575,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2013",
+      "value": 6349.13398503592,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2012",
+      "value": 6702.98586928623,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2011",
+      "value": 7155.54208650969,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2010",
+      "value": 6736.89412726066,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2009",
+      "value": 5912.23573208102,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2008",
+      "value": 5927.85053888478,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2007",
+      "value": 6889.71721193841,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2006",
+      "value": 6138.77344250291,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2005",
+      "value": 4030.08185259047,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2004",
+      "value": 3658.50755395167,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2003",
+      "value": 3565.24432327227,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2002",
+      "value": 3469.43506166397,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2001",
+      "value": 3303.97268173668,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2000",
+      "value": 3286.26599451763,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2023",
+      "value": 16343.0404045489,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2022",
+      "value": 16875.5882360595,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2021",
+      "value": 17103.3823019572,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2020",
+      "value": 14869.1047902561,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2019",
+      "value": 15760.447244716,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2018",
+      "value": 16139.7708310186,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2017",
+      "value": 16718.237047918,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2016",
+      "value": 15178.8562114172,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2015",
+      "value": 16427.7565434994,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2014",
+      "value": 17814.5431104326,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2013",
+      "value": 20642.1423232651,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2012",
+      "value": 21456.0669284592,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2011",
+      "value": 16473.4269691009,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2010",
+      "value": 16779.9216747321,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2009",
+      "value": 15063.2666244935,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2008",
+      "value": 15946.7278040391,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2007",
+      "value": 18323.3464644697,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2006",
+      "value": 20140.3428752631,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2005",
+      "value": 20198.1689051663,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2004",
+      "value": 21557.4750763638,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2003",
+      "value": 17779.7436857851,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2002",
+      "value": 18009.6331286529,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2001",
+      "value": 16740.6866104411,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2000",
+      "value": 16853.5131028918,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2023",
+      "value": 7148.58725115291,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2022",
+      "value": 7525.25321185534,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2021",
+      "value": 7467.02479068822,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2020",
+      "value": 7172.00803547452,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2019",
+      "value": 7669.39905417665,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2018",
+      "value": 7650.76338796016,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2017",
+      "value": 7707.05632967392,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2016",
+      "value": 7521.58911581712,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2015",
+      "value": 7786.91651664863,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2014",
+      "value": 7959.81351652344,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2013",
+      "value": 7401.17130265584,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2012",
+      "value": 7862.42354103658,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2011",
+      "value": 7979.3799657336,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2010",
+      "value": 7965.26121862505,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2009",
+      "value": 7125.05300494705,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2008",
+      "value": 6980.05897029755,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2007",
+      "value": 6696.94747279399,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2006",
+      "value": 6605.44101687621,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2005",
+      "value": 6447.07190249029,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2004",
+      "value": 6375.54473048108,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2003",
+      "value": 6631.81585672969,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2002",
+      "value": 6826.99573187577,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2001",
+      "value": 6348.58935367071,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "EG.USE.PCAP.KG.OE",
+        "value": "Energy use (kg of oil equivalent per capita)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2000",
+      "value": 6516.00755562211,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    }
+  ]
+}

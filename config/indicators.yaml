@@ -1,0 +1,81 @@
+# World Bank Development Indicators
+# Source: World Bank Open Data  https://data.worldbank.org/indicator
+# Codes are used directly with the World Bank API:
+#   https://api.worldbank.org/v2/country/{iso2}/indicator/{code}?format=json
+
+world_bank_indicators:
+
+  - code: NY.GDP.MKTP.CD
+    name: GDP (current US$)
+    category: economy
+    unit: USD
+    frequency: annual
+    notes: Gross domestic product at market prices, converted to US dollars using official exchange rates
+
+  - code: TX.VAL.FUEL.ZS.UN
+    name: Fuel exports (% of merchandise exports)
+    category: trade
+    unit: percent
+    frequency: annual
+    notes: Comprises SITC section 3 (mineral fuels); primary proxy for oil-export dependency
+
+  - code: EG.USE.PCAP.KG.OE
+    name: Energy use (kg of oil equivalent per capita)
+    category: energy
+    unit: kg_oe_per_capita
+    frequency: annual
+    notes: Total primary energy supply divided by mid-year population
+
+  - code: EG.ELC.PETR.ZS
+    name: Electricity production from oil sources (% of total)
+    category: energy
+    unit: percent
+    frequency: annual
+    notes: Includes petroleum, diesel, and fuel oil used for electricity generation
+
+  - code: NY.GDP.PETR.RT.ZS
+    name: Oil rents (% of GDP)
+    category: economy
+    unit: percent
+    frequency: annual
+    notes: Oil rents are the difference between the value of crude oil production at world prices
+           and total costs of production; core measure of oil-revenue dependency
+
+  - code: EG.USE.COMM.FO.ZS
+    name: Fossil fuel energy consumption (% of total)
+    category: energy
+    unit: percent
+    frequency: annual
+    notes: Comprises coal, oil, petroleum, and natural gas; replaced archived EP.PMP.* indicators
+           which were retired by the World Bank circa 2016
+
+  - code: BX.GSR.TOTL.CD
+    name: Exports of goods and services (current US$)
+    category: trade
+    unit: USD
+    frequency: annual
+    notes: Total merchandise and services exports; used alongside TX.VAL.FUEL.ZS.UN to compute
+           absolute fuel export value
+
+  - code: BM.GSR.MRCH.CD
+    name: Imports of goods (BoP, current US$)
+    category: trade
+    unit: USD
+    frequency: annual
+    notes: Merchandise imports on a balance-of-payments basis; used with NY.GDP.MKTP.CD to
+           derive imports_pct_gdp for the OCVI formula
+
+  - code: FP.CPI.TOTL.ZG
+    name: Inflation, consumer prices (annual %)
+    category: prices
+    unit: percent
+    frequency: annual
+    notes: CPI annual percentage change; standard deviation across years used as the
+           inflation_vol component in the OCVI formula
+
+# API defaults applied when fetching all indicators above
+fetch_defaults:
+  date_range: "2000:2024"
+  per_page: 500
+  mrv: null          # set to an integer to fetch only the N most-recent values
+  format: json

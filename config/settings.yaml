@@ -1,0 +1,36 @@
+project:
+  name: middle-east-oil-chain-analysis
+  version: "0.1.0"
+
+paths:
+  data_raw: data/raw
+  data_processed: data/processed
+  data_external: data/external
+  outputs: outputs
+
+analysis:
+  base_currency: USD
+  countries:
+    - Saudi Arabia
+    - Iraq
+    - Iran
+    - Kuwait
+    - UAE
+    - Qatar
+    - Oman
+    - Bahrain
+  commodities:
+    - crude_oil
+    - natural_gas
+    - refined_products
+  date_range:
+    start: "2000-01-01"
+    end: "2024-12-31"
+
+visualization:
+  default_theme: plotly_white
+  map_tiles: OpenStreetMap
+  figure_dpi: 150
+  export_formats:
+    - png
+    - html

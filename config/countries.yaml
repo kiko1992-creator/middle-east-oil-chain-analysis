@@ -1,0 +1,123 @@
+# MENA country definitions
+# ISO 3166-1 alpha-2 (code) and alpha-3 (code_a3) codes
+# World Bank region: Middle East & North Africa
+
+mena_countries:
+
+  - code: DZ
+    code_a3: DZA
+    name: Algeria
+    subregion: North Africa
+    opec_member: true
+    major_export_terminal: Arzew / Skikda
+
+  - code: BH
+    code_a3: BHR
+    name: Bahrain
+    subregion: Gulf
+    opec_member: false
+    major_export_terminal: Sitra
+
+  - code: EG
+    code_a3: EGY
+    name: Egypt
+    subregion: North Africa
+    opec_member: false
+    major_export_terminal: Ain Sukhna / Sidi Kerir
+
+  - code: IR
+    code_a3: IRN
+    name: Iran
+    subregion: Gulf
+    opec_member: true
+    major_export_terminal: Kharg Island
+
+  - code: IQ
+    code_a3: IRQ
+    name: Iraq
+    subregion: Gulf
+    opec_member: true
+    major_export_terminal: Basrah Oil Terminal
+
+  - code: JO
+    code_a3: JOR
+    name: Jordan
+    subregion: Levant
+    opec_member: false
+    major_export_terminal: Aqaba
+
+  - code: KW
+    code_a3: KWT
+    name: Kuwait
+    subregion: Gulf
+    opec_member: true
+    major_export_terminal: Mina Al Ahmadi
+
+  - code: LB
+    code_a3: LBN
+    name: Lebanon
+    subregion: Levant
+    opec_member: false
+    major_export_terminal: Tripoli (offshore blocks TBD)
+
+  - code: LY
+    code_a3: LBY
+    name: Libya
+    subregion: North Africa
+    opec_member: true
+    major_export_terminal: Es Sider / Ras Lanuf
+
+  - code: MA
+    code_a3: MAR
+    name: Morocco
+    subregion: North Africa
+    opec_member: false
+    major_export_terminal: Mohammedia
+
+  - code: OM
+    code_a3: OMN
+    name: Oman
+    subregion: Gulf
+    opec_member: false   # OPEC+ participant
+    major_export_terminal: Mina Al Fahal
+
+  - code: QA
+    code_a3: QAT
+    name: Qatar
+    subregion: Gulf
+    opec_member: false   # withdrew 2019; OPEC+ participant
+    major_export_terminal: Ras Laffan
+
+  - code: SA
+    code_a3: SAU
+    name: Saudi Arabia
+    subregion: Gulf
+    opec_member: true
+    major_export_terminal: Ras Tanura / Ju'aymah
+
+  - code: AE
+    code_a3: ARE
+    name: United Arab Emirates
+    subregion: Gulf
+    opec_member: true
+    major_export_terminal: Jebel Ali / Fujairah
+
+# Key strait / chokepoint metadata used by supply_chain analysis
+chokepoints:
+  - name: Strait of Hormuz
+    lat: 26.5667
+    lon: 56.2500
+    daily_flow_mbd_2023: 21.0
+    notes: ~21 % of global oil trade passes through daily
+
+  - name: Suez Canal
+    lat: 30.4549
+    lon: 32.5490
+    daily_flow_mbd_2023: 5.5
+    notes: Connects Red Sea to Mediterranean
+
+  - name: Bab-el-Mandeb
+    lat: 12.5850
+    lon: 43.3330
+    daily_flow_mbd_2023: 6.2
+    notes: Red Sea southern gateway

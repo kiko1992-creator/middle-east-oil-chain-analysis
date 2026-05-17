@@ -1,0 +1,5687 @@
+{
+  "meta": {
+    "indicator_code": "BM.GSR.MRCH.CD",
+    "indicator_name": "Imports of goods (BoP, current US$)",
+    "indicator_category": "trade",
+    "indicator_unit": "USD",
+    "countries": [
+      {
+        "code": "DZ",
+        "code_a3": "DZA",
+        "name": "Algeria"
+      },
+      {
+        "code": "BH",
+        "code_a3": "BHR",
+        "name": "Bahrain"
+      },
+      {
+        "code": "EG",
+        "code_a3": "EGY",
+        "name": "Egypt"
+      },
+      {
+        "code": "IR",
+        "code_a3": "IRN",
+        "name": "Iran"
+      },
+      {
+        "code": "IQ",
+        "code_a3": "IRQ",
+        "name": "Iraq"
+      },
+      {
+        "code": "JO",
+        "code_a3": "JOR",
+        "name": "Jordan"
+      },
+      {
+        "code": "KW",
+        "code_a3": "KWT",
+        "name": "Kuwait"
+      },
+      {
+        "code": "LB",
+        "code_a3": "LBN",
+        "name": "Lebanon"
+      },
+      {
+        "code": "LY",
+        "code_a3": "LBY",
+        "name": "Libya"
+      },
+      {
+        "code": "MA",
+        "code_a3": "MAR",
+        "name": "Morocco"
+      },
+      {
+        "code": "OM",
+        "code_a3": "OMN",
+        "name": "Oman"
+      },
+      {
+        "code": "QA",
+        "code_a3": "QAT",
+        "name": "Qatar"
+      },
+      {
+        "code": "SA",
+        "code_a3": "SAU",
+        "name": "Saudi Arabia"
+      },
+      {
+        "code": "AE",
+        "code_a3": "ARE",
+        "name": "United Arab Emirates"
+      }
+    ],
+    "date_range": "2000:2024",
+    "fetched_at": "2026-05-17T22:39:17.906921+00:00",
+    "total_records": 350,
+    "source": "World Bank Open Data",
+    "api_base_url": "https://api.worldbank.org/v2"
+  },
+  "records": [
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2024",
+      "value": 400217835262.083,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2023",
+      "value": 352648059904.697,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2022",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2021",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2020",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2019",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2018",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2017",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2016",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2015",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2014",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2013",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2012",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2011",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2010",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2009",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2008",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2007",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2006",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2005",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2004",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2003",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2002",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "AE",
+        "value": "United Arab Emirates"
+      },
+      "countryiso3code": "ARE",
+      "date": "2000",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2024",
+      "value": 20670478723.4042,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2023",
+      "value": 20310904255.3191,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2022",
+      "value": 21949202127.6595,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2021",
+      "value": 17464361702.1276,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2020",
+      "value": 14192819148.9361,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2019",
+      "value": 17263297872.3404,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2018",
+      "value": 19110106382.9787,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2017",
+      "value": 16076063829.7872,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2016",
+      "value": 13588297872.3404,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2015",
+      "value": 15709574468.0851,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2014",
+      "value": 19784521276.5957,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2013",
+      "value": 21280053191.4893,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2012",
+      "value": 19704521276.5957,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2011",
+      "value": 12105851063.8297,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2010",
+      "value": 11190425531.9148,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2009",
+      "value": 9613031914.89361,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2008",
+      "value": 14246276595.7446,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2007",
+      "value": 10925398936.1702,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2006",
+      "value": 9953803191.48936,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2005",
+      "value": 8870744680.85106,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2004",
+      "value": 6922632978.7234,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2003",
+      "value": 5298377659.57446,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2002",
+      "value": 4678484042.55319,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2001",
+      "value": 4029095744.68085,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "BH",
+        "value": "Bahrain"
+      },
+      "countryiso3code": "BHR",
+      "date": "2000",
+      "value": 4375292553.19148,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2024",
+      "value": 45331729396.2413,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2023",
+      "value": 42851913054.6296,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2022",
+      "value": 38692983623.5322,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2021",
+      "value": 37395018713.6665,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2020",
+      "value": 34907242968.8531,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2019",
+      "value": 44320173281.7055,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2018",
+      "value": 48284091542.4764,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2017",
+      "value": 48810762377.0038,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2016",
+      "value": 49316882927.4104,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2015",
+      "value": 52261207236.1659,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2014",
+      "value": 59457444971.2747,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2013",
+      "value": 54871842663.8759,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2012",
+      "value": 51508891623.9591,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2011",
+      "value": 46800967101.0699,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2010",
+      "value": 38797066194.14,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2009",
+      "value": 37384686145.4077,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2008",
+      "value": 37979983494.3952,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2007",
+      "value": 26408223359.3417,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2006",
+      "value": 20520000000.0008,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2005",
+      "value": 19816999999.9991,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2004",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2003",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2002",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "DZ",
+        "value": "Algeria"
+      },
+      "countryiso3code": "DZA",
+      "date": "2000",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2024",
+      "value": 72882900000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2023",
+      "value": 60259137500,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2022",
+      "value": 71745425000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2021",
+      "value": 70912800000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2020",
+      "value": 54282937500,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2019",
+      "value": 57757587500,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2018",
+      "value": 57635387500,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2017",
+      "value": 52404100000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2016",
+      "value": 51066100000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2015",
+      "value": 50419900000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2014",
+      "value": 56446400000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2013",
+      "value": 48918100000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2012",
+      "value": 52350400000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2011",
+      "value": 47311500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2010",
+      "value": 45144500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2009",
+      "value": 39906900000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2008",
+      "value": 49607900000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2007",
+      "value": 39354300000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2006",
+      "value": 28983500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2005",
+      "value": 23818200000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2004",
+      "value": 18895275000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2003",
+      "value": 13188562500,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2002",
+      "value": 12879425000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2001",
+      "value": 13959600000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "countryiso3code": "EGY",
+      "date": "2000",
+      "value": 15382000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2023",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2022",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2021",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2020",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2019",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2018",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2017",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2016",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2015",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2014",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2013",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2012",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2011",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2010",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2009",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2008",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2007",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2006",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2005",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2004",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2003",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2002",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IR",
+        "value": "Iran, Islamic Rep."
+      },
+      "countryiso3code": "IRN",
+      "date": "2000",
+      "value": 15207000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2024",
+      "value": 74298500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2023",
+      "value": 55952500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2022",
+      "value": 46914800000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2021",
+      "value": 34721100000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2020",
+      "value": 41048600000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2019",
+      "value": 49417600000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2018",
+      "value": 38875700000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2017",
+      "value": 32185600000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2016",
+      "value": 29077000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2015",
+      "value": 40347112000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2014",
+      "value": 49811500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2013",
+      "value": 53821700000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2012",
+      "value": 50155000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2011",
+      "value": 40633000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2010",
+      "value": 37328000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2009",
+      "value": 35284800000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2008",
+      "value": 29761400000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2007",
+      "value": 16622500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2006",
+      "value": 18707500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2005",
+      "value": 20002200000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2004",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2003",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2002",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "IQ",
+        "value": "Iraq"
+      },
+      "countryiso3code": "IRQ",
+      "date": "2000",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2024",
+      "value": 23947042253.5211,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2023",
+      "value": 22917746478.8732,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2022",
+      "value": 24341690140.845,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2021",
+      "value": 19167042253.5211,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2020",
+      "value": 15329047887.3239,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2019",
+      "value": 17052436619.7183,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2018",
+      "value": 18052394366.1972,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2017",
+      "value": 18206056338.0281,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2016",
+      "value": 17136478873.2394,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2015",
+      "value": 18165633802.8169,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2014",
+      "value": 20350985915.4929,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2013",
+      "value": 19560563380.2816,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2012",
+      "value": 18431126760.5633,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2011",
+      "value": 16825633802.8169,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2010",
+      "value": 13822394366.1971,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2009",
+      "value": 12641133802.8169,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2008",
+      "value": 15101919310.8619,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2007",
+      "value": 12183301298.4281,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2006",
+      "value": 10260339266.5726,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2005",
+      "value": 9317273980.63469,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2004",
+      "value": 7261136090.78984,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2003",
+      "value": 5078028688.29337,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2002",
+      "value": 4500876526.47206,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2001",
+      "value": 4301355623.75557,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "JO",
+        "value": "Jordan"
+      },
+      "countryiso3code": "JOR",
+      "date": "2000",
+      "value": 4073693980.93089,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2024",
+      "value": 33443405535.7801,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2023",
+      "value": 33028053859.9452,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2022",
+      "value": 28364274801.7127,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2021",
+      "value": 27866083168.6119,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2020",
+      "value": 24835854373.5107,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2019",
+      "value": 29436065811.251,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2018",
+      "value": 31369500436.0877,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2017",
+      "value": 29526868427.4313,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2016",
+      "value": 26562436858.4095,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2015",
+      "value": 27342757605.5777,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2014",
+      "value": 27384704018.7381,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2013",
+      "value": 25576252706.6343,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2012",
+      "value": 24241446997.3104,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2011",
+      "value": 22597216655.6184,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2010",
+      "value": 19569216700.0927,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2009",
+      "value": 18528664731.3898,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2008",
+      "value": 22939171473.8437,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2007",
+      "value": 19962073760.4519,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2006",
+      "value": 16240131320.2003,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2005",
+      "value": 15053424657.5342,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2004",
+      "value": 12402443162.5381,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2003",
+      "value": 9880154932.58951,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2002",
+      "value": 8116763154.31757,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2001",
+      "value": 7047046611.8505,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "KW",
+        "value": "Kuwait"
+      },
+      "countryiso3code": "KWT",
+      "date": "2000",
+      "value": 6451474442.26721,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2023",
+      "value": 16686886736.226,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2022",
+      "value": 17951464954.6115,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2021",
+      "value": 12732523119.2912,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2020",
+      "value": 10403254183.3842,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2019",
+      "value": 17989505339.5223,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2018",
+      "value": 18453727531.1895,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2017",
+      "value": 18214323183.965,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2016",
+      "value": 17709206185.351,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2015",
+      "value": 17196968038.243,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2014",
+      "value": 20036058199.5676,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2013",
+      "value": 20404520299.729,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2012",
+      "value": 20539840756.7872,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2011",
+      "value": 18856749194.47,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2010",
+      "value": 17187759343.1869,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2009",
+      "value": 15394347263.1101,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2008",
+      "value": 15530700000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2007",
+      "value": 11463080000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2006",
+      "value": 9025040321.51216,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2005",
+      "value": 8959193225.20315,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2004",
+      "value": 8908043656.78885,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2003",
+      "value": 6808309054.67931,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2002",
+      "value": 6127505650.8659,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LB",
+        "value": "Lebanon"
+      },
+      "countryiso3code": "LBN",
+      "date": "2000",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2023",
+      "value": 23229500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2022",
+      "value": 19665500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2021",
+      "value": 16957200000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2020",
+      "value": 9148000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2019",
+      "value": 17725900000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2018",
+      "value": 13786200000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2017",
+      "value": 10556200000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2016",
+      "value": 8667000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2015",
+      "value": 16428500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2014",
+      "value": 30418700000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2013",
+      "value": 34049500000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2012",
+      "value": 25590000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2011",
+      "value": 11200000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2010",
+      "value": 24559000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2009",
+      "value": 22002000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2008",
+      "value": 21658300000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2007",
+      "value": 17701400000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2006",
+      "value": 13219000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2005",
+      "value": 11174000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2004",
+      "value": 8768000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2003",
+      "value": 7200000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2002",
+      "value": 7408000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2001",
+      "value": 4825000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "LY",
+        "value": "Libya"
+      },
+      "countryiso3code": "LBY",
+      "date": "2000",
+      "value": 4129000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2024",
+      "value": 66483524821.2227,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2023",
+      "value": 61407709696.6318,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2022",
+      "value": 63037153128.7945,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2021",
+      "value": 51641946065.1025,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2020",
+      "value": 39218082911.9528,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2019",
+      "value": 44465870446.13,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2018",
+      "value": 44872285913.3977,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2017",
+      "value": 39570959761.6803,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2016",
+      "value": 36684161942.9415,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2015",
+      "value": 33307158475.339,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2014",
+      "value": 41032003259.4768,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2013",
+      "value": 39853614196.749,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2012",
+      "value": 38876982593.6203,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2011",
+      "value": 37333019633.1331,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2010",
+      "value": 29627263622.2718,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2009",
+      "value": 28027355463.9439,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2008",
+      "value": 36650596645.9543,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2007",
+      "value": 25954017474.6566,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2006",
+      "value": 19382954316.337,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2005",
+      "value": 16697907013.3233,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2004",
+      "value": 14274575619.5352,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2003",
+      "value": 11200871256.2243,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2002",
+      "value": 9224203195.53562,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2001",
+      "value": 8540592189.22451,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "MA",
+        "value": "Morocco"
+      },
+      "countryiso3code": "MAR",
+      "date": "2000",
+      "value": 9051825085.23371,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2024",
+      "value": 39489777135.13,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2023",
+      "value": 35169193758.1274,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2022",
+      "value": 34747048438.1297,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2021",
+      "value": 28023772992.6613,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2020",
+      "value": 25364089923.5725,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2019",
+      "value": 20456783394.0182,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2018",
+      "value": 23646293888.1665,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2017",
+      "value": 24121339458.2444,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2016",
+      "value": 21286568270.4811,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2015",
+      "value": 26563679141.7425,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2014",
+      "value": 27889070221.0663,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2013",
+      "value": 32043088582.5747,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2012",
+      "value": 25628889466.84,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2011",
+      "value": 21496759427.8283,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2010",
+      "value": 17874395318.5955,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2009",
+      "value": 16051807542.2626,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2008",
+      "value": 20707204161.2483,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2007",
+      "value": 14343276983.0949,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2006",
+      "value": 9881079323.79713,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2005",
+      "value": 8028608582.57477,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2004",
+      "value": 7872561768.53055,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2003",
+      "value": 6085825747.72431,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2002",
+      "value": 5633289986.99609,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2001",
+      "value": 5308192457.73732,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "OM",
+        "value": "Oman"
+      },
+      "countryiso3code": "OMN",
+      "date": "2000",
+      "value": 4593000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2024",
+      "value": 32606868131.8681,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2023",
+      "value": 29428571428.5714,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2022",
+      "value": 33519780219.7802,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2021",
+      "value": 26864285714.2857,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2020",
+      "value": 24366758241.7582,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2019",
+      "value": 31353846153.8461,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2018",
+      "value": 33307142857.1428,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2017",
+      "value": 30765659340.6593,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2016",
+      "value": 31934065934.0659,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2015",
+      "value": 28496153846.1538,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2014",
+      "value": 31145329670.3296,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2013",
+      "value": 31474725274.7252,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2012",
+      "value": 30787179487.1794,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2011",
+      "value": 26925851648.3516,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2010",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2009",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2008",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2007",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2006",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2005",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2004",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2003",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2002",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2001",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "QA",
+        "value": "Qatar"
+      },
+      "countryiso3code": "QAT",
+      "date": "2000",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2024",
+      "value": 213752430879.728,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2023",
+      "value": 189930236519.714,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2022",
+      "value": 174022684257.802,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2021",
+      "value": 138206335466.666,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2020",
+      "value": 124539786666.666,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2019",
+      "value": 138749522438.293,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2018",
+      "value": 124267066666.667,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2017",
+      "value": 122055572973.84,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2016",
+      "value": 126441706765.856,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2015",
+      "value": 157524374400,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2014",
+      "value": 156723645992.533,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2013",
+      "value": 151662080000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2012",
+      "value": 140243226666.666,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2011",
+      "value": 118644826666.666,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2010",
+      "value": 96362506666.6666,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2009",
+      "value": 86122132800,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2008",
+      "value": 100302269333.333,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2007",
+      "value": 81640819545.1765,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2006",
+      "value": 63132083094.8012,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2005",
+      "value": 53958280000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2004",
+      "value": 41050400000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2003",
+      "value": 33867733333.3333,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2002",
+      "value": 29624266666.6666,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2001",
+      "value": 28606972533.3333,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    },
+    {
+      "indicator": {
+        "id": "BM.GSR.MRCH.CD",
+        "value": "Goods imports (BoP, current US$)"
+      },
+      "country": {
+        "id": "SA",
+        "value": "Saudi Arabia"
+      },
+      "countryiso3code": "SAU",
+      "date": "2000",
+      "value": 27704000000,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 0
+    }
+  ]
+}
