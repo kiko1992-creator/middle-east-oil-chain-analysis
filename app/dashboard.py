@@ -88,6 +88,12 @@ _all_labels   = sorted(panel["country_label"].unique())
 _yr_min       = int(panel["year"].min())
 _yr_max       = int(panel["year"].max())
 
+# Consistent colour map: alphabetical order → same colour in every chart
+_COLOUR_MAP: dict[str, str] = {
+    label: _PALETTE[i % len(_PALETTE)]
+    for i, label in enumerate(_all_labels)
+}
+
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
@@ -259,7 +265,7 @@ with tab_rank:
             "Imports/GDP", "GDP Vol", "Infl Vol",
         ]
         fig_radar = go.Figure()
-        for i, row in ocvi.iterrows():
+        for _, row in ocvi.iterrows():
             vals = [row[c] for c in norm_cols]
             vals_closed = vals + [vals[0]]
             labels_closed = axis_labels + [axis_labels[0]]
@@ -269,7 +275,7 @@ with tab_rank:
                 fill="toself",
                 opacity=0.25,
                 name=row["country_label"],
-                line=dict(color=_PALETTE[i % len(_PALETTE)]),
+                line=dict(color=_COLOUR_MAP[row["country_label"]]),
             ))
         fig_radar.update_layout(
             polar=dict(radialaxis=dict(visible=True, range=[0, 1])),
@@ -309,7 +315,7 @@ with tab_rents:
                 "country_label": "Country",
             },
             title=f"Oil Rents % GDP · {year_range[0]}–{year_range[1]}",
-            color_discrete_sequence=_PALETTE,
+            color_discrete_map=_COLOUR_MAP,
         )
         fig_ts.update_traces(marker_size=4, line_width=1.8)
         fig_ts.update_layout(
@@ -509,7 +515,8 @@ with tab_macro:
     st.caption(
         "**X-axis:** Year-on-year GDP growth (%) derived from NY.GDP.MKTP.CD  ·  "
         "**Y-axis:** CPI inflation (%) from FP.CPI.TOTL.ZG  ·  "
-        "**Bubble size:** GDP (USD)  ·  Each dot = one country-year observation."
+        "**Bubble size:** GDP (USD)  ·  Each dot = one country-year observation.  "
+        "Extreme outliers clipped on both axes; true values shown in hover tooltips."
     )
 
     df_macro = _filter(panel).dropna(subset=["gdp_growth_pct", "FP_CPI_TOTL_ZG"]).copy()
@@ -517,24 +524,46 @@ with tab_macro:
     if df_macro.empty:
         st.warning("No data for the current selection. Adjust the filters.")
     else:
-        # Clip extreme inflation for axis readability; annotate clipping
-        p99 = df_macro["FP_CPI_TOTL_ZG"].quantile(0.99)
-        clipped_n = (df_macro["FP_CPI_TOTL_ZG"] > p99).sum()
-        df_macro["infl_clipped"] = df_macro["FP_CPI_TOTL_ZG"].clip(upper=p99)
+        # ── Clip Y-axis (inflation) at p99 — Lebanon hyperinflation ──────────
+        p99_inf = df_macro["FP_CPI_TOTL_ZG"].quantile(0.99)
+        clipped_inf_n = (df_macro["FP_CPI_TOTL_ZG"] > p99_inf).sum()
+        df_macro["infl_clipped"] = df_macro["FP_CPI_TOTL_ZG"].clip(upper=p99_inf)
 
-        if clipped_n > 0:
-            st.info(
-                f"ℹ️  {clipped_n} observation(s) with inflation > {p99:.0f}% clipped on the "
-                f"Y-axis for readability (Lebanon hyperinflation period). "
-                f"Full values visible in hover tooltips."
+        # ── Clip X-axis (GDP growth) at p2/p98 — Libya/Iraq war-rebound ─────
+        # Without clipping, Libya 2012 (+92%) and Iraq 2004 (+67%) collapse
+        # all other 12 countries into a narrow unreadable band.
+        p2_g  = df_macro["gdp_growth_pct"].quantile(0.02)
+        p98_g = df_macro["gdp_growth_pct"].quantile(0.98)
+        clipped_g_n = (
+            (df_macro["gdp_growth_pct"] < p2_g) |
+            (df_macro["gdp_growth_pct"] > p98_g)
+        ).sum()
+        df_macro["growth_clipped"] = df_macro["gdp_growth_pct"].clip(
+            lower=p2_g, upper=p98_g
+        )
+
+        # ── Info banners ──────────────────────────────────────────────────────
+        msgs = []
+        if clipped_inf_n > 0:
+            msgs.append(
+                f"{clipped_inf_n} point(s) with inflation > {p99_inf:.0f}% "
+                f"clipped on Y-axis (Lebanon 2020-2023, max 221%)"
             )
+        if clipped_g_n > 0:
+            msgs.append(
+                f"{clipped_g_n} point(s) with GDP growth outside "
+                f"[{p2_g:.0f}%, {p98_g:.0f}%] clipped on X-axis "
+                f"(Libya/Iraq conflict rebounds)"
+            )
+        if msgs:
+            st.info("ℹ️  " + "  ·  ".join(msgs) + ".  True values visible in hover tooltips.")
 
         # Bubble size proportional to GDP; guard against NaN/zero
         df_macro["gdp_bn"] = df_macro["NY_GDP_MKTP_CD"].fillna(0).clip(lower=1e8) / 1e9
 
         fig_macro = px.scatter(
             df_macro,
-            x="gdp_growth_pct",
+            x="growth_clipped",
             y="infl_clipped",
             color="country_label",
             size="gdp_bn",
@@ -542,25 +571,27 @@ with tab_macro:
             hover_name="country_label",
             hover_data={
                 "year": True,
-                "gdp_growth_pct": ":.1f",
-                "FP_CPI_TOTL_ZG": ":.1f",   # show true (unclipped) value in tooltip
-                "infl_clipped": False,
+                "gdp_growth_pct": ":.1f",   # true (unclipped) GDP growth
+                "FP_CPI_TOTL_ZG": ":.1f",   # true (unclipped) inflation
+                "growth_clipped": False,
+                "infl_clipped":   False,
                 "gdp_bn": ":.0f",
             },
             labels={
-                "gdp_growth_pct": "GDP Growth (%)",
-                "infl_clipped":   "Inflation — CPI (%, clipped at p99)",
-                "country_label":  "Country",
-                "gdp_bn":         "GDP (USD bn)",
-                "FP_CPI_TOTL_ZG": "True Inflation (%)",
-                "year":           "Year",
+                "growth_clipped":  f"GDP Growth (%, clipped p2–p98)",
+                "infl_clipped":    f"Inflation — CPI (%, clipped p99)",
+                "country_label":   "Country",
+                "gdp_bn":          "GDP (USD bn)",
+                "gdp_growth_pct":  "True GDP Growth (%)",
+                "FP_CPI_TOTL_ZG":  "True Inflation (%)",
+                "year":            "Year",
             },
             title=(
                 f"GDP Growth vs Inflation · "
                 f"{year_range[0]}–{year_range[1]} · "
                 f"bubble size = GDP"
             ),
-            color_discrete_sequence=_PALETTE,
+            color_discrete_map=_COLOUR_MAP,
         )
 
         # Reference lines + quadrant labels
