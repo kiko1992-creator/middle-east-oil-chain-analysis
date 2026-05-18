@@ -32,6 +32,7 @@ st.set_page_config(
 _ROOT       = Path(__file__).resolve().parents[1]
 PANEL_PATH  = _ROOT / "data" / "processed" / "world_bank_panel.csv"
 OCVI_PATH   = _ROOT / "outputs" / "tables" / "ocvi_scores.csv"
+CHAIN_PATH  = _ROOT / "outputs" / "tables" / "chain_transmission.csv"
 
 # Consistent 14-colour palette (one per country)
 _PALETTE = px.colors.qualitative.D3 + px.colors.qualitative.Plotly
@@ -69,6 +70,13 @@ def load_ocvi() -> pd.DataFrame:
     return df
 
 
+@st.cache_data(show_spinner="Loading chain transmission data…")
+def load_chain() -> pd.DataFrame:
+    df = pd.read_csv(CHAIN_PATH)
+    df["country_label"] = df["country_name"].map(_label)
+    return df
+
+
 # ── Sanity-check paths before anything else ───────────────────────────────────
 for _p in (PANEL_PATH, OCVI_PATH):
     if not _p.exists():
@@ -83,6 +91,8 @@ for _p in (PANEL_PATH, OCVI_PATH):
 
 panel = load_panel()
 ocvi  = load_ocvi()
+_chain_available = CHAIN_PATH.exists()
+chain = load_chain() if _chain_available else None
 
 _all_labels   = sorted(panel["country_label"].unique())
 _yr_min       = int(panel["year"].min())
@@ -150,11 +160,12 @@ def _filter(df: pd.DataFrame) -> pd.DataFrame:
 
 
 # ── Tabs ──────────────────────────────────────────────────────────────────────
-tab_rank, tab_rents, tab_shock, tab_macro = st.tabs([
+tab_rank, tab_rents, tab_shock, tab_macro, tab_chain = st.tabs([
     "📊  OCVI Rankings",
     "🛢️  Oil Rents % GDP",
     "⚡  Price Shock",
     "📈  GDP Growth vs Inflation",
+    "⛓️  Chain Transmission",
 ])
 
 
@@ -630,3 +641,259 @@ with tab_macro:
             qc2.metric("↖ Contraction + Inflation", f"{q2} obs", "Stagflation / crisis")
             qc3.metric("↙ Contraction + Deflation", f"{q3} obs", "Recession / slump")
             qc4.metric("↘ Growth + Low Inflation",  f"{q4} obs", "Goldilocks zone")
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TAB 5 · Chain Transmission
+# ═══════════════════════════════════════════════════════════════════════════════
+with tab_chain:
+    st.header("Oil Price Shock — Chain Transmission Model")
+    st.caption(
+        "**Transmission chain:** Oil Price → Fiscal Revenue (Stage 1) → "
+        "Government Spending (Stage 2) → Subsidy Strain (Stage 3) → "
+        "Pass-Through (Stage 4) → Oil Inflation (Stage 5) → Employment Pressure (Stage 6)  ·  "
+        "Severity = weighted sum of all six normalised stages."
+    )
+
+    if not _chain_available or chain is None:
+        st.warning(
+            "Chain transmission data not found.  \n"
+            "Run: `python -m src.model.chain_model` from the project root."
+        )
+        st.stop()
+
+    # ── Apply year filter from sidebar (country filter not applied — show all) ──
+    chain_f = chain[chain["year"].between(year_range[0], year_range[1])].copy()
+
+    if chain_f.empty:
+        st.warning("No chain data in the selected year range.")
+    else:
+        # ── KPI row ────────────────────────────────────────────────────────────
+        kpi1, kpi2, kpi3, kpi4 = st.columns(4)
+        _max_row = chain_f.loc[chain_f["transmission_severity"].idxmax()]
+        _mean_sev = chain_f.groupby("country_label")["transmission_severity"].mean()
+        _most_exp = _mean_sev.idxmax()
+        _exp_sev = _mean_sev.max()
+        _n_exporters = chain_f[chain_f["is_exporter"]]["country_label"].nunique()
+        kpi1.metric(
+            "Worst single event",
+            f"{_max_row['country_label']} {int(_max_row['year'])}",
+            f"Severity {_max_row['transmission_severity']:.3f}",
+            delta_color="inverse",
+        )
+        kpi2.metric(
+            "Highest avg severity",
+            _most_exp,
+            f"{_exp_sev:.3f} mean",
+            delta_color="inverse",
+        )
+        kpi3.metric("Exporters in model", f"{_n_exporters}", "fuel exports > 20% of total")
+        kpi4.metric(
+            "Country-years analysed",
+            f"{len(chain_f)}",
+            f"{chain_f['year'].nunique()} years · {chain_f['country_label'].nunique()} countries",
+            delta_color="off",
+        )
+
+        st.markdown("---")
+
+        # ── Section 1: Severity heatmap (countries × years) ───────────────────
+        st.subheader("Transmission Severity Heatmap")
+
+        pivot = (
+            chain_f.pivot_table(
+                index="country_label", columns="year",
+                values="transmission_severity", aggfunc="mean",
+            )
+        )
+        # Sort rows by mean severity descending
+        row_order = pivot.mean(axis=1).sort_values(ascending=False).index.tolist()
+        pivot = pivot.loc[row_order]
+
+        fig_heat = go.Figure(go.Heatmap(
+            z=pivot.values,
+            x=pivot.columns.tolist(),
+            y=pivot.index.tolist(),
+            colorscale="RdYlBu_r",
+            zmin=0,
+            zmax=0.55,
+            colorbar=dict(title="Severity", thickness=14),
+            hovertemplate=(
+                "<b>%{y}</b> · %{x}<br>"
+                "Severity: %{z:.3f}<extra></extra>"
+            ),
+        ))
+        # Crash year vlines
+        for yr, lbl in [(2008, "GFC"), (2014, "2014"), (2020, "COVID")]:
+            if year_range[0] <= yr <= year_range[1]:
+                fig_heat.add_vline(
+                    x=yr, line_dash="dash", line_color="white",
+                    line_width=1.5, opacity=0.7,
+                    annotation_text=lbl, annotation_font_color="white",
+                    annotation_font_size=9, annotation_position="top",
+                )
+        fig_heat.update_layout(
+            height=420,
+            margin=dict(l=10, r=10, t=30, b=10),
+            xaxis=dict(dtick=2, title="Year"),
+            yaxis_title=None,
+        )
+        st.plotly_chart(fig_heat, use_container_width=True)
+
+        st.markdown("---")
+
+        # ── Section 2: Worst 20 events bar chart ──────────────────────────────
+        st.subheader("Worst Transmission Events (top 20)")
+
+        worst20 = chain_f.nlargest(20, "transmission_severity").copy()
+        worst20["event_label"] = (
+            worst20["country_label"] + " " + worst20["year"].astype(str)
+        )
+        worst20["type"] = worst20["is_exporter"].map(
+            {True: "Exporter", False: "Importer"}
+        )
+        worst20 = worst20.sort_values("transmission_severity", ascending=True)
+
+        fig_worst = px.bar(
+            worst20,
+            x="transmission_severity",
+            y="event_label",
+            color="type",
+            orientation="h",
+            color_discrete_map={"Exporter": "#d62728", "Importer": "#1f77b4"},
+            text=worst20["transmission_severity"].map(lambda v: f"{v:.3f}"),
+            labels={
+                "transmission_severity": "Transmission Severity",
+                "event_label": "",
+                "type": "Country type",
+            },
+            title="Top 20 highest-severity country-year events",
+        )
+        fig_worst.update_traces(textposition="outside")
+        fig_worst.update_layout(
+            height=520,
+            margin=dict(l=10, r=60, t=50, b=10),
+            xaxis=dict(range=[0, 0.60]),
+            legend=dict(orientation="h", y=-0.08),
+        )
+        st.plotly_chart(fig_worst, use_container_width=True)
+
+        st.markdown("---")
+
+        # ── Section 3: Per-country stage breakdown ─────────────────────────────
+        st.subheader("Stage Breakdown — Country Detail")
+
+        all_chain_labels = sorted(chain_f["country_label"].unique())
+        # Default to the country with highest mean severity
+        default_idx = all_chain_labels.index(_most_exp) if _most_exp in all_chain_labels else 0
+        sel_country = st.selectbox(
+            "Select country", all_chain_labels, index=default_idx, key="chain_country"
+        )
+
+        ctry_df = chain_f[chain_f["country_label"] == sel_country].copy().sort_values("year")
+
+        # Stage contribution columns (re-normalise for display consistency)
+        def _n(s: pd.Series) -> pd.Series:
+            mn, mx = s.min(skipna=True), s.max(skipna=True)
+            if pd.isna(mn) or pd.isna(mx) or mx == mn:
+                return pd.Series(0.0, index=s.index)
+            return ((s - mn) / (mx - mn)).clip(0.0, 1.0)
+
+        ctry_df["contrib_fiscal"]     = 0.30 * _n(ctry_df["fiscal_delta_pp"].abs().fillna(0))
+        ctry_df["contrib_spending"]   = 0.20 * _n(ctry_df["spending_pressure_pp"].fillna(0))
+        ctry_df["contrib_subsidy"]    = 0.15 * ctry_df["subsidy_strain_score"].fillna(0)
+        ctry_df["contrib_passthru"]   = 0.15 * ctry_df["passthrough_factor"].fillna(0)
+        ctry_df["contrib_inflation"]  = 0.12 * _n(ctry_df["oil_inflation_pp"].abs().fillna(0))
+        ctry_df["contrib_employment"] = 0.08 * ctry_df["employment_pressure_score"].fillna(0)
+
+        stage_cols = [
+            "contrib_fiscal", "contrib_spending", "contrib_subsidy",
+            "contrib_passthru", "contrib_inflation", "contrib_employment",
+        ]
+        stage_names = [
+            "Fiscal (30%)", "Gov't Spending (20%)", "Subsidy Strain (15%)",
+            "Pass-Through (15%)", "Oil Inflation (12%)", "Employment (8%)",
+        ]
+        stage_colours = [
+            "#e45756", "#f58518", "#72b7b2",
+            "#4c78a8", "#54a24b", "#b279a2",
+        ]
+
+        fig_stack = go.Figure()
+        for col, name, colour in zip(stage_cols, stage_names, stage_colours):
+            fig_stack.add_trace(go.Bar(
+                x=ctry_df["year"],
+                y=ctry_df[col],
+                name=name,
+                marker_color=colour,
+                hovertemplate=f"<b>{name}</b><br>Year: %{{x}}<br>Contribution: %{{y:.3f}}<extra></extra>",
+            ))
+        # Overlay total severity as a line
+        fig_stack.add_trace(go.Scatter(
+            x=ctry_df["year"],
+            y=ctry_df["transmission_severity"],
+            mode="lines+markers",
+            name="Total Severity",
+            line=dict(color="black", width=2),
+            marker=dict(size=5),
+            hovertemplate="<b>Total Severity</b><br>Year: %{x}<br>%{y:.3f}<extra></extra>",
+            yaxis="y",
+        ))
+        fig_stack.update_layout(
+            barmode="stack",
+            height=460,
+            title=f"Stage Contributions — {sel_country}",
+            xaxis=dict(dtick=2, title="Year"),
+            yaxis=dict(title="Severity contribution", range=[0, 0.65]),
+            legend=dict(orientation="h", y=-0.22, font_size=11),
+            margin=dict(l=10, r=10, t=50, b=80),
+        )
+        # Crash vlines
+        for yr, lbl in [(2008, "GFC"), (2014, "2014"), (2020, "COVID")]:
+            if year_range[0] <= yr <= year_range[1]:
+                fig_stack.add_vline(
+                    x=yr, line_dash="dot", line_color="grey", opacity=0.5,
+                    annotation_text=lbl, annotation_font_size=9,
+                    annotation_position="top",
+                )
+        st.plotly_chart(fig_stack, use_container_width=True)
+
+        # ── Raw data table ─────────────────────────────────────────────────────
+        with st.expander("Raw chain data — all countries / selected years"):
+            show_cols = [
+                "country_label", "year", "is_exporter",
+                "brent_price_usd", "brent_yoy_pct",
+                "fiscal_delta_pp", "spending_pressure_pp",
+                "subsidy_strain_score", "passthrough_factor",
+                "oil_inflation_pp", "cpi_actual_pct",
+                "employment_pressure_score", "transmission_severity",
+            ]
+            col_labels = {
+                "country_label": "Country",
+                "year": "Year",
+                "is_exporter": "Exporter?",
+                "brent_price_usd": "Brent (USD)",
+                "brent_yoy_pct": "Brent YoY %",
+                "fiscal_delta_pp": "Fiscal Δ pp",
+                "spending_pressure_pp": "Spending pp",
+                "subsidy_strain_score": "Subsidy",
+                "passthrough_factor": "Pass-Through",
+                "oil_inflation_pp": "Oil Infl pp",
+                "cpi_actual_pct": "CPI %",
+                "employment_pressure_score": "Employment",
+                "transmission_severity": "Severity",
+            }
+            disp_chain = chain_f[show_cols].rename(columns=col_labels).round(4)
+            st.dataframe(
+                disp_chain,
+                hide_index=True,
+                use_container_width=True,
+                column_config={
+                    "Severity": st.column_config.ProgressColumn(
+                        "Severity", format="%.3f", min_value=0.0, max_value=0.6,
+                    ),
+                    "Brent (USD)": st.column_config.NumberColumn(format="$%.2f"),
+                    "Brent YoY %": st.column_config.NumberColumn(format="%.1f%%"),
+                    "CPI %": st.column_config.NumberColumn(format="%.1f%%"),
+                },
+            )
