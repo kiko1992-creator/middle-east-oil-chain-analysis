@@ -77,6 +77,24 @@ def load_chain() -> pd.DataFrame:
     return df
 
 
+# EIA annual average Brent spot price 2022 — used as the shock baseline
+_BRENT_2022_AVG: float = 100.93
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def fetch_live_brent() -> tuple[float | None, str]:
+    """Fetch latest Brent Crude Futures close from Yahoo Finance (BZ=F)."""
+    try:
+        import yfinance as yf
+        hist = yf.Ticker("BZ=F").history(period="5d")
+        if hist.empty:
+            return None, ""
+        price = float(hist["Close"].dropna().iloc[-1])
+        ts = hist.index[-1].strftime("%Y-%m-%d %H:%M UTC")
+        return price, ts
+    except Exception:
+        return None, ""
+
+
 # ── Sanity-check paths before anything else ───────────────────────────────────
 for _p in (PANEL_PATH, OCVI_PATH):
     if not _p.exists():
@@ -93,6 +111,16 @@ panel = load_panel()
 ocvi  = load_ocvi()
 _chain_available = CHAIN_PATH.exists()
 chain = load_chain() if _chain_available else None
+
+_live_brent, _live_ts = fetch_live_brent()
+_auto_shock_raw: float | None = (
+    (_live_brent - _BRENT_2022_AVG) / _BRENT_2022_AVG * 100
+    if _live_brent is not None else None
+)
+_auto_shock_snap: int | None = (
+    int(max(-60, min(60, round(_auto_shock_raw / 5) * 5)))
+    if _auto_shock_raw is not None else None
+)
 
 _all_labels   = sorted(panel["country_label"].unique())
 _yr_min       = int(panel["year"].min())
@@ -146,6 +174,29 @@ with st.sidebar:
             "Negative = revenue loss · Positive = revenue gain."
         ),
     )
+
+    # Live Brent price
+    st.markdown("### 📡 Live Brent Price")
+    if _live_brent is not None:
+        st.metric(
+            "BZ=F (Brent Futures)",
+            f"${_live_brent:.2f}",
+            f"{_auto_shock_raw:+.1f}% vs 2022 avg (${_BRENT_2022_AVG:.2f})",
+            delta_color="off",
+        )
+        _use_live_shock = st.checkbox(
+            "Auto-set shock from live price",
+            value=False,
+            help=(
+                f"Overrides the slider to **{_auto_shock_snap:+d}%**  \n"
+                f"live ${_live_brent:.2f} vs 2022 avg ${_BRENT_2022_AVG:.2f}"
+            ),
+        )
+        if _use_live_shock:
+            shock_pct = _auto_shock_snap
+    else:
+        st.caption("Live price unavailable — markets closed or API error.")
+        _use_live_shock = False
 
     st.markdown("---")
     st.caption("Source: World Bank Open Data  \nBuilt with Streamlit + Plotly")
@@ -382,6 +433,18 @@ with tab_rents:
 # ═══════════════════════════════════════════════════════════════════════════════
 with tab_shock:
     st.header("First-Order Oil Price Shock Exposure")
+
+    # Live price banner
+    if _live_brent is not None:
+        _banner = (
+            f"📡 **Live Brent (BZ=F):** ${_live_brent:.2f}"
+            f"  ·  **vs 2022 avg (${_BRENT_2022_AVG:.2f}):** {_auto_shock_raw:+.1f}%"
+            f"  ·  *{_live_ts}*"
+        )
+        if _use_live_shock:
+            st.success(_banner + f"  ·  **Shock auto-set to {shock_pct:+d}%**")
+        else:
+            st.info(_banner + "  ·  Enable *Auto-set shock* in the sidebar to use this value.")
 
     # Scenario narrative
     _dir = "decline" if shock_pct < 0 else "surge" if shock_pct > 0 else "no change"
