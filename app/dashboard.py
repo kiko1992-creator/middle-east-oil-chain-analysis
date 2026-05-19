@@ -29,10 +29,13 @@ st.set_page_config(
 )
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
-_ROOT       = Path(__file__).resolve().parents[1]
-PANEL_PATH  = _ROOT / "data" / "processed" / "world_bank_panel.csv"
-OCVI_PATH   = _ROOT / "outputs" / "tables" / "ocvi_scores.csv"
-CHAIN_PATH  = _ROOT / "outputs" / "tables" / "chain_transmission.csv"
+_ROOT          = Path(__file__).resolve().parents[1]
+PANEL_PATH     = _ROOT / "data" / "processed" / "world_bank_panel.csv"
+OCVI_PATH      = _ROOT / "outputs" / "tables" / "ocvi_scores.csv"
+CHAIN_PATH     = _ROOT / "outputs" / "tables" / "chain_transmission.csv"
+BREAKEVEN_PATH = _ROOT / "data" / "reference" / "fiscal_breakeven.csv"
+RESERVES_PATH  = _ROOT / "data" / "reference" / "swf_reserves.csv"
+FOOD_PATH      = _ROOT / "data" / "reference" / "food_security.csv"
 
 # Consistent 14-colour palette (one per country)
 _PALETTE = px.colors.qualitative.D3 + px.colors.qualitative.Plotly
@@ -75,6 +78,22 @@ def load_chain() -> pd.DataFrame:
     df = pd.read_csv(CHAIN_PATH)
     df["country_label"] = df["country_name"].map(_label)
     return df
+
+
+@st.cache_data(ttl=3600, show_spinner="Running fiscal stress analysis…")
+def load_fiscal_stress_data() -> dict:
+    """Build the Right Now Risk composite table from all four additions."""
+    from src.model.right_now_risk import run_right_now_risk
+    try:
+        return run_right_now_risk(
+            breakeven_path=BREAKEVEN_PATH,
+            reserves_path=RESERVES_PATH,
+            food_path=FOOD_PATH,
+            chain_path=CHAIN_PATH,
+            panel_path=PANEL_PATH,
+        )
+    except Exception as exc:
+        return {"error": str(exc)}
 
 
 # EIA annual average Brent spot price 2022 — used as the shock baseline
@@ -211,12 +230,13 @@ def _filter(df: pd.DataFrame) -> pd.DataFrame:
 
 
 # ── Tabs ──────────────────────────────────────────────────────────────────────
-tab_rank, tab_rents, tab_shock, tab_macro, tab_chain = st.tabs([
+tab_rank, tab_rents, tab_shock, tab_macro, tab_chain, tab_fiscal = st.tabs([
     "📊  OCVI Rankings",
     "🛢️  Oil Rents % GDP",
     "⚡  Price Shock",
     "📈  GDP Growth vs Inflation",
     "⛓️  Chain Transmission",
+    "🚨  Fiscal Stress",
 ])
 
 
@@ -960,3 +980,245 @@ with tab_chain:
                     "CPI %": st.column_config.NumberColumn(format="%.1f%%"),
                 },
             )
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TAB 6 · Right Now Risk — Fiscal Stress
+# ═══════════════════════════════════════════════════════════════════════════════
+with tab_fiscal:
+    st.header("Right Now Risk — Fiscal & Stability Assessment")
+    st.caption(
+        "Composite score = **0.35** × fiscal stress  +  **0.25** × reserve runway risk  "
+        "+  **0.20** × social stability risk  +  **0.20** × chain transmission severity  ·  "
+        "Missing components trigger proportional weight rescaling."
+    )
+
+    _fiscal_data = load_fiscal_stress_data()
+
+    if "error" in _fiscal_data:
+        st.warning(
+            f"Fiscal stress analysis unavailable: {_fiscal_data['error']}  \n"
+            "Ensure all reference CSVs exist:  \n"
+            "`data/reference/fiscal_breakeven.csv`  \n"
+            "`data/reference/swf_reserves.csv`  \n"
+            "`data/reference/food_security.csv`"
+        )
+    else:
+        _rnr_df      = _fiscal_data["right_now_risk_df"]
+        _stress_tbl  = _fiscal_data["stress_table"]
+        _runway_tbl  = _fiscal_data["runway_table"]
+        _fs_brent    = _fiscal_data.get("brent_live", float("nan"))
+
+        # ── KPI row ────────────────────────────────────────────────────────────
+        kf1, kf2, kf3, kf4 = st.columns(4)
+
+        import math as _math
+        _brent_str = f"${_fs_brent:.2f}" if not _math.isnan(_fs_brent) else "N/A"
+        kf1.metric(
+            "Brent Today (BZ=F)",
+            _brent_str,
+            delta=None,
+        )
+
+        _n_below_be = int((_stress_tbl["stress_status"] == "Red").sum()) if not _stress_tbl.empty else 0
+        kf2.metric(
+            "Countries Below Breakeven",
+            str(_n_below_be),
+            "fiscal deficit territory",
+            delta_color="inverse",
+        )
+
+        _runway_active = _runway_tbl[
+            ~_runway_tbl["runway_status"].isin(["Gray"])
+        ].copy() if not _runway_tbl.empty else pd.DataFrame()
+
+        if not _runway_active.empty and _runway_active["reserve_runway_months"].notna().any():
+            _shortest_idx = _runway_active["reserve_runway_months"].idxmin()
+            _shortest_row = _runway_active.loc[_shortest_idx]
+            _runway_lbl   = _shortest_row.get("country_label", _shortest_row.get("country_code_a3", "?"))
+            _runway_mo    = _shortest_row["reserve_runway_months"]
+            kf3.metric(
+                "Shortest Runway (stressed)",
+                _runway_lbl,
+                f"{_runway_mo:.0f} months",
+                delta_color="inverse",
+            )
+        else:
+            kf3.metric("Shortest Runway (stressed)", "—", "no stressed countries")
+
+        if not _rnr_df.empty and not _rnr_df["right_now_risk_score"].isna().all():
+            _top_row   = _rnr_df.dropna(subset=["right_now_risk_score"]).iloc[0]
+            _top_lbl   = _top_row.get("country_label", _top_row.get("country_code_a3", "?"))
+            _top_score = _top_row["right_now_risk_score"]
+            kf4.metric(
+                "Highest Risk Country",
+                _top_lbl,
+                f"score {_top_score:.3f}",
+                delta_color="inverse",
+            )
+        else:
+            kf4.metric("Highest Risk Country", "—", "data unavailable")
+
+        st.markdown("---")
+
+        # ── Rescaled-weights transparency banner ───────────────────────────────
+        _n_rescaled = int((_rnr_df["missing_components"].fillna("") != "").sum())
+        if _n_rescaled > 0:
+            _rescaled_pct = _n_rescaled / len(_rnr_df) * 100
+            st.warning(
+                f"**Weight rescaling active** — {_n_rescaled} of {len(_rnr_df)} "
+                f"countries ({_rescaled_pct:.0f}%) had one or more components "
+                f"missing and used proportionally rescaled weights. "
+                f"See the **Missing** column in the Country Detail table for per-country detail."
+            )
+
+        # ── Bar chart ──────────────────────────────────────────────────────────
+        st.subheader("Right Now Risk Score — Country Ranking")
+
+        _bar_df = (
+            _rnr_df
+            .dropna(subset=["right_now_risk_score"])
+            .sort_values("right_now_risk_score", ascending=True)
+            .copy()
+        )
+        if not _bar_df.empty:
+            _bar_df["_label"] = _bar_df.get(
+                "country_label",
+                _bar_df.get("country_code_a3", _bar_df.index.astype(str))
+            )
+            _bar_df["_driver_tag"] = _bar_df["primary_driver"].fillna("Mixed")
+
+            fig_rnr = px.bar(
+                _bar_df,
+                x="right_now_risk_score",
+                y="_label",
+                orientation="h",
+                color="right_now_risk_score",
+                color_continuous_scale="RdYlGn_r",
+                range_color=[0.0, 1.0],
+                text=_bar_df["right_now_risk_score"].map(lambda v: f"{v:.3f}"),
+                hover_data={
+                    "right_now_risk_score": ":.3f",
+                    "_driver_tag": True,
+                    "fiscal_stress_score": ":.3f" if "fiscal_stress_score" in _bar_df.columns else False,
+                    "reserve_runway_risk": ":.3f" if "reserve_runway_risk" in _bar_df.columns else False,
+                    "social_stability_risk": ":.3f" if "social_stability_risk" in _bar_df.columns else False,
+                    "chain_transmission_severity_recent": ":.3f" if "chain_transmission_severity_recent" in _bar_df.columns else False,
+                    "_label": False,
+                },
+                labels={
+                    "right_now_risk_score": "Right Now Risk Score",
+                    "_label": "",
+                    "_driver_tag": "Primary driver",
+                },
+                title="Right Now Risk Score (0 = lowest · 1 = highest)",
+            )
+            fig_rnr.update_traces(textposition="outside")
+            fig_rnr.update_layout(
+                coloraxis_showscale=False,
+                height=500,
+                margin=dict(l=0, r=70, t=50, b=0),
+                xaxis=dict(range=[0, 1.12], title="Right Now Risk Score"),
+            )
+            st.plotly_chart(fig_rnr, use_container_width=True)
+
+        st.markdown("---")
+
+        # ── Ranked table ───────────────────────────────────────────────────────
+        st.subheader("Country Detail")
+
+        _tbl_src = _rnr_df.copy()
+
+        # Data-quality badges for low-confidence and partially-missing rows
+        _n_low_conf   = int((_tbl_src.get("confidence", pd.Series(dtype=str)).str.lower() == "low").sum())
+        _n_partial     = int((_tbl_src["missing_components"].fillna("") != "").sum())
+        if _n_low_conf > 0 or _n_partial > 0:
+            _badge_parts = []
+            if _n_low_conf > 0:
+                _badge_parts.append(f"**{_n_low_conf}** low-confidence row(s)")
+            if _n_partial > 0:
+                _badge_parts.append(f"**{_n_partial}** row(s) with missing components (weights rescaled)")
+            st.info("Data quality: " + " · ".join(_badge_parts))
+
+        _display_cols = {
+            "country_label":                        "Country",
+            "stress_status":                        "Fiscal Status",
+            "runway_status":                        "Runway Status",
+            "fiscal_stress_score":                  "Fiscal Score",
+            "reserve_runway_risk":                  "Runway Risk",
+            "social_stability_risk":                "Social Risk",
+            "chain_transmission_severity_recent":   "Chain Severity",
+            "right_now_risk_score":                 "Right Now Risk",
+            "primary_driver":                       "Primary Driver",
+            "confidence":                           "Data Confidence",
+            "missing_components":                   "Missing",
+        }
+        _tbl_cols_available = [c for c in _display_cols if c in _tbl_src.columns]
+        _tbl_disp = (
+            _tbl_src[_tbl_cols_available]
+            .rename(columns=_display_cols)
+            .round(3)
+        )
+
+        _col_config: dict = {
+            "Right Now Risk": st.column_config.ProgressColumn(
+                "Right Now Risk", format="%.3f", min_value=0.0, max_value=1.0,
+                help="Composite 0-1 score; 1 = highest risk",
+            ),
+            "Fiscal Score": st.column_config.ProgressColumn(
+                "Fiscal Score", format="%.3f", min_value=0.0, max_value=1.0,
+                help="Continuous fiscal stress: (breakeven - brent) / breakeven, clamped to [0,1]",
+            ),
+            "Runway Risk": st.column_config.ProgressColumn(
+                "Runway Risk", format="%.3f", min_value=0.0, max_value=1.0,
+                help="Reserve runway risk: 1=<=6 months, 0=>=36 months (Gray=0)",
+            ),
+            "Social Risk": st.column_config.ProgressColumn(
+                "Social Risk", format="%.3f", min_value=0.0, max_value=1.0,
+                help="Social stability risk (Addition 3)",
+            ),
+            "Chain Severity": st.column_config.ProgressColumn(
+                "Chain Severity", format="%.3f", min_value=0.0, max_value=1.0,
+                help="Normalised mean transmission severity, most recent 3 years",
+            ),
+        }
+        st.dataframe(
+            _tbl_disp,
+            hide_index=True,
+            use_container_width=True,
+            column_config=_col_config,
+        )
+
+        # ── Methodology expander ───────────────────────────────────────────────
+        with st.expander("Methodology — Right Now Risk score"):
+            st.markdown("""
+**Composite formula (default weights):**
+```
+right_now_risk_score =
+    0.35 × fiscal_stress_score
+  + 0.25 × reserve_runway_risk
+  + 0.20 × social_stability_risk
+  + 0.20 × chain_transmission_severity_recent
+```
+
+**Component definitions:**
+
+| Component | Source | Formula |
+|-----------|--------|---------|
+| **Fiscal stress score** | Addition 1 — fiscal breakeven | `min(1, max(0, (breakeven − brent) / breakeven))` |
+| **Reserve runway risk** | Addition 2 — SWF/FX reserves | Linear: 0 at ≥36 months, 1 at ≤6 months; 0 if Gray (not stressed) |
+| **Social stability risk** | Addition 3 — food/fiscal/inflation | `0.5×food_exposure + 0.3×fiscal_score + 0.2×inflation_norm` |
+| **Chain transmission** | Chain model — transmission_severity | Mean severity, most recent 3 years, min-max normalised |
+
+**Fallback policy:**
+If any component is NaN for a country, the remaining component weights
+are rescaled proportionally to sum to 1.0.  The `Missing` column shows
+which components were absent; `rescaled_weights` shows the actual weights used.
+No country is silently dropped from the table.
+
+**Stress classifications:**
+- **Red** fiscal status: Brent < breakeven (government in deficit)
+- **Amber**: Brent within $15/bbl above breakeven
+- **Green**: comfortable fiscal headroom (≥$15 above breakeven)
+- **Gray**: net importer or concept not applicable
+""")

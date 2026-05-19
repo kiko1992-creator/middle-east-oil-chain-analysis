@@ -515,14 +515,14 @@ with tab_choke:
             st.plotly_chart(fig_imp_bar, use_container_width=True)
 
             # Oil import share context
-            imp_detail = imp_cp[["country_label", "suez_import_pct", "oil_import_share", "imports_pct_gdp"]].copy()
-            imp_detail["oil_import_share_pct"] = imp_detail["oil_import_share"] * 100
+            imp_detail = imp_cp[["country_label", "suez_import_pct", "imports_pct_gdp"]].copy()
+            imp_detail["oil_import_share_pct"] = imp_cp["oil_import_share"] * 100
             imp_detail["suez_oil_import_cost"] = (
                 imp_detail["suez_import_pct"] / 100 * imp_detail["oil_import_share_pct"]
             )
             imp_detail.columns = [
-                "Country", "Suez Routing (%)", "Oil / Total Imports (%)",
-                "Imports % GDP", "Suez Oil Cost Exposure",
+                "Country", "Suez Routing (%)", "Imports % GDP",
+                "Oil / Total Imports (%)", "Suez Oil Cost Exposure",
             ]
             st.dataframe(
                 imp_detail,

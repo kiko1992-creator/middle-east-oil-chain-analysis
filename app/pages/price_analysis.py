@@ -1,8 +1,7 @@
 """
 Brent Crude Oil Price Analysis
 
-Fetches annual Brent crude price data from the World Bank API
-(indicator: CRUDE_BRENT), then analyses:
+Fetches annual Brent crude price data via yfinance (BZ=F), then analyses:
   - Historical price with 2008 / 2014 / 2020 crash highlights
   - Rolling 3-year annualised volatility
   - Pearson correlation between Brent price and GDP growth per country
@@ -22,8 +21,13 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-import requests
 import streamlit as st
+
+from src.data.brent import (
+    calculate_returns,
+    calculate_rolling_volatility,
+    fetch_brent_history,
+)
 
 # ── Page config ────────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -49,50 +53,10 @@ def _label(name: str) -> str:
     return _LABEL.get(name, name)
 
 
-# ── World Bank API ─────────────────────────────────────────────────────────────
-_WB_URL = (
-    "https://api.worldbank.org/v2/country/all/indicator/CRUDE_BRENT"
-    "?format=json&per_page=100&mrv=30"
-)
-
-# Hard-coded annual Brent prices (EIA/World Bank, USD/bbl) — used when API unavailable
-_BRENT_FALLBACK: dict[int, float] = {
-    2000: 28.51, 2001: 24.44, 2002: 25.02, 2003: 28.85, 2004: 38.27,
-    2005: 54.52, 2006: 65.14, 2007: 72.44, 2008: 96.94, 2009: 61.51,
-    2010: 79.50, 2011: 111.26, 2012: 111.63, 2013: 108.66, 2014: 98.97,
-    2015: 52.39, 2016: 43.55, 2017: 54.25, 2018: 71.69, 2019: 64.37,
-    2020: 41.96, 2021: 70.68, 2022: 100.93, 2023: 82.17, 2024: 80.30,
-}
-
-
-@st.cache_data(show_spinner="Fetching Brent crude prices from World Bank…", ttl=86_400)
+@st.cache_data(show_spinner="Fetching Brent crude prices…", ttl=86_400)
 def load_brent() -> tuple[pd.DataFrame, bool]:
-    """Return (df[year, price_usd], api_ok).  Falls back to built-in data on failure."""
-    try:
-        r = requests.get(_WB_URL, timeout=10)
-        r.raise_for_status()
-        payload = r.json()
-        if (
-            isinstance(payload, list)
-            and len(payload) == 2
-            and isinstance(payload[1], list)
-            and payload[1]
-        ):
-            records = [
-                {"year": int(item["date"]), "price_usd": float(item["value"])}
-                for item in payload[1]
-                if item.get("value") is not None
-            ]
-            if records:
-                df = pd.DataFrame(records).sort_values("year").reset_index(drop=True)
-                return df, True
-    except Exception:
-        pass
-
-    df = pd.DataFrame(
-        [{"year": y, "price_usd": p} for y, p in sorted(_BRENT_FALLBACK.items())]
-    )
-    return df, False
+    """Return (df[year, price_usd], live_ok) via src.data.brent.fetch_brent_history."""
+    return fetch_brent_history()
 
 
 @st.cache_data(show_spinner="Loading panel data…")
@@ -124,8 +88,8 @@ panel              = load_panel()
 
 # Derived price columns (computed on the full series before year-range filtering)
 brent_all = brent_all.copy()
-brent_all["return_pct"] = brent_all["price_usd"].pct_change().mul(100)
-brent_all["vol_3yr"]    = brent_all["return_pct"].rolling(3).std()
+brent_all["return_pct"] = calculate_returns(brent_all["price_usd"])
+brent_all["vol_3yr"]    = calculate_rolling_volatility(brent_all["return_pct"], window=3)
 
 # Consistent country colour map
 _all_labels = sorted(panel["country_label"].unique())
@@ -169,24 +133,20 @@ with st.sidebar:
 
     st.markdown("---")
     if _api_ok:
-        st.caption("Source: World Bank API · CRUDE_BRENT")
+        st.caption("Source: Yahoo Finance · BZ=F (annual averages)")
     else:
-        st.caption("Source: EIA/World Bank fallback data (2000–2024)")
+        st.caption("Source: EIA/World Bank historical data (2000–2024)")
     st.caption("Built with Streamlit + Plotly")
 
 # ── Filter Brent to selected year range ───────────────────────────────────────
 brent = brent_all[brent_all["year"].between(year_range[0], year_range[1])].copy()
 
-# ── Page title & API banner ────────────────────────────────────────────────────
+# ── Page title ─────────────────────────────────────────────────────────────────
 st.title("Brent Crude Oil — Historical Price Analysis")
 if not _api_ok:
-    st.info(
-        "World Bank API unreachable — showing built-in fallback prices (EIA/World Bank, 2000–2024). "
-        "Data refreshes automatically when the API is available.",
-        icon="ℹ️",
-    )
+    st.caption("Using historical reference data (EIA/World Bank, 2000–2024). Live data unavailable.")
 else:
-    st.caption("Data: World Bank Commodity Price Data · Indicator: CRUDE_BRENT")
+    st.caption("Data: Yahoo Finance · BZ=F (annual averages via yfinance)")
 
 # ── Helper: stamp crash vertical lines on any figure ──────────────────────────
 def _add_crashes(fig: go.Figure) -> None:
