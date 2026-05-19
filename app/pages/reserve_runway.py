@@ -36,6 +36,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+from src.app.export import make_csv_download_button
 from src.model.fiscal_stress import (
     build_stress_table,
     fetch_brent_live,
@@ -465,6 +466,7 @@ st.dataframe(
         ),
     },
 )
+make_csv_download_button(disp_tbl, "reserve_runway_table.csv", "Download table as CSV")
 
 # Detail expander: full reference data including SWF + FX breakdown.
 with st.expander("Full reference data — SWF and FX reserve breakdown"):
@@ -495,6 +497,7 @@ with st.expander("Full reference data — SWF and FX reserve breakdown"):
             "Monthly Burn ($bn)":  st.column_config.NumberColumn(format="$%.1f bn"),
         },
     )
+    make_csv_download_button(detail_df, "reserve_runway_detail.csv", "Download detail as CSV")
 
 st.markdown("---")
 

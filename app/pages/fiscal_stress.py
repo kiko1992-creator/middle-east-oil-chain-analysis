@@ -33,6 +33,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
+from src.app.export import make_csv_download_button
+
 from src.model.fiscal_stress import (
     _AMBER_BUFFER,
     build_stress_table,
@@ -345,6 +347,7 @@ st.dataframe(
         ),
     },
 )
+make_csv_download_button(disp_tbl, "fiscal_stress_table.csv", "Download table as CSV")
 
 st.markdown("---")
 

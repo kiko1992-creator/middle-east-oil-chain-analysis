@@ -1,0 +1,15 @@
+country_code,country_code_a3,country_name,country_label,gdp_growth_2020_pct,fiscal_balance_2020_pct_gdp,imf_emergency_program,outcome_severity_rank,source_id_primary,source_id_secondary,is_estimate,confidence,notes
+SA,SAU,Saudi Arabia,Saudi Arabia,-4.1,-11.4,False,10,IMF_WEO_APR2021,WB_GEP_2021,False,high,OPEC+ output cuts amplified COVID demand shock; IMF WEO Apr 2021 Table A7
+IQ,IRQ,Iraq,Iraq,-11.3,-18.8,False,3,IMF_WEO_APR2021,WB_GEP_2021,False,medium,Oil revenue collapse (April 2020 Brent ~$18); IMF WEO Apr 2021; fiscal balance highly uncertain
+IR,IRN,Iran,Iran,-1.5,-5.5,True,13,IMF_WEO_APR2021,WB_GEP_2021,True,low,Sanctions constrain data access; emergency financing refers to SDR allocation not bilateral program; IMF WEO Apr 2021 estimate
+KW,KWT,Kuwait,Kuwait,-8.9,-33.0,False,4,IMF_WEO_APR2021,WB_GEP_2021,False,high,Severe fiscal hit from both oil price crash and output cuts; KIA buffer prevented financing stress; IMF WEO Apr 2021
+AE,ARE,United Arab Emirates,UAE,-6.1,-11.2,False,8,IMF_WEO_APR2021,WB_GEP_2021,False,high,Non-oil diversification cushioned shock; Abu Dhabi ADNOC maintained output; IMF WEO Apr 2021
+QA,QAT,Qatar,Qatar,-3.6,-5.5,False,11,IMF_WEO_APR2021,WB_GEP_2021,False,high,LNG contracts provide revenue stability; among most resilient in region; IMF WEO Apr 2021
+OM,OMN,Oman,Oman,-6.4,-19.3,False,6,IMF_WEO_APR2021,WB_GEP_2021,False,high,Higher breakeven than peers; Eurobond issuance to cover deficit; IMF WEO Apr 2021
+BH,BHR,Bahrain,Bahrain,-6.1,-16.7,False,7,IMF_WEO_APR2021,WB_GEP_2021,False,high,GCC financial support package sustained external position; IMF WEO Apr 2021
+LY,LBY,Libya,Libya,-59.7,-80.0,False,1,IMF_WEO_APR2021,WB_GEP_2021,True,low,Extreme outlier: oil blockade by Haftar forces (Jan-Sep 2020) destroyed most oil revenue; fiscal balance highly uncertain; dual-government; IMF WEO Apr 2021
+DZ,DZA,Algeria,Algeria,-5.5,-16.9,False,9,IMF_WEO_APR2021,WB_GEP_2021,False,high,Hydrocarbon-dependent; FX reserves fell sharply in 2020; IMF WEO Apr 2021
+EG,EGY,Egypt,Egypt,3.6,-8.0,True,14,IMF_WEO_APR2021,WB_GEP_2021,False,high,Only MENA economy with positive 2020 growth; RFI disbursement Apr 2020 + SBA Jun 2020; IMF WEO Apr 2021
+JO,JOR,Jordan,Jordan,-1.6,-8.3,True,12,IMF_WEO_APR2021,WB_GEP_2021,False,high,PLL arrangement used as precautionary backstop; IMF WEO Apr 2021
+MA,MAR,Morocco,Morocco,-7.1,-7.7,True,5,IMF_WEO_APR2021,WB_GEP_2021,False,high,PLL used as precautionary backstop (not drawn); drought compounded COVID impact; IMF WEO Apr 2021
+LB,LBN,Lebanon,Lebanon,-25.9,-10.0,False,2,IMF_WEO_APR2021,WB_GEP_2021,True,low,Financial sector collapse pre-dated COVID; political deadlock blocked IMF program despite negotiations; fiscal balance estimate highly uncertain; IMF WEO Apr 2021

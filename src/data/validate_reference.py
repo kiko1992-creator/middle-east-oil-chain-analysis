@@ -26,12 +26,17 @@ import pandas as pd
 
 _ROOT = Path(__file__).resolve().parents[2]
 
-REGISTRY_PATH   = _ROOT / "data" / "reference" / "source_registry.csv"
-BREAKEVEN_PATH  = _ROOT / "data" / "reference" / "fiscal_breakeven.csv"
-RESERVES_PATH   = _ROOT / "data" / "reference" / "swf_reserves.csv"
-FOOD_PATH       = _ROOT / "data" / "reference" / "food_security.csv"
+REGISTRY_PATH     = _ROOT / "data" / "reference" / "source_registry.csv"
+BREAKEVEN_PATH    = _ROOT / "data" / "reference" / "fiscal_breakeven.csv"
+RESERVES_PATH     = _ROOT / "data" / "reference" / "swf_reserves.csv"
+FOOD_PATH         = _ROOT / "data" / "reference" / "food_security.csv"
+RETRO_PATH        = _ROOT / "data" / "reference" / "imf_weo_2020_outcomes.csv"
+BENCHMARKS_PATH   = _ROOT / "data" / "reference" / "imf_wb_benchmarks.csv"
 
-_VALID_CONFIDENCE = {"high", "medium", "low", ""}
+_VALID_CONFIDENCE   = {"high", "medium", "low", ""}
+_VALID_FM_TIER      = {"Low", "Medium", "High"}
+_VALID_MPO_STATUS   = {"Stable", "Watch", "Stressed"}
+_N_COUNTRIES        = 14
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
@@ -139,6 +144,44 @@ def check_monotonic_bands(
     )
 
 
+def check_enum_column(
+    df: pd.DataFrame,
+    name: str,
+    col: str,
+    valid_values: set[str],
+) -> None:
+    """Column must only contain values from valid_values (empty string also allowed)."""
+    if col not in df.columns:
+        _check(f"{name}: {col} column present", False)
+        return
+    bad = [v for v in df[col] if str(v) not in valid_values and str(v) != ""]
+    _check(f"{name}: {col} enum valid", len(bad) == 0,
+           f"bad values: {bad}" if bad else "")
+
+
+def check_rank_column_unique(
+    df: pd.DataFrame,
+    name: str,
+    col: str,
+    expected_n: int,
+) -> None:
+    """Rank column must be integers 1..expected_n with no duplicates."""
+    if col not in df.columns:
+        _check(f"{name}: {col} column present", False)
+        return
+    vals = pd.to_numeric(df[col], errors="coerce").dropna().astype(int).tolist()
+    duplicates = [v for v in vals if vals.count(v) > 1]
+    _check(f"{name}: {col} no duplicates", len(duplicates) == 0,
+           f"duplicated ranks: {sorted(set(duplicates))}" if duplicates else "")
+    expected = set(range(1, expected_n + 1))
+    actual   = set(vals)
+    missing  = expected - actual
+    extra    = actual - expected
+    _check(f"{name}: {col} covers 1..{expected_n}",
+           not missing and not extra,
+           f"missing={sorted(missing)} extra={sorted(extra)}" if (missing or extra) else "")
+
+
 def check_base_values_present(
     df: pd.DataFrame,
     name: str,
@@ -169,10 +212,12 @@ def check_base_values_present(
 # ── Main validation run ────────────────────────────────────────────────────────
 
 def run_all() -> bool:
-    reg  = _load(REGISTRY_PATH,  "source_registry.csv")
-    be   = _load(BREAKEVEN_PATH, "fiscal_breakeven.csv")
-    res  = _load(RESERVES_PATH,  "swf_reserves.csv")
-    food = _load(FOOD_PATH,      "food_security.csv")
+    reg   = _load(REGISTRY_PATH,   "source_registry.csv")
+    be    = _load(BREAKEVEN_PATH,  "fiscal_breakeven.csv")
+    res   = _load(RESERVES_PATH,   "swf_reserves.csv")
+    food  = _load(FOOD_PATH,       "food_security.csv")
+    retro = _load(RETRO_PATH,      "imf_weo_2020_outcomes.csv")
+    bench = _load(BENCHMARKS_PATH, "imf_wb_benchmarks.csv")
 
     if reg is None:
         print("\nCannot continue without source registry.")
@@ -183,7 +228,13 @@ def run_all() -> bool:
 
     check_registry_self_consistent(reg)
 
-    for df, name in [(be, "fiscal_breakeven"), (res, "swf_reserves"), (food, "food_security")]:
+    for df, name in [
+        (be,    "fiscal_breakeven"),
+        (res,   "swf_reserves"),
+        (food,  "food_security"),
+        (retro, "imf_weo_2020_outcomes"),
+        (bench, "imf_wb_benchmarks"),
+    ]:
         if df is None:
             continue
         print(f"\n-- {name} --")
@@ -214,6 +265,18 @@ def run_all() -> bool:
         check_monotonic_bands(food, "food_security",
                               "cereal_dependency_low", "cereal_dependency_base",
                               "cereal_dependency_high")
+
+    if retro is not None:
+        print("\n-- imf_weo_2020_outcomes domain checks --")
+        check_rank_column_unique(retro, "imf_weo_2020_outcomes",
+                                 "outcome_severity_rank", _N_COUNTRIES)
+
+    if bench is not None:
+        print("\n-- imf_wb_benchmarks domain checks --")
+        check_enum_column(bench, "imf_wb_benchmarks",
+                          "imf_fm_risk_tier", _VALID_FM_TIER)
+        check_enum_column(bench, "imf_wb_benchmarks",
+                          "wb_mpo_status", _VALID_MPO_STATUS)
 
     n_pass = sum(1 for _, ok, _ in _RESULTS if ok)
     n_fail = sum(1 for _, ok, _ in _RESULTS if not ok)

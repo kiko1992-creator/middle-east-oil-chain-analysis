@@ -37,6 +37,8 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+from src.app.export import make_csv_download_button
+
 from src.model.chain_transmission import (
     _SNAPSHOT_YEAR,
     _STAGE_COLS,
@@ -252,6 +254,7 @@ with st.expander("Full data table — all 14 countries"):
             "Amplif.": st.column_config.NumberColumn(format="%.2f"),
         },
     )
+    make_csv_download_button(disp, "chain_transmission_table.csv", "Download table as CSV")
 
 # ── Methodology ────────────────────────────────────────────────────────────────
 with st.expander("Methodology"):

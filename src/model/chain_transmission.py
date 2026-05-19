@@ -51,6 +51,7 @@ import logging
 import sys
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 log = logging.getLogger(__name__)
@@ -88,6 +89,9 @@ _REQUIRED_REF_COLS: frozenset[str] = frozenset(
 _EXPORTERS: frozenset[str] = frozenset({
     "SAU", "IRQ", "KWT", "ARE", "QAT", "OMN", "BHR", "DZA", "LBY", "IRN",
 })
+
+_MIN_OBS: int = 5  # Minimum paired observations required for OLS fit
+_PANEL_PATH: Path = Path("data/processed/world_bank_panel.csv")
 
 
 # ---------------------------------------------------------------------------
@@ -127,6 +131,114 @@ def load_chain_reference(path: Path = REF_PATH) -> pd.DataFrame:
         df[col] = pd.to_numeric(df[col], errors="coerce")
 
     log.info("Chain reference loaded: %d countries from %s", len(df), path)
+    return df
+
+
+def fit_transmission_ols(
+    ref_df: pd.DataFrame,
+    panel_path: Path = _PANEL_PATH,
+) -> pd.DataFrame:
+    """Add empirical OLS stage scores to the chain reference DataFrame.
+
+    Proxy mapping (from world_bank_panel.csv → stage):
+      stage1 → Δ NY_GDP_PETR_RT_ZS  (oil-rents-% YoY pp change)
+      stage2 → FP_CPI_TOTL_ZG        (CPI inflation rate %)
+      stage5 → NY_GDP_MKTP_CD pct_change × 100  (nominal GDP growth proxy)
+      stage3, stage4 → no proxy available; expert estimates kept in build_chain_table
+
+    OLS model:  y_t = α + β × brent_pct_change_{t−1} + ε
+    Score:  min(1.0, |β|)
+    Requires at least _MIN_OBS = 5 non-null paired observations.
+
+    Brent history uses the deterministic EIA/WB fallback table (no network
+    call) so results are reproducible without internet access.
+
+    Args:
+        ref_df:     Output of :func:`load_chain_reference`.
+        panel_path: Path to data/processed/world_bank_panel.csv.
+
+    Returns:
+        Copy of *ref_df* with new columns:
+          empirical_stage1..5  (float, NaN where data insufficient)
+          empirical_flag       (bool, True if ≥ 1 stage was fitted)
+          data_quality_flag    (str, semicolon-separated issue codes)
+    """
+    panel_path = Path(panel_path)
+    df = ref_df.copy()
+
+    for s in range(1, 6):
+        df[f"empirical_stage{s}"] = float("nan")
+    df["empirical_flag"] = False
+    df["data_quality_flag"] = ""
+
+    if not panel_path.exists():
+        log.warning("World Bank panel not found at %s — OLS fitting skipped.", panel_path)
+        df["data_quality_flag"] = "panel_not_found"
+        return df
+
+    panel = pd.read_csv(panel_path)
+
+    # Build Brent annual pct-change series from the hard-coded EIA/WB fallback
+    # (deterministic — no yfinance call required for OLS fitting).
+    from src.data.brent import _BRENT_HISTORY_FALLBACK  # noqa: PLC0415
+    brent_prices = pd.Series(_BRENT_HISTORY_FALLBACK, dtype=float).sort_index()
+    brent_pct_chg = brent_prices.pct_change().mul(100)
+
+    # lag1[t] = brent_pct_chg[t−1]: the price shock in year t−1 predicts y in t
+    lag1 = pd.Series(
+        {yr: brent_pct_chg.get(yr - 1, float("nan")) for yr in brent_pct_chg.index},
+        name="brent_pct_change_lag1",
+        dtype=float,
+    )
+
+    def _ols_score(x: pd.Series, y: pd.Series) -> float:
+        combined = pd.DataFrame({"x": x, "y": y}).dropna()
+        if len(combined) < _MIN_OBS:
+            return float("nan")
+        A = np.column_stack([np.ones(len(combined)), combined["x"].values])
+        coef, *_ = np.linalg.lstsq(A, combined["y"].values, rcond=None)
+        return float(min(1.0, abs(coef[1])))
+
+    # Proxy spec: stage_index → (panel_col, transform applied to raw series)
+    _PROXY: dict[int, tuple[str, object]] = {
+        1: ("NY_GDP_PETR_RT_ZS", lambda s: s.diff()),
+        2: ("FP_CPI_TOTL_ZG",    lambda s: s),
+        5: ("NY_GDP_MKTP_CD",    lambda s: s.pct_change().mul(100)),
+    }
+
+    dq: dict[str, list[str]] = {a3: [] for a3 in df["country_code_a3"]}
+
+    for a3 in df["country_code_a3"]:
+        cdf = panel[panel["country_code_a3"] == a3].copy()
+        if cdf.empty:
+            for s in range(1, 6):
+                dq[a3].append(f"stage{s}_no_panel_row")
+            continue
+
+        cdf = cdf.set_index("year")
+
+        for s_idx, (col, transform) in _PROXY.items():
+            if col not in cdf.columns:
+                dq[a3].append(f"stage{s_idx}_col_missing")
+                continue
+            y_raw = pd.to_numeric(cdf[col], errors="coerce")
+            y = transform(y_raw).rename("y")
+            score = _ols_score(lag1, y)
+            if np.isnan(score):
+                dq[a3].append(f"stage{s_idx}_insufficient_data")
+            else:
+                df.loc[df["country_code_a3"] == a3, f"empirical_stage{s_idx}"] = score
+
+        dq[a3].extend(["stage3_insufficient_data", "stage4_insufficient_data"])
+
+    emp_cols = [f"empirical_stage{s}" for s in range(1, 6)]
+    df["empirical_flag"] = df[emp_cols].notna().any(axis=1)
+    df["data_quality_flag"] = df["country_code_a3"].map(
+        lambda a3: ";".join(dq.get(a3, []))
+    )
+
+    n_fitted = int(df["empirical_flag"].sum())
+    log.info("OLS fitting: %d/%d countries have ≥1 empirical stage.", n_fitted, len(df))
     return df
 
 
@@ -176,7 +288,18 @@ def build_chain_table(ref_df: pd.DataFrame) -> pd.DataFrame:
         DataFrame with one row per country, sorted by
         ``chain_transmission_severity`` descending.
     """
-    df = compute_chain_severity(ref_df)
+    # Blend: use empirical stage score where non-null, expert estimate otherwise.
+    # The original expert columns in ref_df are not modified; blending happens
+    # on a copy so compute_chain_severity sees the merged values.
+    blended = ref_df.copy()
+    for i, stage_col in enumerate(_STAGE_COLS, start=1):
+        emp_col = f"empirical_stage{i}"
+        if emp_col in blended.columns:
+            blended[stage_col] = (
+                blended[emp_col].combine_first(blended[stage_col]).clip(0.0, 1.0)
+            )
+
+    df = compute_chain_severity(blended)
 
     df["is_exporter"] = df["country_code_a3"].isin(_EXPORTERS)
     df["year"]        = _SNAPSHOT_YEAR
@@ -232,12 +355,18 @@ def save_chain_table(df: pd.DataFrame, output_path: Path = OUTPUT_PATH) -> Path:
 def run_chain_transmission(
     ref_path:    Path = REF_PATH,
     output_path: Path = OUTPUT_PATH,
+    fit_ols:     bool = False,
+    panel_path:  Path = _PANEL_PATH,
 ) -> pd.DataFrame:
-    """End-to-end chain transmission pipeline: load → compute → save.
+    """End-to-end chain transmission pipeline: load → (OLS fit) → compute → save.
 
     Args:
         ref_path:    Path to the reference CSV (data/reference/).
         output_path: Destination path for the output CSV (outputs/tables/).
+        fit_ols:     If True, run OLS fitting on world_bank_panel.csv and
+                     write empirical columns back to *ref_path* before building
+                     the output table.
+        panel_path:  Path to the World Bank panel CSV used by OLS fitting.
 
     Returns:
         Computed chain transmission DataFrame (also written to *output_path*).
@@ -246,7 +375,12 @@ def run_chain_transmission(
         FileNotFoundError: If *ref_path* does not exist.
         ValueError: If required columns are absent.
     """
-    ref_df   = load_chain_reference(ref_path)
+    ref_df = load_chain_reference(ref_path)
+
+    if fit_ols:
+        ref_df = fit_transmission_ols(ref_df, panel_path)
+        _save_empirical_to_ref(ref_df, ref_path)
+
     chain_df = build_chain_table(ref_df)
     save_chain_table(chain_df, output_path)
     _print_summary(chain_df)
@@ -256,6 +390,27 @@ def run_chain_transmission(
 # ---------------------------------------------------------------------------
 # Internal helpers
 # ---------------------------------------------------------------------------
+
+def _save_empirical_to_ref(df: pd.DataFrame, ref_path: Path) -> None:
+    """Merge empirical OLS columns back into the reference CSV in place."""
+    emp_cols = [c for c in df.columns
+                if c.startswith("empirical_") or c == "data_quality_flag"]
+    if not emp_cols:
+        log.info("No empirical columns to save.")
+        return
+
+    ref_path = Path(ref_path)
+    existing = pd.read_csv(ref_path)
+    # Drop stale empirical columns so we get a clean merge
+    existing = existing.drop(
+        columns=[c for c in emp_cols if c in existing.columns], errors="ignore"
+    )
+    merged = existing.merge(
+        df[["country_code_a3"] + emp_cols], on="country_code_a3", how="left"
+    )
+    merged.to_csv(ref_path, index=False)
+    log.info("Empirical OLS columns saved to %s", ref_path)
+
 
 def _validate_chain_table(df: pd.DataFrame) -> None:
     """Post-build guardrail checks. Logs warnings; never raises."""
@@ -348,6 +503,21 @@ def _build_parser() -> argparse.ArgumentParser:
         help=f"Destination CSV (default: {OUTPUT_PATH}).",
     )
     p.add_argument(
+        "--fit-ols",
+        action="store_true",
+        default=False,
+        help=(
+            "Fit OLS coefficients from the World Bank panel and save empirical stage "
+            "scores to the reference CSV before building the output table."
+        ),
+    )
+    p.add_argument(
+        "--panel",
+        metavar="PATH",
+        default=str(_PANEL_PATH),
+        help=f"Path to world_bank_panel.csv for OLS fitting (default: {_PANEL_PATH}).",
+    )
+    p.add_argument(
         "--log-level",
         default="INFO",
         choices=["DEBUG", "INFO", "WARNING", "ERROR"],
@@ -370,6 +540,8 @@ def main(argv: list[str] | None = None) -> int:
         run_chain_transmission(
             ref_path=Path(args.ref),
             output_path=Path(args.output),
+            fit_ols=args.fit_ols,
+            panel_path=Path(args.panel),
         )
     except (FileNotFoundError, ValueError) as exc:
         log.error("%s", exc)

@@ -212,41 +212,85 @@ known limitations.
 
 ```
 middle-east-oil-chain-analysis/
+├── reproduce_all.py              # One-command full pipeline reproduction
 ├── app/
-│   ├── dashboard.py              # Main Streamlit dashboard (6 tabs)
+│   ├── dashboard.py              # Main Streamlit dashboard (11 tabs)
 │   └── pages/
 │       ├── price_analysis.py     # Brent price history & volatility
 │       ├── supply_chain.py       # Trade route & Suez exposure
-│       ├── social_stability.py   # Social stability risk (Addition 3)
-│       └── fiscal_stress.py      # Fiscal stress deep-dive (Addition 1)
+│       ├── social_stability.py   # Social stability risk
+│       ├── fiscal_stress.py      # Fiscal stress deep-dive
+│       ├── reserve_runway.py     # Reserve runway deep-dive
+│       ├── chain_transmission.py # Chain transmission severity
+│       └── country_detail.py     # Single-country deep-dive (Priority 3B)
 ├── docs/
 │   └── backtesting_plan.md       # Target periods, success criteria, limitations
 ├── src/
+│   ├── app/
+│   │   └── export.py             # CSV download button helper (Priority 3A)
 │   ├── data/
 │   │   ├── brent.py              # Single source of truth for Brent prices
 │   │   ├── fetch_world_bank.py
 │   │   ├── clean_world_bank.py
-│   │   └── validate_reference.py # Reference data integrity checker
+│   │   └── validate_reference.py # Reference data integrity checker (47 checks)
 │   └── model/
-│       ├── vulnerability_index.py  # OCVI (Addition 0)
-│       ├── chain_model.py          # Chain transmission model
-│       ├── fiscal_stress.py        # Fiscal breakeven stress (Addition 1)
-│       ├── reserve_runway.py       # Reserve runway model (Addition 2)
-│       ├── social_stability.py     # Social stability risk (Addition 3)
-│       ├── right_now_risk.py       # Right Now Risk composite (Addition 5)
-│       └── backtest.py             # Conditional backtesting scaffolding
+│       ├── vulnerability_index.py   # OCVI
+│       ├── chain_transmission.py    # Chain transmission severity
+│       ├── fiscal_stress.py         # Fiscal breakeven stress
+│       ├── reserve_runway.py        # Reserve runway model
+│       ├── social_stability.py      # Social stability risk
+│       ├── right_now_risk.py        # Right Now Risk composite
+│       ├── backtest.py              # Conditional backtesting
+│       ├── historical_index.py      # Historical risk index 2015–2024
+│       ├── sensitivity.py           # OAT sensitivity analysis
+│       ├── retrospective.py         # 2020 oil crash retrospective (Priority 1)
+│       └── cross_validation.py      # IMF/WB cross-validation (Priority 2)
 ├── data/
 │   ├── processed/world_bank_panel.csv
 │   └── reference/
-│       ├── source_registry.csv     # Stable source IDs + confidence tiers
-│       ├── fiscal_breakeven.csv    # Includes low/base/high uncertainty bands
-│       ├── swf_reserves.csv        # Includes low/base/high uncertainty bands
-│       └── food_security.csv       # Includes low/base/high uncertainty bands
+│       ├── source_registry.csv          # 19 stable source IDs + confidence tiers
+│       ├── fiscal_breakeven.csv         # Includes low/base/high uncertainty bands
+│       ├── swf_reserves.csv             # Includes low/base/high uncertainty bands
+│       ├── food_security.csv            # Includes low/base/high uncertainty bands
+│       ├── chain_transmission.csv       # Expert + empirical stage scores
+│       ├── imf_weo_2020_outcomes.csv    # 2020 actual GDP / fiscal outcomes (Priority 1)
+│       └── imf_wb_benchmarks.csv        # IMF FM / WB MPO risk tiers (Priority 2)
 └── outputs/tables/
     ├── ocvi_scores.csv
     ├── chain_transmission.csv
-    ├── right_now_risk_scores.csv   # Auto-exported on each pipeline run
-    └── backtest/                   # Per-year backtest CSVs + rank stability
+    ├── right_now_risk_scores.csv
+    ├── historical_risk_index.csv        # 2015–2024 panel (140 rows)
+    ├── sensitivity_results.csv          # OAT weight grid (238 rows)
+    ├── retrospective_2020.csv           # Pre-crisis vs actual comparison
+    ├── cross_validation.csv             # Model vs IMF/WB tier comparison
+    └── backtest/                        # Per-year backtest CSVs + rank stability
+```
+
+---
+
+## Reproducing all outputs
+
+Run the entire pipeline from scratch with a single command:
+
+```bash
+python reproduce_all.py
+```
+
+This executes 11 steps in dependency order, times each one, and prints a
+PASS / FAIL summary.  Individual steps can also be run independently:
+
+```bash
+python -m src.data.fetch_world_bank        # Step 1 — fetch WB panel
+python -m src.data.clean_world_bank        # Step 2 — clean panel
+python -m src.data.validate_reference --strict  # Step 3 — integrity check
+python -m src.model.vulnerability_index    # Step 4 — OCVI
+python -m src.model.chain_transmission     # Step 5 — chain severity
+python -m src.model.right_now_risk         # Step 6 — composite score
+python -m src.model.backtest               # Step 7 — backtest
+python -m src.model.historical_index       # Step 8 — 2015–2024 panel
+python -m src.model.sensitivity            # Step 9 — OAT sensitivity
+python -m src.model.retrospective          # Step 10 — 2020 retrospective
+python -m src.model.cross_validation       # Step 11 — IMF/WB validation
 ```
 
 ---
@@ -258,16 +302,7 @@ middle-east-oil-chain-analysis/
 streamlit run app/dashboard.py
 ```
 
-Requirements: `streamlit`, `pandas`, `plotly`, `yfinance`, `numpy`.
-
-To regenerate the data pipeline from scratch:
-
-```bash
-python -m src.data.fetch_world_bank
-python -m src.data.clean_world_bank
-python -m src.model.vulnerability_index
-python -m src.model.chain_model
-```
+Requirements: `streamlit`, `pandas`, `plotly`, `yfinance`, `numpy`, `pyyaml`.
 
 ---
 

@@ -1,0 +1,15 @@
+country_code,country_code_a3,country_name,country_label,imf_fm_risk_tier,wb_mpo_status,source_id_primary,source_id_secondary,is_estimate,confidence,notes
+SA,SAU,Saudi Arabia,Saudi Arabia,Medium,Watch,IMF_FM_OCT2023,WB_MPO_2023,False,high,IMF FM Oct 2023 Table A8; WB MPO Fall 2023 country note; Vision 2030 diversification partially offsets oil dependency
+IQ,IRQ,Iraq,Iraq,High,Stressed,IMF_FM_OCT2023,WB_MPO_2023,True,medium,IMF FM Oct 2023; conflict legacy and weak institutions; near-total oil revenue dependency; reconstruction spending pressures
+IR,IRN,Iran,Iran,High,Stressed,IMF_FM_OCT2023,WB_MPO_2023,True,low,IMF FM Oct 2023; sanctions severely restrict data and classification confidence; proxy indicators used
+KW,KWT,Kuwait,Kuwait,Low,Stable,IMF_FM_OCT2023,WB_MPO_2023,False,high,IMF FM Oct 2023; KIA assets ~5× GDP provide fiscal buffer; among strongest sovereign balance sheets in MENA
+AE,ARE,United Arab Emirates,UAE,Low,Stable,IMF_FM_OCT2023,WB_MPO_2023,False,high,IMF FM Oct 2023; ADIA/Mubadala SWF assets; significant non-oil diversification (finance tourism logistics)
+QA,QAT,Qatar,Qatar,Low,Stable,IMF_FM_OCT2023,WB_MPO_2023,False,high,IMF FM Oct 2023; QIA assets ~200% GDP; LNG contracts provide multi-year revenue stability
+OM,OMN,Oman,Oman,Medium,Watch,IMF_FM_OCT2023,WB_MPO_2023,False,high,IMF FM Oct 2023; medium-term fiscal reform path under Vision 2040; debt elevated but manageable
+BH,BHR,Bahrain,Bahrain,High,Stressed,IMF_FM_OCT2023,WB_MPO_2023,False,high,IMF FM Oct 2023; highest debt/GDP in GCC; reliant on Saudi-led GCC support package; fiscal position most stressed in GCC
+LY,LBY,Libya,Libya,High,Stressed,IMF_FM_OCT2023,WB_MPO_2023,True,low,IMF FM Oct 2023; dual-government makes classification uncertain; oil revenue subject to political blockades
+DZ,DZA,Algeria,Algeria,High,Watch,IMF_FM_OCT2023,WB_MPO_2023,False,high,IMF FM Oct 2023; WB MPO Watch given FX reserve drawdown trajectory; large hydrocarbon-dependent public wage bill
+EG,EGY,Egypt,Egypt,High,Stressed,IMF_FM_OCT2023,WB_MPO_2023,False,high,IMF FM Oct 2023; high external financing needs; IMF SBA 2022 and EFF 2023 programs active; currency pressures
+JO,JOR,Jordan,Jordan,High,Watch,IMF_FM_OCT2023,WB_MPO_2023,False,high,IMF FM Oct 2023; WB MPO Watch; large debt/GDP but PLL backstop and GCC grants support stability
+MA,MAR,Morocco,Morocco,Medium,Watch,IMF_FM_OCT2023,WB_MPO_2023,False,high,IMF FM Oct 2023; WB MPO Watch; most diversified non-GCC MENA economy; PLL backstop; September 2023 earthquake fiscal impact
+LB,LBN,Lebanon,Lebanon,High,Stressed,IMF_FM_OCT2023,WB_MPO_2023,True,low,IMF FM Oct 2023; in financial collapse; IMF program negotiations stalled; no functioning central bank FX operations; classification most uncertain in dataset

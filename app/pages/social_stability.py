@@ -36,6 +36,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
+from src.app.export import make_csv_download_button
 from src.model.fiscal_stress import (
     build_stress_table,
     fetch_brent_live,
@@ -435,6 +436,7 @@ st.dataframe(
         "Data Flag":      st.column_config.TextColumn("Data Flag", width="large"),
     },
 )
+make_csv_download_button(_tbl, "social_stability_table.csv", "Download table as CSV")
 
 _n_warn_shown = int((df["data_quality_flag"] != "").sum())
 if _n_warn_shown:

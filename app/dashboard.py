@@ -20,6 +20,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
+from src.app.export import make_csv_download_button
+
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="MENA Oil Chain Analysis",
@@ -36,6 +38,10 @@ CHAIN_PATH     = _ROOT / "outputs" / "tables" / "chain_transmission.csv"
 BREAKEVEN_PATH = _ROOT / "data" / "reference" / "fiscal_breakeven.csv"
 RESERVES_PATH  = _ROOT / "data" / "reference" / "swf_reserves.csv"
 FOOD_PATH      = _ROOT / "data" / "reference" / "food_security.csv"
+HIST_PATH      = _ROOT / "outputs" / "tables" / "historical_risk_index.csv"
+SENS_PATH      = _ROOT / "outputs" / "tables" / "sensitivity_results.csv"
+RETRO_PATH     = _ROOT / "outputs" / "tables" / "retrospective_2020.csv"
+CV_PATH        = _ROOT / "outputs" / "tables" / "cross_validation.csv"
 
 # Consistent 14-colour palette (one per country)
 _PALETTE = px.colors.qualitative.D3 + px.colors.qualitative.Plotly
@@ -78,6 +84,51 @@ def load_chain() -> pd.DataFrame:
     df = pd.read_csv(CHAIN_PATH)
     df["country_label"] = df["country_name"].map(_label)
     return df
+
+
+@st.cache_data(show_spinner="Loading historical risk index…")
+def load_historical_index() -> pd.DataFrame:
+    if not HIST_PATH.exists():
+        return pd.DataFrame()
+    df = pd.read_csv(HIST_PATH)
+    if "country_label" not in df.columns and "country_name" in df.columns:
+        df["country_label"] = df["country_name"].map(_label)
+    return df
+
+
+@st.cache_data(show_spinner="Loading sensitivity results…")
+def load_sensitivity() -> pd.DataFrame:
+    if not SENS_PATH.exists():
+        return pd.DataFrame()
+    return pd.read_csv(SENS_PATH)
+
+
+@st.cache_data(show_spinner="Loading 2020 retrospective…")
+def load_retrospective() -> pd.DataFrame:
+    if not RETRO_PATH.exists():
+        return pd.DataFrame()
+    df = pd.read_csv(RETRO_PATH)
+    if "country_label" not in df.columns and "country_name" in df.columns:
+        df["country_label"] = df["country_name"].apply(_label)
+    return df
+
+
+@st.cache_data(show_spinner="Loading cross-validation results…")
+def load_cross_validation() -> pd.DataFrame:
+    if not CV_PATH.exists():
+        return pd.DataFrame()
+    return pd.read_csv(CV_PATH)
+
+
+@st.cache_data(show_spinner="Running historical backtest…", ttl=3600)
+def _run_bt(year: int, scenario: str) -> dict:
+    """Cache-wrapped backtest snapshot.  Returns {'ok': True, 'df': ...} or {'ok': False, 'error': ...}."""
+    from src.model.backtest import run_backtest_snapshot
+    try:
+        df = run_backtest_snapshot(year=year, scenario=scenario)
+        return {"ok": True, "df": df}
+    except Exception as exc:
+        return {"ok": False, "error": str(exc)}
 
 
 @st.cache_data(ttl=3600, show_spinner="Running fiscal stress analysis…")
@@ -218,6 +269,25 @@ with st.sidebar:
         _use_live_shock = False
 
     st.markdown("---")
+
+    # Country Detail navigation
+    st.markdown("### 🔍 Country Detail")
+    _nav_country = st.selectbox(
+        "Deep-dive country",
+        options=["— select —"] + sorted(_all_labels),
+        index=0,
+        help="Opens the Country Detail page for the selected country.",
+        key="nav_country_detail",
+    )
+    if _nav_country != "— select —":
+        _detail_url = f"country_detail?country={_nav_country.replace(' ', '%20')}"
+        st.page_link(
+            "pages/country_detail.py",
+            label=f"Open {_nav_country} detail →",
+            icon="🔍",
+        )
+
+    st.markdown("---")
     st.caption("Source: World Bank Open Data  \nBuilt with Streamlit + Plotly")
 
 
@@ -230,13 +300,18 @@ def _filter(df: pd.DataFrame) -> pd.DataFrame:
 
 
 # ── Tabs ──────────────────────────────────────────────────────────────────────
-tab_rank, tab_rents, tab_shock, tab_macro, tab_chain, tab_fiscal = st.tabs([
+tab_rank, tab_rents, tab_shock, tab_macro, tab_chain, tab_fiscal, tab_backtest, tab_hist, tab_sens, tab_retro, tab_cv = st.tabs([
     "📊  OCVI Rankings",
     "🛢️  Oil Rents % GDP",
     "⚡  Price Shock",
     "📈  GDP Growth vs Inflation",
     "⛓️  Chain Transmission",
     "🚨  Fiscal Stress",
+    "🔁  Backtesting",
+    "📉  Historical Risk Index",
+    "🎛️  Sensitivity Analysis",
+    "🔍  2020 Retrospective",
+    "✅  Validation",
 ])
 
 
@@ -305,6 +380,7 @@ with tab_rank:
                 ),
             },
         )
+        make_csv_download_button(tbl, "ocvi_rankings.csv", "Download rankings as CSV")
 
     # ── Horizontal bar chart ───────────────────────────────────────────────────
     with right_col:
@@ -446,6 +522,7 @@ with tab_rents:
                     "Std":    st.column_config.NumberColumn(format="%.2f"),
                 },
             )
+            make_csv_download_button(summary, "oil_rents_summary.csv", "Download summary as CSV")
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -556,6 +633,7 @@ with tab_shock:
                 "Impact (USD bn)": st.column_config.NumberColumn(format="$%+.1f bn"),
             },
         )
+        make_csv_download_button(disp, "price_shock_table.csv", "Download table as CSV")
 
         # KPI cards
         st.markdown("---")
@@ -909,6 +987,7 @@ with tab_chain:
                     "Amplif.": st.column_config.NumberColumn(format="%.2f"),
                 },
             )
+            make_csv_download_button(_ct_disp, "chain_transmission_table.csv", "Download table as CSV")
 
         # ── Methodology ─────────────────────────────────────────────────────────
         with st.expander("Methodology"):
@@ -1135,6 +1214,7 @@ with tab_fiscal:
             use_container_width=True,
             column_config=_col_config,
         )
+        make_csv_download_button(_tbl_disp, "right_now_risk_scores.csv", "Download scores as CSV")
 
         # ── Methodology expander ───────────────────────────────────────────────
         with st.expander("Methodology — Right Now Risk score"):
@@ -1168,4 +1248,1116 @@ No country is silently dropped from the table.
 - **Amber**: Brent within $15/bbl above breakeven
 - **Green**: comfortable fiscal headroom (≥$15 above breakeven)
 - **Gray**: net importer or concept not applicable
+""")
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TAB 7 · Backtesting
+# ═══════════════════════════════════════════════════════════════════════════════
+with tab_backtest:
+    st.header("Right Now Risk — Historical Backtest")
+    st.caption(
+        "**Conditional backtest:** the 2023 reference data (fiscal breakeven, reserves, "
+        "food security) is held fixed while the annual-average Brent price varies to a "
+        "historical year.  Chain component is absent for pre-2024 years — weights rescale "
+        "proportionally across the remaining three components."
+    )
+
+    # ── Controls (inside tab — not in global sidebar) ─────────────────────────
+    _bt_c1, _bt_c2, _bt_c3 = st.columns([1, 2, 1])
+
+    with _bt_c1:
+        _bt_year = st.selectbox(
+            "Backtest year",
+            options=list(range(2010, 2024)),
+            index=10,          # default 2020 (COVID collapse year)
+            key="bt_year",
+            help=(
+                "Historical annual-average Brent price for this year is used as the "
+                "live Brent input.  Fetched from yfinance; falls back to an embedded "
+                "EIA / World Bank reference table."
+            ),
+        )
+
+    with _bt_c2:
+        _bt_scenario_opts: dict[str, str] = {
+            "Base (2023 reference values)":               "base",
+            "Stress (high breakeven + low buffer)":       "stress",
+            "Favorable (low breakeven + high buffer)":    "optimistic",
+        }
+        _bt_scenario_label = st.selectbox(
+            "Scenario",
+            options=list(_bt_scenario_opts.keys()),
+            index=0,
+            key="bt_scenario",
+            help=(
+                "**Base:** 2023 reference columns unchanged.  \n"
+                "**Stress:** `breakeven_high_usd` + `liquid_buffer_low_usd_bn` "
+                "+ `monthly_burn_high_usd_bn`.  \n"
+                "**Favorable:** `breakeven_low_usd` + `liquid_buffer_high_usd_bn` "
+                "+ `monthly_burn_low_usd_bn`."
+            ),
+        )
+        _bt_scenario = _bt_scenario_opts[_bt_scenario_label]
+
+    with _bt_c3:
+        st.markdown("&nbsp;", unsafe_allow_html=True)
+        _bt_clicked = st.button("Run backtest", type="primary", key="bt_run_btn")
+
+    # Persist the last-run selection across re-renders via session state
+    if _bt_clicked:
+        st.session_state["_bt_run_year"]     = _bt_year
+        st.session_state["_bt_run_scenario"] = _bt_scenario
+
+    _bt_active_year     = st.session_state.get("_bt_run_year",     None)
+    _bt_active_scenario = st.session_state.get("_bt_run_scenario", "base")
+
+    if _bt_active_year is None:
+        st.info(
+            "Select a year and scenario above, then click **Run backtest**.  \n"
+            "The model applies the historical annual-average Brent price to the "
+            "2023 reference data and recomputes all four Right Now Risk components."
+        )
+    else:
+        _bt_result = _run_bt(_bt_active_year, _bt_active_scenario)
+
+        if not _bt_result["ok"]:
+            st.error(
+                f"Backtest failed: {_bt_result['error']}  \n"
+                "Check that reference CSVs exist and that yfinance or the "
+                "fallback Brent table covers the selected year."
+            )
+        else:
+            _bt_df    = _bt_result["df"].copy()
+            _bt_brent = float(_bt_df["historical_brent_usd"].iloc[0])
+            _bt_n_rsc = int((_bt_df["missing_components_count"] > 0).sum())
+
+            # ── Historical Brent banner ──────────────────────────────────────
+            st.success(
+                f"**{_bt_active_year}** · "
+                f"Annual-average Brent **${_bt_brent:.2f}/bbl** · "
+                f"Scenario: **{_bt_active_scenario}** · "
+                f"Rescaled weights: **{_bt_n_rsc} / 14** countries"
+            )
+
+            st.markdown("---")
+
+            # ── 1. Coverage indicator ────────────────────────────────────────
+            st.subheader("Component coverage")
+
+            _chain_missing_any = (
+                _bt_df["missing_components"]
+                .str.contains("chain_transmission", na=False)
+                .any()
+            )
+            _cov_cols = st.columns(4)
+            _cov_items = [
+                (
+                    "Fiscal stress",
+                    True,
+                    "2023 fiscal breakeven reference",
+                ),
+                (
+                    "Reserve runway",
+                    True,
+                    "2023 SWF / FX reserve reference",
+                ),
+                (
+                    "Social stability",
+                    True,
+                    "2023 food security + WB inflation panel",
+                ),
+                (
+                    "Chain transmission",
+                    not _chain_missing_any,
+                    "chain_transmission.csv year match"
+                    if not _chain_missing_any
+                    else f"No chain data for {_bt_active_year} — weight rescaled to 0",
+                ),
+            ]
+            for _cov_col, (_lbl, _ok, _detail) in zip(_cov_cols, _cov_items):
+                _cov_col.metric(
+                    ("✅ " if _ok else "⚠️ ") + _lbl,
+                    "Available" if _ok else "Rescaled",
+                    _detail,
+                    delta_color="off",
+                )
+
+            st.markdown("---")
+
+            # ── 2. Results table ─────────────────────────────────────────────
+            st.subheader(
+                f"Right Now Risk scores — {_bt_active_year} "
+                f"(Brent ${_bt_brent:.2f}, {_bt_active_scenario})"
+            )
+
+            _bt_col_map: dict[str, str] = {
+                "country_label":                      "Country",
+                "right_now_risk_score":               "Right Now Risk",
+                "fiscal_stress_score":                "Fiscal",
+                "reserve_runway_risk":                "Runway",
+                "social_stability_risk":              "Social",
+                "chain_transmission_severity_recent": "Chain",
+                "primary_driver":                     "Driver",
+                "missing_components_count":           "Missing#",
+                "rescaled_weights":                   "Weights used",
+            }
+            _bt_col_map = {k: v for k, v in _bt_col_map.items() if k in _bt_df.columns}
+            _bt_tbl = (
+                _bt_df.sort_values("right_now_risk_score", ascending=False)
+                [list(_bt_col_map.keys())]
+                .rename(columns=_bt_col_map)
+                .round(4)
+            )
+            st.dataframe(
+                _bt_tbl,
+                hide_index=True,
+                use_container_width=True,
+                column_config={
+                    "Right Now Risk": st.column_config.ProgressColumn(
+                        "Right Now Risk", format="%.3f", min_value=0.0, max_value=1.0,
+                        help="Composite score; rescaled weights when chain absent",
+                    ),
+                    "Fiscal": st.column_config.ProgressColumn(
+                        "Fiscal", format="%.3f", min_value=0.0, max_value=1.0,
+                    ),
+                    "Runway": st.column_config.ProgressColumn(
+                        "Runway", format="%.3f", min_value=0.0, max_value=1.0,
+                    ),
+                    "Social": st.column_config.ProgressColumn(
+                        "Social", format="%.3f", min_value=0.0, max_value=1.0,
+                    ),
+                    "Chain": st.column_config.ProgressColumn(
+                        "Chain", format="%.3f", min_value=0.0, max_value=1.0,
+                    ),
+                    "Missing#": st.column_config.NumberColumn(
+                        "Missing#", format="%d", help="Number of components absent (weight rescaling active)",
+                    ),
+                },
+            )
+            make_csv_download_button(_bt_tbl, "backtest_scores.csv", "Download backtest as CSV")
+
+            st.markdown("---")
+
+            # ── 3. Comparison chart: backtest vs live ────────────────────────
+            st.subheader("Backtest vs Current Live — Right Now Risk")
+            st.caption(
+                f"Live scores use today's Brent (${_live_brent:.2f}/bbl if available); "
+                f"backtest scores use the {_bt_active_year} annual average "
+                f"(${_bt_brent:.2f}/bbl).  "
+                "Reference data (breakeven, reserves, food) is identical in both — "
+                "only the Brent price and scenario bands differ."
+            )
+
+            _live_data = load_fiscal_stress_data()
+            if "error" not in _live_data and "right_now_risk_df" in _live_data:
+                _live_rnr = (
+                    _live_data["right_now_risk_df"]
+                    [["country_code_a3", "country_label", "right_now_risk_score"]]
+                    .copy()
+                    .rename(columns={"right_now_risk_score": "live_score"})
+                )
+                _bt_rnr = (
+                    _bt_df[["country_code_a3", "right_now_risk_score"]]
+                    .copy()
+                    .rename(columns={"right_now_risk_score": "bt_score"})
+                )
+                _cmp = (
+                    _live_rnr
+                    .merge(_bt_rnr, on="country_code_a3", how="inner")
+                    .sort_values("bt_score", ascending=False)
+                )
+
+                fig_cmp = go.Figure()
+                fig_cmp.add_trace(go.Bar(
+                    x=_cmp["country_label"],
+                    y=_cmp["bt_score"],
+                    name=f"{_bt_active_year} backtest",
+                    marker_color="#e45756",
+                    hovertemplate="<b>%{x}</b><br>Backtest: %{y:.3f}<extra></extra>",
+                ))
+                fig_cmp.add_trace(go.Bar(
+                    x=_cmp["country_label"],
+                    y=_cmp["live_score"],
+                    name="Live (today)",
+                    marker_color="#4c78a8",
+                    hovertemplate="<b>%{x}</b><br>Live: %{y:.3f}<extra></extra>",
+                ))
+                fig_cmp.update_layout(
+                    barmode="group",
+                    height=420,
+                    xaxis=dict(title=None, tickangle=-30),
+                    yaxis=dict(title="Right Now Risk", range=[0, 1.0]),
+                    legend=dict(orientation="h", y=-0.22, font_size=12),
+                    margin=dict(l=10, r=10, t=10, b=90),
+                )
+                st.plotly_chart(fig_cmp, use_container_width=True)
+
+                # Delta table inside expander
+                _cmp["delta"] = (_cmp["bt_score"] - _cmp["live_score"]).round(4)
+                _delta_disp = (
+                    _cmp[["country_label", "bt_score", "live_score", "delta"]]
+                    .sort_values("delta", ascending=False)
+                    .rename(columns={
+                        "country_label": "Country",
+                        "bt_score":      f"{_bt_active_year} score",
+                        "live_score":    "Live score",
+                        "delta":         "Delta (BT minus Live)",
+                    })
+                    .round(4)
+                )
+                with st.expander("Score delta table (backtest minus live)"):
+                    st.dataframe(_delta_disp, hide_index=True, use_container_width=True)
+                    make_csv_download_button(_delta_disp, "backtest_delta.csv", "Download delta as CSV")
+            else:
+                st.info(
+                    "Live Right Now Risk scores unavailable — "
+                    "comparison chart cannot be drawn."
+                )
+
+            st.markdown("---")
+
+            # ── 4. Methodology expander ──────────────────────────────────────
+            with st.expander("What this backtest does and does not test"):
+                st.markdown(f"""
+**What it tests**
+
+The backtest asks: *"What would the Right Now Risk score have been for each MENA country
+if oil had been priced at the {_bt_active_year} annual average (${_bt_brent:.2f}/bbl)?"*
+
+It varies:
+- **Brent crude price** — historical annual average sourced from yfinance (`BZ=F`);
+  falls back to an embedded EIA / World Bank reference table for years where yfinance
+  data is unavailable.
+- **Scenario uncertainty bands** — `stress` substitutes `breakeven_high_usd`,
+  `liquid_buffer_low_usd_bn`, and `monthly_burn_high_usd_bn` from the reference CSVs;
+  `favorable` (optimistic) substitutes the low/high counterparts.
+- **Chain transmission** — filtered to rows where `year == {_bt_active_year}` in
+  `outputs/tables/chain_transmission.csv`.  The current file is a 2024 static snapshot,
+  so chain data is absent for all pre-2024 years; the remaining three components receive
+  proportionally rescaled weights (fiscal 0.35→0.47, runway 0.25→0.33, social 0.20→0.27).
+
+It holds constant (2023 reference):
+- **Fiscal breakeven estimates** — IMF Article IV preliminary estimates.
+- **Reserve / SWF figures** — SWF annual reports and central bank bulletins.
+- **Food security** — World Bank WDI 2022 / FAO FAOSTAT 2021.
+
+**What it does not test**
+
+- **True historical state**: a country that reformed its subsidy system in 2018 still
+  appears with 2023 breakeven and reserve figures.
+- **Intra-year price volatility**: annual averages mask within-year swings
+  (e.g. 2008: $96 average conceals the $147 peak and $32 trough).
+- **Policy responses**: exchange-rate adjustments, monetary tightening, emergency
+  borrowing, and non-linear subsidy reform dynamics are not modelled.
+- **Political transitions**: leadership changes and conflict escalations that altered
+  fiscal capacity between the reference year and the snapshot year.
+
+**Interpreting the comparison chart**
+
+Both the backtest and live scores use the same model structure and 2023 reference data.
+The difference reflects **oil-price sensitivity** (and scenario effects) only — it does
+not represent an actual change in a country's underlying fiscal position.
+""")
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TAB 8 · Historical Risk Index  (Sprint 4)
+# ═══════════════════════════════════════════════════════════════════════════════
+with tab_hist:
+    st.header("Historical Risk Index — 2015–2024")
+    st.caption(
+        "Conditional backtest panel: Right Now Risk score per country per year, "
+        "holding 2023 reference data fixed while varying the historical Brent price.  "
+        "Chain component available for 2024 only; earlier years use rescaled weights "
+        "(fiscal 47% · runway 33% · social 27%)."
+    )
+
+    _hist_df = load_historical_index()
+
+    if _hist_df.empty:
+        st.warning(
+            "Historical risk index not found.  \n"
+            "Run from the project root:  \n"
+            "`python -m src.model.historical_index`"
+        )
+    else:
+        _h_years   = sorted(_hist_df["year"].unique())
+        _h_labels  = sorted(_hist_df["country_label"].unique())
+        _h_yr_min  = int(min(_h_years))
+        _h_yr_max  = int(max(_h_years))
+
+        # ── KPI row ────────────────────────────────────────────────────────────
+        hk1, hk2, hk3, hk4 = st.columns(4)
+
+        _h_2024 = _hist_df[_hist_df["year"] == _h_yr_max]
+        _h_2015 = _hist_df[_hist_df["year"] == _h_yr_min]
+
+        _h_top24  = _h_2024.loc[_h_2024["right_now_risk_score"].idxmax()]
+        _h_mean24 = _h_2024["right_now_risk_score"].mean()
+        _h_mean15 = _h_2015["right_now_risk_score"].mean()
+        _h_brent_range = (
+            f"${_hist_df['historical_brent_usd'].min():.0f}–"
+            f"${_hist_df['historical_brent_usd'].max():.0f}/bbl"
+        ) if "historical_brent_usd" in _hist_df.columns else "—"
+
+        hk1.metric(
+            "Highest risk (2024)",
+            _h_top24.get("country_label", "—"),
+            f"{_h_top24['right_now_risk_score']:.3f}",
+            delta_color="inverse",
+        )
+        hk2.metric("Mean score (2024)", f"{_h_mean24:.3f}")
+        hk3.metric(
+            "Mean score change",
+            f"{_h_mean24:.3f} ({_h_yr_max})",
+            f"{_h_mean24 - _h_mean15:+.3f} vs {_h_yr_min}",
+            delta_color="inverse",
+        )
+        hk4.metric("Brent range covered", _h_brent_range, f"{_h_yr_min}–{_h_yr_max}")
+
+        st.markdown("---")
+
+        # ── 1. Line chart — risk score over time per country ──────────────────
+        st.subheader("Right Now Risk Score — Country Trends (2015–2024)")
+
+        _h_line_filter = st.multiselect(
+            "Filter countries (leave empty to show all)",
+            options=_h_labels,
+            default=[],
+            key="hist_line_filter",
+        )
+        _h_plot_df = (
+            _hist_df[_hist_df["country_label"].isin(_h_line_filter)]
+            if _h_line_filter else _hist_df
+        )
+
+        fig_hist_line = px.line(
+            _h_plot_df.sort_values("year"),
+            x="year",
+            y="right_now_risk_score",
+            color="country_label",
+            color_discrete_map=_COLOUR_MAP,
+            markers=True,
+            labels={
+                "year": "Year",
+                "right_now_risk_score": "Right Now Risk",
+                "country_label": "Country",
+            },
+            hover_data={
+                "historical_brent_usd": ":.2f" if "historical_brent_usd" in _h_plot_df.columns else False,
+                "right_now_risk_score": ":.3f",
+            },
+        )
+        fig_hist_line.update_layout(
+            height=460,
+            yaxis=dict(range=[0, 1.0], title="Right Now Risk Score"),
+            xaxis=dict(title=None, dtick=1),
+            legend=dict(
+                title="Country", orientation="v",
+                yanchor="top", y=1, xanchor="left", x=1.02,
+                font_size=11,
+            ),
+            margin=dict(l=10, r=10, t=10, b=40),
+        )
+        st.plotly_chart(fig_hist_line, use_container_width=True)
+
+        st.markdown("---")
+
+        # ── 2. Heatmap — countries × years ───────────────────────────────────
+        st.subheader("Heatmap — Right Now Risk by Country and Year")
+        st.caption("Colour scale: green = low risk · red = high risk.")
+
+        _h_pivot = (
+            _hist_df
+            .pivot(index="country_label", columns="year", values="right_now_risk_score")
+            .fillna(float("nan"))
+        )
+        _h_avg_score = _hist_df.groupby("country_label")["right_now_risk_score"].mean()
+        _h_heat_order = _h_avg_score.sort_values(ascending=False).index.tolist()
+        _h_pivot = _h_pivot.loc[[c for c in _h_heat_order if c in _h_pivot.index]]
+
+        fig_hist_heat = go.Figure(go.Heatmap(
+            z=_h_pivot.values,
+            x=[str(y) for y in _h_pivot.columns],
+            y=_h_pivot.index.tolist(),
+            colorscale="RdYlGn_r",
+            zmin=0.0,
+            zmax=1.0,
+            colorbar=dict(title="Score", thickness=14),
+            hovertemplate="<b>%{y}</b> · %{x}<br>Risk: %{z:.3f}<extra></extra>",
+            text=_h_pivot.round(3).values,
+            texttemplate="%{z:.3f}",
+            textfont=dict(size=9),
+        ))
+        fig_hist_heat.update_layout(
+            height=460,
+            margin=dict(l=10, r=10, t=10, b=60),
+            xaxis=dict(title="Year", tickangle=0),
+            yaxis_title=None,
+        )
+        st.plotly_chart(fig_hist_heat, use_container_width=True)
+
+        st.markdown("---")
+
+        # ── 3. Rank shift table: 2015 rank vs 2024 rank vs today ─────────────
+        st.subheader("Rank Shift — 2015 → 2024 → Today")
+        st.caption(
+            "Rank 1 = highest risk.  Today's rank uses the live Right Now Risk scores "
+            "(same Brent as Tab 6)."
+        )
+
+        def _rank_col(df_yr: pd.DataFrame, label: str) -> pd.Series:
+            return (
+                df_yr.set_index("country_label")["right_now_risk_score"]
+                .rank(ascending=False, method="min")
+                .astype(int)
+                .rename(label)
+            )
+
+        _r15  = _rank_col(_h_2015, f"Rank {_h_yr_min}")
+        _r24  = _rank_col(_h_2024, f"Rank {_h_yr_max}")
+
+        _rank_tbl = pd.concat([_r15, _r24], axis=1).reset_index()
+        _rank_tbl.columns = ["Country", f"Rank {_h_yr_min}", f"Rank {_h_yr_max}"]
+        _rank_tbl["Shift"] = _rank_tbl[f"Rank {_h_yr_min}"] - _rank_tbl[f"Rank {_h_yr_max}"]
+
+        _live_data_h = load_fiscal_stress_data()
+        if "right_now_risk_df" in _live_data_h:
+            _live_rnr_h = _live_data_h["right_now_risk_df"].copy()
+            _live_rnr_h["country_label"] = _live_rnr_h.get(
+                "country_label",
+                _live_rnr_h.get("country_code_a3", pd.Series(dtype=str))
+            )
+            _r_today = (
+                _live_rnr_h
+                .set_index("country_label")["right_now_risk_score"]
+                .rank(ascending=False, method="min")
+                .astype(int)
+                .rename("Rank Today")
+            )
+            _rank_tbl = _rank_tbl.merge(
+                _r_today.reset_index(), on="Country", how="left"
+            )
+            _rank_tbl["Shift vs Today"] = (
+                _rank_tbl[f"Rank {_h_yr_min}"] - _rank_tbl["Rank Today"]
+            )
+
+        _rank_tbl = _rank_tbl.sort_values(f"Rank {_h_yr_max}").reset_index(drop=True)
+        st.dataframe(
+            _rank_tbl,
+            hide_index=True,
+            use_container_width=True,
+            column_config={
+                "Shift": st.column_config.NumberColumn(
+                    "Shift 2015→2024",
+                    help="Positive = moved up in risk ranking (became relatively riskier); "
+                         "Negative = moved down (became relatively less risky).",
+                    format="%+d",
+                ),
+                "Shift vs Today": st.column_config.NumberColumn(
+                    "Shift 2015→Today",
+                    format="%+d",
+                ),
+            },
+        )
+        make_csv_download_button(_rank_tbl, "historical_rank_shifts.csv", "Download rank shifts as CSV")
+
+        st.markdown("---")
+
+        # ── 4. Methodology expander ───────────────────────────────────────────
+        with st.expander("Methodology — Historical Risk Index"):
+            st.markdown("""
+**Source data**
+
+Generated by `python -m src.model.historical_index` using the base scenario.
+Output: `outputs/tables/historical_risk_index.csv` (140 rows = 14 countries × 10 years).
+
+**What varies per year**
+
+| Variable | Source |
+|----------|--------|
+| Brent crude price | yfinance `BZ=F` annual average; EIA/WB fallback table |
+| Chain transmission | `chain_transmission.csv` filtered to `year == <snapshot_year>` |
+
+**What is held constant (2023 reference)**
+
+- Fiscal breakeven estimates — IMF Article IV 2023
+- Reserve / SWF figures — SWF annual reports 2023
+- Food security — World Bank WDI 2022 / FAO FAOSTAT 2021
+
+**Chain component coverage**
+
+The `chain_transmission.csv` is a static 2024 snapshot.  For years 2015–2023 the
+chain component is NaN; the remaining three components are rescaled proportionally:
+fiscal 0.35→0.47, runway 0.25→0.33, social 0.20→0.27.  The `missing_components`
+column in the source CSV records this for every row.
+
+**Rank shift interpretation**
+
+Positive shift (e.g. +3) means the country rose 3 places in the risk ranking —
+it became *relatively more risky* compared to the reference year.
+Negative shift means it became relatively less risky.
+Shifts reflect both oil-price sensitivity and structural differences between countries.
+""")
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TAB 9 · Sensitivity Analysis  (Sprint 5)
+# ═══════════════════════════════════════════════════════════════════════════════
+with tab_sens:
+    st.header("Sensitivity Analysis — Component Weight Variation")
+    st.caption(
+        "One-at-a-time (OAT) analysis: each of the four Right Now Risk component "
+        "weights is varied ±0.10 from its default in 0.05 steps.  The remaining "
+        "weights are proportionally renormalized so all four always sum to 1.0."
+    )
+
+    _sens_df = load_sensitivity()
+
+    if _sens_df.empty:
+        st.warning(
+            "Sensitivity results not found.  \n"
+            "Run from the project root:  \n"
+            "`python -m src.model.sensitivity`"
+        )
+    else:
+        from src.model.sensitivity import summarize_sensitivity, _BASE_WEIGHTS, _SHORT_NAME
+
+        _sum_df = summarize_sensitivity(_sens_df)
+
+        # ── KPI row ────────────────────────────────────────────────────────────
+        sk1, sk2, sk3, sk4 = st.columns(4)
+
+        _stable   = _sum_df.iloc[-1]
+        _volatile = _sum_df.iloc[0]
+        _n_scen   = int(_sens_df["scenario_id"].nunique())
+
+        sk1.metric(
+            "Most stable country",
+            _stable.get("country_label", _stable["country_code_a3"]),
+            f"σ = {_stable['rank_volatility']:.3f}",
+        )
+        sk2.metric(
+            "Most sensitive country",
+            _volatile.get("country_label", _volatile["country_code_a3"]),
+            f"σ = {_volatile['rank_volatility']:.3f}",
+            delta_color="inverse",
+        )
+        sk3.metric("Scenarios tested", str(_n_scen), "OAT ±0.10 step 0.05")
+        sk4.metric(
+            "Countries analysed",
+            str(_sens_df["country_code_a3"].nunique()),
+        )
+
+        st.markdown("---")
+
+        # ── 1. Rank volatility bar chart ──────────────────────────────────────
+        st.subheader("Rank Volatility by Country")
+        st.caption(
+            "σ(rank) across all 17 OAT scenarios.  Higher = rank changes "
+            "more when component weights shift."
+        )
+
+        fig_vol = px.bar(
+            _sum_df.sort_values("rank_volatility", ascending=True),
+            x="rank_volatility",
+            y="country_label" if "country_label" in _sum_df.columns else "country_code_a3",
+            orientation="h",
+            color="rank_volatility",
+            color_continuous_scale="RdYlGn_r",
+            range_color=[0, _sum_df["rank_volatility"].max() * 1.05],
+            text=_sum_df.sort_values("rank_volatility")["rank_volatility"].map(lambda v: f"{v:.3f}"),
+            labels={
+                "rank_volatility": "Rank Volatility σ",
+                "country_label": "",
+                "country_code_a3": "",
+            },
+        )
+        fig_vol.update_traces(textposition="outside")
+        fig_vol.update_layout(
+            height=460,
+            coloraxis_showscale=False,
+            xaxis=dict(title="Rank volatility (std dev of rank)", range=[0, _sum_df["rank_volatility"].max() * 1.2]),
+            margin=dict(l=10, r=80, t=10, b=40),
+        )
+        st.plotly_chart(fig_vol, use_container_width=True)
+
+        st.markdown("---")
+
+        # ── 2. Interactive slider — live-recomputed bar chart ─────────────────
+        st.subheader("Interactive Weight Sensitivity")
+        st.caption(
+            "Adjust the fiscal stress weight below.  "
+            "The remaining three weights are proportionally renormalized.  "
+            "The chart shows the resulting Right Now Risk score ranking."
+        )
+
+        _s_fiscal_w = st.slider(
+            "Fiscal stress weight",
+            min_value=0.15,
+            max_value=0.55,
+            value=0.35,
+            step=0.05,
+            format="%.2f",
+            key="sens_fiscal_slider",
+            help=(
+                "Default = 0.35.  "
+                "Remaining weights (runway=0.25, social=0.20, chain=0.20) "
+                "are renormalized proportionally."
+            ),
+        )
+
+        # Renormalize other weights
+        _others_base = {k: v for k, v in _BASE_WEIGHTS.items()
+                        if k != "fiscal_stress_score"}
+        _others_total = sum(_others_base.values())
+        _remaining = 1.0 - _s_fiscal_w
+        _live_weights = {k: v / _others_total * _remaining for k, v in _others_base.items()}
+        _live_weights["fiscal_stress_score"] = _s_fiscal_w
+
+        # Load the live base component scores
+        _sens_live_data = load_fiscal_stress_data()
+        if "right_now_risk_df" in _sens_live_data:
+            _base_scores = _sens_live_data["right_now_risk_df"].copy()
+
+            _comp_cols = [
+                "fiscal_stress_score", "reserve_runway_risk",
+                "social_stability_risk", "chain_transmission_severity_recent",
+            ]
+
+            def _apply_w(row):
+                av = {c: (row[c], _live_weights[c]) for c in _comp_cols
+                      if c in row.index and not pd.isna(row[c])}
+                if not av:
+                    return float("nan")
+                tw = sum(w for _, w in av.values())
+                return min(1.0, max(0.0, sum(v * w / tw for v, w in av.values())))
+
+            _base_scores["adj_score"] = _base_scores.apply(_apply_w, axis=1)
+            _base_scores["adj_rank"] = (
+                _base_scores["adj_score"]
+                .rank(ascending=False, method="min")
+                .astype(int)
+            )
+
+            _lbl_col = "country_label" if "country_label" in _base_scores.columns else "country_code_a3"
+
+            _adj_bar = _base_scores.sort_values("adj_score", ascending=True)
+
+            # Side-by-side: default vs adjusted weight scores
+            _default_scores = _base_scores[["right_now_risk_score", _lbl_col]].copy()
+
+            _weights_str = (
+                f"fiscal={_s_fiscal_w:.2f}  ·  "
+                f"runway={_live_weights['reserve_runway_risk']:.2f}  ·  "
+                f"social={_live_weights['social_stability_risk']:.2f}  ·  "
+                f"chain={_live_weights['chain_transmission_severity_recent']:.2f}"
+            )
+            st.caption(f"Active weights → {_weights_str}")
+
+            fig_adj = go.Figure()
+            fig_adj.add_trace(go.Bar(
+                x=_adj_bar["adj_score"],
+                y=_adj_bar[_lbl_col],
+                orientation="h",
+                name=f"Adjusted (fiscal={_s_fiscal_w:.2f})",
+                marker_color="#e45756",
+                text=_adj_bar["adj_score"].map(lambda v: f"{v:.3f}"),
+                textposition="outside",
+                hovertemplate="<b>%{y}</b><br>Adjusted: %{x:.3f}<extra></extra>",
+            ))
+            fig_adj.add_trace(go.Bar(
+                x=_adj_bar["right_now_risk_score"],
+                y=_adj_bar[_lbl_col],
+                orientation="h",
+                name="Default weights",
+                marker_color="#4c78a8",
+                opacity=0.55,
+                hovertemplate="<b>%{y}</b><br>Default: %{x:.3f}<extra></extra>",
+            ))
+            fig_adj.update_layout(
+                barmode="overlay",
+                height=460,
+                xaxis=dict(range=[0, 1.0], title="Right Now Risk Score"),
+                yaxis_title=None,
+                legend=dict(orientation="h", y=-0.18, font_size=12),
+                margin=dict(l=10, r=80, t=10, b=70),
+            )
+            st.plotly_chart(fig_adj, use_container_width=True)
+        else:
+            st.info(
+                "Live component scores unavailable — "
+                "interactive chart cannot be rendered."
+            )
+
+        st.markdown("---")
+
+        # ── 3. Scenario detail table ──────────────────────────────────────────
+        with st.expander("Scenario detail — all 17 OAT scenarios"):
+            _pivot_scen = (
+                _sens_df
+                .pivot(
+                    index="scenario_id",
+                    columns="country_label" if "country_label" in _sens_df.columns else "country_code_a3",
+                    values="rank",
+                )
+                .astype(int)
+            )
+            st.dataframe(_pivot_scen, use_container_width=True)
+            make_csv_download_button(
+                _pivot_scen.reset_index(),
+                "sensitivity_pivot.csv",
+                "Download pivot as CSV",
+            )
+
+        # ── 4. Methodology expander ───────────────────────────────────────────
+        with st.expander("Methodology — Sensitivity Analysis"):
+            st.markdown("""
+**Design: one-at-a-time (OAT)**
+
+Each of the four component weights is varied independently while the other
+three are proportionally renormalized so all weights sum to 1.0:
+
+```
+when fiscal_w = new_value:
+    runway_w_adj = 0.25 / (0.25 + 0.20 + 0.20) × (1 − new_value)
+    social_w_adj = 0.20 / (0.25 + 0.20 + 0.20) × (1 − new_value)
+    chain_w_adj  = 0.20 / (0.25 + 0.20 + 0.20) × (1 − new_value)
+```
+
+**Weight grid**
+
+| Component | Default | Levels tested |
+|-----------|---------|---------------|
+| Fiscal stress | 0.35 | 0.25, 0.30, 0.40, 0.45 |
+| Reserve runway | 0.25 | 0.15, 0.20, 0.30, 0.35 |
+| Social stability | 0.20 | 0.10, 0.15, 0.25, 0.30 |
+| Chain transmission | 0.20 | 0.10, 0.15, 0.25, 0.30 |
+
+Total: 16 non-base + 1 base = **17 scenarios × 14 countries = 238 rows.**
+
+**Rank volatility**
+
+σ(rank) across all 17 scenarios per country.  A value of 0 means the
+country's rank never changes regardless of weight choice; high σ means
+the country's ranking is sensitive to how the model is parameterised.
+
+**Source data**
+
+`outputs/tables/sensitivity_results.csv` — regenerate with:
+`python -m src.model.sensitivity`
+
+Base component scores come from the live Right Now Risk pipeline
+(`run_right_now_risk()` with today's Brent price).
+""")
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TAB 10 · 2020 Oil Crash Retrospective
+# ═══════════════════════════════════════════════════════════════════════════════
+with tab_retro:
+    st.header("2020 Oil Crash Retrospective")
+    st.caption(
+        "How well did the pre-crisis (2019) model rankings predict actual 2020 economic outcomes?  "
+        "Source: IMF World Economic Outlook April 2021 · World Bank Global Economic Prospects Jan 2021."
+    )
+
+    _retro_df = load_retrospective()
+
+    if _retro_df.empty:
+        st.info(
+            "Retrospective data not found.  \n"
+            "Run: `python -m src.model.retrospective`  \n"
+            "(requires `outputs/tables/historical_risk_index.csv`)"
+        )
+    else:
+        # ── KPI row ────────────────────────────────────────────────────────────
+        try:
+            from src.model.retrospective import summarize_retrospective as _sum_retro
+            _retro_summary = _sum_retro(_retro_df)
+            rk1, rk2, rk3, rk4 = st.columns(4)
+            rk1.metric("Spearman ρ (pre-crisis rank vs outcome)",
+                       f"{_retro_summary['spearman_r']:.3f}",
+                       help="Rank correlation between 2019 model rank and 2020 GDP severity rank. "
+                            "1.0 = perfect prediction.")
+            rk2.metric("Hit rate (±3 rank positions)",
+                       f"{_retro_summary['hit_rate']:.0%}",
+                       help=f"% of countries where |model_rank - outcome_rank| ≤ {_retro_summary['hit_threshold']}")
+            rk3.metric("Mean absolute rank error",
+                       f"{_retro_summary['rank_error_mean']:.1f}",
+                       help="Average |model_rank_2019 − outcome_severity_rank_2020|")
+            rk4.metric("Top-5 precision / recall",
+                       f"{_retro_summary['top5_precision']:.0%} / {_retro_summary['top5_recall']:.0%}",
+                       help="Among countries model placed in top-5 highest risk, how many were actually "
+                            "in the worst-5 outcomes (precision); and of the actual worst-5, how many "
+                            "did the model flag (recall).")
+        except Exception:
+            pass
+
+        st.markdown("---")
+
+        # ── Scatter: model rank 2019 vs outcome severity rank 2020 ────────────
+        st.subheader("Pre-Crisis Model Rank vs 2020 Outcome Severity")
+        st.caption(
+            "Each bubble is a country.  X-axis = model's 2019 Right Now Risk rank "
+            "(1 = most at-risk predicted).  Y-axis = actual 2020 GDP severity rank "
+            "(1 = worst outcome, e.g. Libya −59.7%).  "
+            "Points on the diagonal = perfect prediction."
+        )
+
+        _r_have = "model_rank_precris" in _retro_df.columns and "outcome_severity_rank" in _retro_df.columns
+        if _r_have:
+            _label_col = "country_label" if "country_label" in _retro_df.columns else "country_code_a3"
+            fig_scatter = go.Figure()
+            fig_scatter.add_trace(go.Scatter(
+                x=_retro_df["model_rank_precris"],
+                y=_retro_df["outcome_severity_rank"],
+                mode="markers+text",
+                text=_retro_df[_label_col],
+                textposition="top center",
+                textfont=dict(size=10),
+                marker=dict(
+                    size=14,
+                    color=_retro_df["rank_error"] if "rank_error" in _retro_df.columns else "#1f77b4",
+                    colorscale="RdYlGn_r",
+                    colorbar=dict(title="Rank error", thickness=12),
+                    showscale=True,
+                ),
+                hovertemplate=(
+                    "<b>%{text}</b><br>"
+                    "Model rank 2019: %{x}<br>"
+                    "Outcome rank 2020: %{y}<br>"
+                    "<extra></extra>"
+                ),
+            ))
+            # Perfect prediction diagonal
+            _max_r = max(
+                _retro_df["model_rank_precris"].max(),
+                _retro_df["outcome_severity_rank"].max(),
+            ) + 0.5
+            fig_scatter.add_trace(go.Scatter(
+                x=[0.5, _max_r], y=[0.5, _max_r],
+                mode="lines",
+                line=dict(dash="dash", color="grey", width=1),
+                showlegend=False,
+                hoverinfo="skip",
+            ))
+            fig_scatter.update_layout(
+                height=480,
+                xaxis=dict(title="Model rank 2019 (1 = highest predicted risk)", dtick=1),
+                yaxis=dict(title="Actual 2020 outcome severity rank (1 = worst)", dtick=1),
+                margin=dict(l=10, r=10, t=10, b=60),
+            )
+            st.plotly_chart(fig_scatter, use_container_width=True)
+
+        st.markdown("---")
+
+        # ── Data table ─────────────────────────────────────────────────────────
+        with st.expander("Full retrospective data table"):
+            _retro_show = {
+                "country_label":           "Country",
+                "outcome_severity_rank":   "Outcome Rank 2020",
+                "gdp_growth_2020_pct":     "GDP Growth 2020 (%)",
+                "fiscal_balance_2020_pct_gdp": "Fiscal Balance 2020 (% GDP)",
+                "imf_emergency_program":   "IMF Emergency Program",
+                "model_rank_precris":      "Model Rank 2019",
+                "right_now_risk_score":    "Model Score 2019",
+                "rank_error":              "Rank Error",
+                "hit":                     "Hit (±3)",
+                "confidence":              "Confidence",
+            }
+            _retro_show = {k: v for k, v in _retro_show.items() if k in _retro_df.columns}
+            _retro_disp = (
+                _retro_df[list(_retro_show.keys())]
+                .rename(columns=_retro_show)
+                .round({"GDP Growth 2020 (%)": 1, "Model Score 2019": 3, "Rank Error": 1})
+            )
+            st.dataframe(_retro_disp, hide_index=True, use_container_width=True)
+            make_csv_download_button(_retro_disp, "retrospective_2020.csv", "Download as CSV")
+
+        # ── Methodology ────────────────────────────────────────────────────────
+        with st.expander("Methodology — 2020 Retrospective"):
+            st.markdown("""
+**Pre-crisis snapshot year:** 2019 (last full year before the crisis).
+
+**Outcome measure:** GDP growth rate (%) from IMF WEO April 2021 Table A7.
+Countries ranked 1 (worst, e.g. Libya −59.7%) to 14 (best, Egypt +3.6%).
+
+**Correlation metric:** Spearman rank correlation ρ between the model's 2019
+Right Now Risk rank and the 2020 outcome severity rank.  A perfect model would
+produce ρ = 1.0.
+
+**Hit rate:** Proportion of countries where |model_rank_2019 − outcome_rank_2020| ≤ 3.
+
+**Important caveat:** The 2020 shock was driven partly by factors the model
+could not have predicted from structural data alone:
+- Libya's oil export blockade (Jan–Sep 2020) amplified an already high-risk score.
+- Lebanon's financial collapse pre-dated COVID and was not primarily oil-driven.
+- Morocco's drought compounded the COVID shock.
+- Kuwait's fiscal hit was severe but buffered by KIA SWF assets.
+
+**Data source:** `data/reference/imf_weo_2020_outcomes.csv`
+Regenerate output: `python -m src.model.retrospective`
+""")
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TAB 11 · IMF / WB Cross-Validation
+# ═══════════════════════════════════════════════════════════════════════════════
+with tab_cv:
+    st.header("IMF / World Bank Cross-Validation")
+    st.caption(
+        "Compares model Right Now Risk tiers against independent benchmarks from the "
+        "IMF Fiscal Monitor (Oct 2023) and World Bank Macro Poverty Outlook (Fall 2023)."
+    )
+
+    _cv_df = load_cross_validation()
+
+    if _cv_df.empty:
+        st.info(
+            "Cross-validation data not found.  \n"
+            "Run: `python -m src.model.cross_validation`"
+        )
+    else:
+        # ── KPI row ────────────────────────────────────────────────────────────
+        _cv_n_div = int(_cv_df.get("any_divergence", pd.Series([False] * len(_cv_df))).sum()) \
+            if "any_divergence" in _cv_df.columns else None
+        _cv_imf_r = _cv_df[["model_rank", "imf_fm_ordinal"]].dropna() \
+            if "model_rank" in _cv_df.columns and "imf_fm_ordinal" in _cv_df.columns \
+            else pd.DataFrame()
+        _cv_wb_r  = _cv_df[["model_rank", "wb_mpo_ordinal"]].dropna() \
+            if "model_rank" in _cv_df.columns and "wb_mpo_ordinal" in _cv_df.columns \
+            else pd.DataFrame()
+
+        import math as _math
+        import numpy as _np
+
+        def _sr(x, y):
+            rx = pd.Series(x, dtype=float).rank()
+            ry = pd.Series(y, dtype=float).rank()
+            return float(_np.corrcoef(rx.values, ry.values)[0, 1]) if len(x) > 2 else float("nan")
+
+        _r_imf = _sr(_cv_imf_r["model_rank"].tolist(), _cv_imf_r["imf_fm_ordinal"].tolist()) \
+            if not _cv_imf_r.empty else float("nan")
+        _r_wb  = _sr(_cv_wb_r["model_rank"].tolist(),  _cv_wb_r["wb_mpo_ordinal"].tolist()) \
+            if not _cv_wb_r.empty else float("nan")
+
+        cv1, cv2, cv3, cv4 = st.columns(4)
+        cv1.metric("Spearman ρ vs IMF FM tier",
+                   f"{_r_imf:.3f}" if not _math.isnan(_r_imf) else "N/A",
+                   help="Rank correlation between model rank and IMF Fiscal Monitor risk tier ordinal. "
+                        "Positive = model agrees with IMF on relative ordering.")
+        cv2.metric("Spearman ρ vs WB MPO status",
+                   f"{_r_wb:.3f}" if not _math.isnan(_r_wb) else "N/A",
+                   help="Rank correlation between model rank and WB Macro Poverty Outlook status ordinal.")
+        cv3.metric("Countries with divergence",
+                   f"{_cv_n_div} / {len(_cv_df)}" if _cv_n_div is not None else "N/A",
+                   help="Countries where model tier disagrees with IMF FM or WB MPO classification.")
+        cv4.metric("Reference year", "2023",
+                   help="IMF Fiscal Monitor Oct 2023 · WB Macro Poverty Outlook Fall 2023")
+
+        st.markdown("---")
+
+        # ── Tier comparison table ──────────────────────────────────────────────
+        st.subheader("Tier Comparison — Model vs IMF FM vs WB MPO")
+
+        _cv_show = {
+            "country_label":      "Country",
+            "right_now_risk_score": "Model Score",
+            "model_rank":         "Model Rank",
+            "model_tier":         "Model Tier",
+            "imf_fm_risk_tier":   "IMF FM Tier",
+            "wb_mpo_status":      "WB MPO Status",
+            "imf_divergence":     "IMF Divergence",
+            "wb_divergence":      "WB Divergence",
+        }
+        _cv_show = {k: v for k, v in _cv_show.items() if k in _cv_df.columns}
+        _cv_disp = (
+            _cv_df.sort_values("model_rank" if "model_rank" in _cv_df.columns else "right_now_risk_score")
+            [list(_cv_show.keys())]
+            .rename(columns=_cv_show)
+        )
+        if "Model Score" in _cv_disp.columns:
+            _cv_disp["Model Score"] = _cv_disp["Model Score"].round(3)
+
+        st.dataframe(
+            _cv_disp,
+            hide_index=True,
+            use_container_width=True,
+            column_config={
+                "Model Score": st.column_config.ProgressColumn(
+                    "Model Score", format="%.3f", min_value=0.0, max_value=1.0,
+                ),
+                "IMF Divergence": st.column_config.CheckboxColumn(
+                    "IMF Divergence",
+                    help="Model tier ≠ IMF Fiscal Monitor tier",
+                ),
+                "WB Divergence": st.column_config.CheckboxColumn(
+                    "WB Divergence",
+                    help="Model tier ≠ WB MPO status",
+                ),
+            },
+        )
+        make_csv_download_button(_cv_disp, "cross_validation.csv", "Download comparison as CSV")
+
+        st.markdown("---")
+
+        # ── Divergence detail ─────────────────────────────────────────────────
+        if "any_divergence" in _cv_df.columns:
+            _div_rows = _cv_df[_cv_df["any_divergence"]].copy()
+            if not _div_rows.empty:
+                st.subheader(f"Divergence Detail ({len(_div_rows)} countries)")
+                st.caption(
+                    "These countries have at least one benchmark tier that differs from "
+                    "the model's tertile-based tier.  Review the notes column for context."
+                )
+                _div_show = {
+                    "country_label":        "Country",
+                    "model_tier":           "Model Tier",
+                    "imf_fm_risk_tier":     "IMF FM Tier",
+                    "wb_mpo_status":        "WB MPO Status",
+                    "imf_ordinal_distance": "IMF Distance",
+                    "wb_ordinal_distance":  "WB Distance",
+                    "right_now_risk_score": "Model Score",
+                }
+                _div_show = {k: v for k, v in _div_show.items() if k in _div_rows.columns}
+                st.dataframe(
+                    _div_rows[list(_div_show.keys())].rename(columns=_div_show).round(3),
+                    hide_index=True,
+                    use_container_width=True,
+                )
+
+        # ── Methodology ────────────────────────────────────────────────────────
+        with st.expander("Methodology — Cross-Validation"):
+            st.markdown("""
+**Tier mapping**
+
+The model's composite Right Now Risk score is divided into three tiers using
+data-driven tertile thresholds (33rd and 67th percentiles of the current score
+distribution), giving roughly equal-sized groups:
+- **Low**: bottom third by score
+- **Medium**: middle third
+- **High**: top third
+
+**Benchmark sources**
+- **IMF Fiscal Monitor (Oct 2023)** — Table A8, MENA region fiscal vulnerability classification.
+- **WB Macro Poverty Outlook (Fall 2023)** — Country notes annex, Stable / Watch / Stressed.
+
+Both benchmarks carry `source_id_primary = IMF_FM_OCT2023` or `WB_MPO_2023`
+in `data/reference/imf_wb_benchmarks.csv`.
+
+**Correlation metric**
+
+Spearman rank correlation ρ between model rank (1 = highest risk) and benchmark
+tier ordinal (Low=1, Medium=2, High=3 for IMF FM; Stable=1, Watch=2, Stressed=3
+for WB MPO).  A positive ρ means the model broadly agrees with the benchmark
+on which countries are more vs less at risk.
+
+**Divergences**
+
+A divergence is recorded when model_tier ≠ imf_fm_risk_tier or model_tier ≠ wb_mpo_status.
+The ordinal distance (|model_ordinal − benchmark_ordinal|) measures severity.
+
+**Regenerate:** `python -m src.model.cross_validation`
 """)
