@@ -14,6 +14,7 @@ Usage
 
 from __future__ import annotations
 
+import datetime
 from pathlib import Path
 
 import pandas as pd
@@ -66,7 +67,10 @@ def make_csv_download_button(
         help:     Optional tooltip text.
     """
     versioned_name = f"v{_MODEL_VERSION}_{filename}"
-    csv_bytes = df.to_csv(index=False).encode("utf-8")
+    export_df = df.copy()
+    export_df["export_timestamp"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    export_df["model_version"] = _MODEL_VERSION
+    csv_bytes = export_df.to_csv(index=False).encode("utf-8")
     st.download_button(
         label=label,
         data=csv_bytes,

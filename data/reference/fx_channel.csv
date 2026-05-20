@@ -1,0 +1,15 @@
+country_code_a3,country_label,fx_channel_relevant,fx_regime,historical_fx_volatility_pct,oil_fx_correlation,fx_channel_weight,source_id_primary,source_year,is_estimate,confidence,notes
+SAU,Saudi Arabia,False,usd_peg,0.0,0.0,0.0,FX_REGIME_2023,2023,True,high,SAR pegged to USD at 3.75 since 1986; no effective FX transmission channel from oil shocks
+IRQ,Iraq,True,managed_float,8.2,0.42,0.08,FX_REGIME_2023,2023,True,medium,IQD managed vs USD; oil revenues stabilise but governance risk creates residual FX pressure on import prices
+KWT,Kuwait,False,basket_peg,0.3,0.05,0.0,FX_REGIME_2023,2023,True,high,KWD pegged to undisclosed basket (mainly USD); RSAL buffer fully shields FX from oil price shocks
+ARE,UAE,False,usd_peg,0.0,0.0,0.0,FX_REGIME_2023,2023,True,high,AED pegged to USD at 3.6725 since 1997; no effective FX transmission channel
+QAT,Qatar,False,usd_peg,0.1,0.03,0.0,FX_REGIME_2023,2023,True,high,QAR pegged to USD at 3.64 since 2001; QIA buffer reinforces peg credibility
+OMN,Oman,False,usd_peg,0.2,0.05,0.0,FX_REGIME_2023,2023,True,high,OMR pegged to USD at 0.3845 since 1986; peg maintained throughout 2014-2016 oil crash
+BHR,Bahrain,False,usd_peg,0.1,0.04,0.0,FX_REGIME_2023,2023,True,high,BHD pegged to USD at 0.376 since 1980; GCC monetary support reinforces peg credibility
+DZA,Algeria,True,managed_float,6.8,0.58,0.10,FX_REGIME_2023,2023,True,medium,DZD managed vs USD/EUR basket; oil-fiscal link creates FX depreciation pressure when prices fall; FX controls limit adjustment speed
+LBY,Libya,True,managed_float,14.2,0.71,0.15,FX_REGIME_2023,2023,True,low,LYD parallel market premium reflects conflict-driven FX distortions; dual exchange rate system; high uncertainty
+IRN,Iran,True,multiple_rate,42.6,0.78,0.25,FX_REGIME_2023,2023,True,low,Multiple official/unofficial exchange rates under sanctions; extreme FX volatility partly driven by oil export restrictions; import price pass-through very high
+EGY,Egypt,True,managed_float,18.4,0.62,0.20,FX_REGIME_2023,2023,True,medium,EGP experienced large devaluations (2016 approx. 50%; 2022-2023 approx. 50%+); strong oil-FX correlation through Suez Canal revenue and remittance channel
+JOR,Jordan,True,usd_peg,0.5,0.12,0.05,FX_REGIME_2023,2023,True,medium,JOD pegged to USD since 1995; peg credibility maintained but reserve adequacy is sensitive to oil-driven regional dynamics and Gulf remittance flows
+LBN,Lebanon,True,currency_crisis,89.4,0.31,0.20,FX_REGIME_2023,2023,True,low,LBP lost over 95% of value 2019-2023; pre-existing banking crisis amplified by oil import cost pressures; extreme FX volatility
+MAR,Morocco,True,managed_float,3.8,0.34,0.10,FX_REGIME_2023,2023,True,medium,MAD in managed float band since 2018 reform; phosphate and remittance buffers reduce oil-FX correlation; relatively moderate FX transmission

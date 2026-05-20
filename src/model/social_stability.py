@@ -75,9 +75,10 @@ log = logging.getLogger(__name__)
 
 # ── Paths ───────────────────────────────────────────────────────────────────────
 
-PANEL_PATH     = Path("data/processed/world_bank_panel.csv")
-FOOD_PATH      = Path("data/reference/food_security.csv")
-BREAKEVEN_PATH = Path("data/reference/fiscal_breakeven.csv")
+PANEL_PATH      = Path("data/processed/world_bank_panel.csv")
+FOOD_PATH       = Path("data/reference/food_security.csv")
+BREAKEVEN_PATH  = Path("data/reference/fiscal_breakeven.csv")
+FX_CHANNEL_PATH = Path("data/reference/fx_channel.csv")
 
 # ── Component weights ───────────────────────────────────────────────────────────
 
@@ -118,6 +119,50 @@ _FOOD_REQUIRED: list[str] = [
 
 
 # ── Data loading ────────────────────────────────────────────────────────────────
+
+_FX_REQUIRED: list[str] = ["country_code_a3", "fx_channel_relevant", "fx_channel_weight"]
+
+
+def load_fx_channel(path: Path = FX_CHANNEL_PATH) -> pd.DataFrame:
+    """Load and validate the FX channel reference CSV.
+
+    The FX channel CSV records, for each country, whether the exchange rate
+    channel is relevant for transmitting oil price shocks to social stability
+    (i.e. whether currency depreciation amplifies import-price inflation), and
+    the weight of that adjustment in the social stability score.
+
+    GCC countries with hard USD pegs have fx_channel_relevant=False and
+    fx_channel_weight=0.0.  Countries with managed floats or a history of
+    large devaluations carry positive weights (up to 0.3).
+
+    Args:
+        path: Path to ``fx_channel.csv``.
+
+    Returns:
+        DataFrame with one row per country and all reference fields.
+
+    Raises:
+        FileNotFoundError: If *path* does not exist.
+        ValueError: If required columns are absent.
+    """
+    if not path.exists():
+        raise FileNotFoundError(f"FX channel CSV not found: {path}")
+
+    df = pd.read_csv(path)
+
+    missing = [c for c in _FX_REQUIRED if c not in df.columns]
+    if missing:
+        raise ValueError(f"Missing required columns in {path.name}: {missing}")
+
+    df["fx_channel_relevant"] = df["fx_channel_relevant"].astype(str).str.lower().isin(
+        ("true", "1", "yes")
+    )
+    df["fx_channel_weight"] = pd.to_numeric(df["fx_channel_weight"], errors="coerce").fillna(0.0)
+
+    n_relevant = int(df["fx_channel_relevant"].sum())
+    log.info("FX channel data loaded: %d countries, %d with active FX channel.", len(df), n_relevant)
+    return df
+
 
 def load_food_security(path: Path = FOOD_PATH) -> pd.DataFrame:
     """Load and validate the food security reference CSV.
@@ -492,12 +537,77 @@ def _append_flag(flags: list[str], idx: int, message: str) -> None:
         flags[idx] = message
 
 
+def compute_fx_adjustment(df: pd.DataFrame, fx_df: pd.DataFrame) -> pd.DataFrame:
+    """Apply the FX channel adjustment to social stability risk scores.
+
+    For countries where ``fx_channel_relevant`` is True, adds an FX-driven
+    component that captures the pass-through of oil price shocks via currency
+    depreciation to imported-goods inflation.
+
+    Formula:
+        fx_adjustment_value = fx_channel_weight × fiscal_stress_score
+
+    Interpretation: when fiscal stress is high (Brent well below breakeven)
+    *and* the country has a managed or freely floating exchange rate, currency
+    depreciation amplifies import-price inflation beyond what is already
+    captured by the direct food-import and inflation-volatility components.
+    For GCC hard-peg countries, fx_channel_weight=0.0 so the adjustment is
+    always zero.
+
+    The adjusted ``social_stability_risk`` is clamped to [0, 1].
+
+    Args:
+        df:    Output of :func:`build_stability_table` containing
+               ``social_stability_risk`` and ``fiscal_stress_score`` columns.
+        fx_df: Output of :func:`load_fx_channel` (one row per country).
+
+    Returns:
+        Copy of *df* with three new columns:
+          ``fx_adjusted``        (bool)  — True where fx_adjustment_value > 0
+          ``fx_adjustment_value`` (float) — raw adjustment added to risk score
+          ``social_stability_risk`` updated in place (original + adjustment,
+          clamped to [0, 1])
+    """
+    df = df.copy()
+    df = df.merge(
+        fx_df[["country_code_a3", "fx_channel_relevant", "fx_channel_weight"]],
+        on="country_code_a3",
+        how="left",
+    )
+
+    df["fx_channel_relevant"] = df["fx_channel_relevant"].fillna(False).astype(bool)
+    df["fx_channel_weight"]   = pd.to_numeric(
+        df["fx_channel_weight"], errors="coerce"
+    ).fillna(0.0)
+
+    def _adj(row: pd.Series) -> float:
+        if not row["fx_channel_relevant"]:
+            return 0.0
+        w   = float(row["fx_channel_weight"])
+        fss = float(row["fiscal_stress_score"]) if not pd.isna(row["fiscal_stress_score"]) else 0.0
+        return w * fss
+
+    df["fx_adjustment_value"] = df.apply(_adj, axis=1)
+    df["fx_adjusted"]         = df["fx_adjustment_value"] > 0.0
+    df["social_stability_risk"] = (
+        df["social_stability_risk"] + df["fx_adjustment_value"]
+    ).clip(0.0, 1.0)
+
+    n_adj = int(df["fx_adjusted"].sum())
+    log.info(
+        "FX adjustment applied: %d countries adjusted, max adjustment=%.4f",
+        n_adj, df["fx_adjustment_value"].max(),
+    )
+    return df
+
+
 # ── End-to-end orchestrator ──────────────────────────────────────────────────────
 
 def run_social_stability(
     food_path:      Path = FOOD_PATH,
     breakeven_path: Path = BREAKEVEN_PATH,
     panel_path:     Path = PANEL_PATH,
+    fx_path:        Path = FX_CHANNEL_PATH,
 ) -> dict:
     """End-to-end social stability pipeline.
 
@@ -505,12 +615,13 @@ def run_social_stability(
         food_path:      Path to ``food_security.csv``.
         breakeven_path: Path to ``fiscal_breakeven.csv``.
         panel_path:     Path to ``world_bank_panel.csv``.
+        fx_path:        Path to ``fx_channel.csv``.
 
     Returns:
         dict with keys:
             ``'brent_live'``      : float
             ``'stress_table'``    : pd.DataFrame
-            ``'stability_table'`` : pd.DataFrame
+            ``'stability_table'`` : pd.DataFrame (includes fx_adjusted columns)
     """
     breakeven_df  = load_breakeven(breakeven_path)
     brent_live    = fetch_brent_live()
@@ -518,7 +629,9 @@ def run_social_stability(
     stress_table  = build_stress_table(breakeven_df, brent_live, ytd_prices)
     inflation_df  = derive_inflation_vol(panel_path)
     food_df       = load_food_security(food_path)
+    fx_df         = load_fx_channel(fx_path)
     stability_tbl = build_stability_table(food_df, stress_table, inflation_df)
+    stability_tbl = compute_fx_adjustment(stability_tbl, fx_df)
 
     return {
         "brent_live":      brent_live,

@@ -1,6 +1,6 @@
 project:
   name: middle-east-oil-chain-analysis
-  version: "0.1.0"
+  version: "1.0.0"
 
 paths:
   data_raw: data/raw

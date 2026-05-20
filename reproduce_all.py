@@ -32,17 +32,16 @@ class Step(NamedTuple):
 
 
 _STEPS: list[Step] = [
-    Step("1. Fetch World Bank panel",        "src.data.fetch_world_bank"),
-    Step("2. Clean World Bank panel",         "src.data.clean_world_bank"),
-    Step("3. Validate reference data",        "src.data.validate_reference",  ["--strict"]),
-    Step("4. OCVI vulnerability index",       "src.model.vulnerability_index"),
-    Step("5. Chain transmission severity",    "src.model.chain_transmission"),
-    Step("6. Right Now Risk composite",       "src.model.right_now_risk"),
-    Step("7. Backtesting (base scenario)",    "src.model.backtest"),
-    Step("8. Historical risk index 2015–2024","src.model.historical_index"),
-    Step("9. Sensitivity analysis (OAT)",     "src.model.sensitivity"),
-    Step("10. 2020 oil crash retrospective",  "src.model.retrospective"),
-    Step("11. IMF/WB cross-validation",       "src.model.cross_validation"),
+    Step(" 1. Fetch World Bank panel",        "src.data.fetch_world_bank"),
+    Step(" 2. Clean World Bank panel",         "src.data.clean_world_bank"),
+    Step(" 3. OCVI vulnerability index",       "src.model.vulnerability_index"),
+    Step(" 4. Chain transmission severity",    "src.model.chain_transmission", ["--fit-ols"]),
+    Step(" 5. Historical risk index 2015–2024","src.model.historical_index"),
+    Step(" 6. Right Now Risk composite",       "src.model.right_now_risk"),
+    Step(" 7. 2020 oil crash retrospective",   "src.model.retrospective"),
+    Step(" 8. IMF/WB cross-validation",        "src.model.cross_validation"),
+    Step(" 9. Sensitivity analysis (OAT)",     "src.model.sensitivity"),
+    Step("10. Validate reference data",        "src.data.validate_reference", ["--strict"]),
 ]
 
 
@@ -86,7 +85,7 @@ def main(argv: list[str] | None = None) -> int:
     total_start = time.perf_counter()
 
     for step in _STEPS:
-        print(f"▶  {step.label} ...", flush=True)
+        print(f">>  {step.label} ...", flush=True)
         ok, elapsed = _run_step(step, python)
         status = "OK " if ok else "FAIL"
         print(f"   {status}  ({elapsed:.1f}s)\n", flush=True)
