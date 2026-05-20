@@ -314,3 +314,14 @@ Requirements: `streamlit`, `pandas`, `plotly`, `yfinance`, `numpy`, `pyyaml`.
 
 ---
 
+## Data Refresh
+
+World Bank panel data refreshes automatically every Monday
+via GitHub Actions.  The workflow fetches, cleans, and
+validates all data before committing.  If validation fails,
+no data is committed.
+
+[![Data Refresh](https://github.com/kiko1992-creator/middle-east-oil-chain-analysis/actions/workflows/refresh_data.yml/badge.svg)](https://github.com/kiko1992-creator/middle-east-oil-chain-analysis/actions/workflows/refresh_data.yml)
+
+---
+

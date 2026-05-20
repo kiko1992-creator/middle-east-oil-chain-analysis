@@ -1,0 +1,59 @@
+name: Weekly Data Refresh
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Every Monday at 06:00 UTC
+  workflow_dispatch:        # Manual trigger via GitHub UI
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch World Bank panel
+        run: python -m src.data.fetch_world_bank
+
+      - name: Clean World Bank panel
+        run: python -m src.data.clean_world_bank
+
+      - name: Build OCVI vulnerability index
+        run: python -m src.model.vulnerability_index
+
+      - name: Build chain transmission model
+        run: python -m src.model.chain_transmission --fit-ols
+
+      - name: Build historical risk index
+        run: python -m src.model.historical_index
+
+      - name: Build Right Now Risk composite
+        run: python -m src.model.right_now_risk
+
+      - name: Validate reference data (gate)
+        # Exits 1 on any failure — prevents the commit step from running
+        run: python -m src.data.validate_reference --strict
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/processed/ outputs/tables/
+          if git diff --staged --quiet; then
+            echo "No data changes — skipping commit."
+          else
+            git commit -m "data: weekly refresh $(date -u +%Y-%m-%d)"
+            git push
+          fi
