@@ -32,6 +32,17 @@ No installation required.
 
 ---
 
+## Citation
+
+If you use this work, please cite:
+
+Mickovski, K. (2026). MENA Oil Chain Analysis (v1.0.1).
+Zenodo. https://doi.org/10.5281/zenodo.20307969
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20307969.svg)](https://doi.org/10.5281/zenodo.20307969)
+
+---
+
 ## Right Now Risk formula
 
 ```
