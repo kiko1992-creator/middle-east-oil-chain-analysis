@@ -200,10 +200,22 @@ a `data_quality_flag` is set on that row.
 
 #### Inflation Volatility Normalisation
 
-Inflation volatility is computed as the standard deviation of the World Bank
-annual CPI growth rate (`FP.CPI.TOTL.ZG`) over 2000–2024.  Raw values are
-then **winsorised at the 5th and 95th percentile** across all 14 countries
-before min-max normalisation.
+Inflation volatility is the standard deviation of the annual CPI growth rate
+across a window of observations.  The source is selected per country:
+
+- **Primary (where available):** IMF World Economic Outlook April 2026
+  (`PCPIPCH`), years 2020–2025 (mix of actuals and IMF projections).
+  Used when at least 2 observations are present for a country.
+- **Fallback (per country):** World Bank panel `FP.CPI.TOTL.ZG`, 2000–2024.
+  Applied when WEO data are absent or fewer than 2 observations exist.
+  If the IMF API is unavailable, the pipeline falls back to World Bank panel
+  inflation data without interruption.
+
+The `inflation_source` column in the stability output records which source
+was applied for each country (`"IMF_WEO_2026"` or `"WB_panel_2024"`).
+
+Raw volatility values are then **winsorised at the 5th and 95th percentile**
+across all 14 countries before min-max normalisation.
 
 Winsorisation is applied because Lebanon's CPI volatility (σ ≈ 73 percentage
 points) would otherwise compress all other countries to near-zero after
@@ -217,8 +229,11 @@ norm_inflation_vol = (inflation_vol_winsorized - min_winsorized)
                    / (max_winsorized - min_winsorized)
 ```
 
-**Data source:** `data/processed/world_bank_panel.csv`
-(World Bank Open Data API, fetched by `src/data/fetch_world_bank.py`).
+**Data sources:**
+- Primary: `data/processed/imf_weo_panel.csv`
+  (IMF Datamapper API, fetched by `src/data/fetch_imf_weo.py`).
+- Fallback: `data/processed/world_bank_panel.csv`
+  (World Bank Open Data API, fetched by `src/data/fetch_world_bank.py`).
 
 ---
 
@@ -312,11 +327,12 @@ Expert stage scores and amplification factors are calibrated to:
 | `data/processed/world_bank_panel.csv` | `FP_CPI_TOTL_ZG`, `NY_GDP_PETR_RT_ZS`, `NY_GDP_MKTP_CD` | World Bank Open Data API | 2000–2024 | High |
 | `data/reference/chain_transmission.csv` | `stage1`–`stage5`, `amplification_factor` | Expert estimates + OLS from WB panel | 2024 snapshot | Varies by country |
 | Live Brent price | `brent_live_usd` | Yahoo Finance ticker `BZ=F` via yfinance | Real-time | High; unavailable outside market hours |
+| `data/processed/imf_weo_panel.csv` | `PCPIPCH` (inflation), `GGXCNL_NGDP` (fiscal balance) | IMF World Economic Outlook April 2026 via Datamapper API | 2015–2026; 2025–2026 are estimates | High |
 | `data/reference/imf_weo_2020_outcomes.csv` | `gdp_growth_2020_pct`, `fiscal_balance_2020_pct_gdp`, `outcome_severity_rank` | IMF World Economic Outlook April 2021 Table A7; WB GEP Jan 2021 | 2020 outcomes | Low for IRN, LBN, LBY |
 | `data/reference/imf_wb_benchmarks.csv` | `imf_fm_risk_tier`, `wb_mpo_status` | IMF Fiscal Monitor Oct 2023; WB Macro Poverty Outlook Fall 2023 | 2023 benchmarks | Low for IRN, LBN, LBY |
 
 All reference assumptions are traceable to a stable source ID in
-`data/reference/source_registry.csv` (19 source IDs across 6 reference
+`data/reference/source_registry.csv` (21 source IDs across 6 reference
 files).  Every reference CSV row carries `source_id_primary` and
 `source_id_secondary` columns that resolve to registry entries recording
 organisation, publication year, retrieval date, URL, and confidence tier.
@@ -486,6 +502,16 @@ and oil-blockade history make revenue and expenditure figures unreliable.  For
 Lebanon, financial-sector collapse and banking controls make FX and fiscal
 data highly uncertain.  All three countries should be interpreted with caution.
 
+### IMF WEO 2026 forecast uncertainty
+
+The `imf_weo_panel.csv` file marks years 2025–2026 as `is_estimate=True`
+(IMF projections, not actuals).  Using these years as the primary inflation
+source introduces additional uncertainty, particularly for countries with
+volatile inflation histories.  The `inflation_source` column in the stability
+output identifies which countries use IMF WEO data versus the longer World
+Bank historical series.  If the IMF API is unavailable, the pipeline falls
+back to World Bank panel inflation data without interruption.
+
 ### Chain transmission static snapshot
 
 `chain_transmission.csv` is generated as a single 2024 snapshot.  The
@@ -507,22 +533,24 @@ project root:
 python reproduce_all.py
 ```
 
-This executes 10 steps in dependency order, timestamps each step, and
+This executes 11 steps in dependency order, timestamps each step, and
 prints a PASS / FAIL summary.  The script continues past any failed step
-and exits with code 1 if any step fails.
+and exits with code 1 if any step fails.  Step 2 (IMF WEO fetch) always
+exits 0 even if the API is unavailable — the pipeline is non-blocking.
 
 | Step | Module | Purpose |
 |------|--------|---------|
 | 1 | `src.data.fetch_world_bank` | Download World Bank panel (2000–2024) |
-| 2 | `src.data.clean_world_bank` | Clean and validate panel |
-| 3 | `src.model.vulnerability_index` | OCVI country rankings |
-| 4 | `src.model.chain_transmission --fit-ols` | Chain severity + OLS fitting |
-| 5 | `src.model.historical_index` | 2015–2024 risk panel (140 rows) |
-| 6 | `src.model.right_now_risk` | Right Now Risk composite (live Brent) |
-| 7 | `src.model.retrospective` | 2020 oil crash retrospective |
-| 8 | `src.model.cross_validation` | IMF / WB cross-validation |
-| 9 | `src.model.sensitivity` | One-at-a-time weight sensitivity |
-| 10 | `src.data.validate_reference --strict` | Reference data integrity check |
+| 2 | `src.data.fetch_imf_weo` | Download IMF WEO panel (2015–2026); non-blocking |
+| 3 | `src.data.clean_world_bank` | Clean and validate WB panel |
+| 4 | `src.model.vulnerability_index` | OCVI country rankings |
+| 5 | `src.model.chain_transmission --fit-ols` | Chain severity + OLS fitting |
+| 6 | `src.model.historical_index` | 2015–2024 risk panel (140 rows) |
+| 7 | `src.model.right_now_risk` | Right Now Risk composite (live Brent) |
+| 8 | `src.model.retrospective` | 2020 oil crash retrospective |
+| 9 | `src.model.cross_validation` | IMF / WB cross-validation |
+| 10 | `src.model.sensitivity` | One-at-a-time weight sensitivity |
+| 11 | `src.data.validate_reference --strict` | Reference data integrity check |
 
 ### Reference data integrity check
 

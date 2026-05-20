@@ -1,15 +1,15 @@
 country_code_a3,country_label,country_name,gdp_growth_2020_pct,fiscal_balance_2020_pct_gdp,imf_emergency_program,outcome_severity_rank,confidence,right_now_risk_score,model_rank_precris,fiscal_stress_score,reserve_runway_risk,social_stability_risk,chain_transmission_severity,missing_components,rank_error,hit,model_predicted_top5,actually_top5
-LBY,Libya,Libya,-59.7,-80.0,False,1,low,0.3274168873655242,5,0.4420814354885356,0.0,0.5360250373571597,,chain_transmission_severity_recent [no chain data available],4,False,True,True
+LBY,Libya,Libya,-59.7,-80.0,False,1,low,0.3175327980615448,5,0.4420814354885356,0.0,0.4964886801412421,,chain_transmission_severity_recent [no chain data available],4,False,True,True
 LBN,Lebanon,Lebanon,-25.9,-10.0,False,2,low,0.1677419354838709,7,0.0,0.0,0.6709677419354838,,chain_transmission_severity_recent [no chain data available],5,False,False,True
-IRQ,Iraq,Iraq,-11.3,-18.8,False,3,medium,0.3731779370040567,4,0.5064566544706277,0.0,0.6064126026926289,,chain_transmission_severity_recent [no chain data available],1,True,True,True
-KWT,Kuwait,Kuwait,-8.9,-33.0,False,4,high,0.0930760064970259,10,0.0,0.0,0.3723040259881039,,chain_transmission_severity_recent [no chain data available],6,False,False,True
-MAR,Morocco,Morocco,-7.1,-7.7,True,5,high,0.0170480120030007,14,0.0,0.0,0.0681920480120029,,chain_transmission_severity_recent [no chain data available],9,False,False,True
-OMN,Oman,Oman,-6.4,-19.3,False,6,high,0.2706829108860749,6,0.2871040564575733,0.1999999999999999,0.3302995447435463,,chain_transmission_severity_recent [no chain data available],0,True,False,False
-BHR,Bahrain,Bahrain,-6.1,-16.7,False,7,high,0.4867722918140924,2,0.3246248955913852,0.7833333333333333,0.3998289333047788,,chain_transmission_severity_recent [no chain data available],5,False,True,False
-ARE,UAE,United Arab Emirates,-6.1,-11.2,False,8,high,0.0573167679961536,12,0.0129133089412553,0.0,0.2066687813374177,,chain_transmission_severity_recent [no chain data available],4,False,False,False
-DZA,Algeria,Algeria,-5.5,-16.9,False,9,high,0.4298732604029335,3,0.5247360376383822,0.3666666666666667,0.3428716424112319,,chain_transmission_severity_recent [no chain data available],6,False,True,False
-SAU,Saudi Arabia,Saudi Arabia,-4.1,-11.4,False,10,high,0.1664864557323087,8,0.1979920635147699,0.0,0.3194597117783875,,chain_transmission_severity_recent [no chain data available],2,True,False,False
-QAT,Qatar,Qatar,-3.6,-5.5,False,11,high,0.0570932596899421,13,0.0,0.0,0.2283730387597687,,chain_transmission_severity_recent [no chain data available],2,True,False,False
-JOR,Jordan,Jordan,-1.6,-8.3,True,12,high,0.1088617520355928,9,0.0,0.0,0.4354470081423712,,chain_transmission_severity_recent [no chain data available],3,True,False,False
-IRN,Iran,Iran,-1.5,-5.5,True,13,low,0.6039398393161147,1,0.5064566544706277,0.9777777777777776,0.3072379897186386,,chain_transmission_severity_recent [no chain data available],12,False,True,False
-EGY,Egypt,Egypt,3.6,-8.0,True,14,high,0.0794437638121481,11,0.0,0.0,0.3177750552485924,,chain_transmission_severity_recent [no chain data available],3,True,False,False
+IRQ,Iraq,Iraq,-11.3,-18.8,False,3,medium,0.3558726362101017,4,0.5064566544706277,0.0,0.5371913995168085,,chain_transmission_severity_recent [no chain data available],1,True,True,True
+KWT,Kuwait,Kuwait,-8.9,-33.0,False,4,high,0.0924841176095294,10,0.0,0.0,0.3699364704381176,,chain_transmission_severity_recent [no chain data available],6,False,False,True
+MAR,Morocco,Morocco,-7.1,-7.7,True,5,high,0.0200628323439721,14,0.0,0.0,0.0802513293758885,,chain_transmission_severity_recent [no chain data available],9,False,False,True
+OMN,Oman,Oman,-6.4,-19.3,False,6,high,0.2694594117023069,6,0.2871040564575733,0.1999999999999999,0.3254055480084745,,chain_transmission_severity_recent [no chain data available],0,True,False,False
+BHR,Bahrain,Bahrain,-6.1,-16.7,False,7,high,0.4885340059384083,2,0.3246248955913852,0.7833333333333333,0.4068757898020425,,chain_transmission_severity_recent [no chain data available],5,False,True,False
+ARE,UAE,United Arab Emirates,-6.1,-11.2,False,8,high,0.0572671652100677,12,0.0129133089412553,0.0,0.206470370193074,,chain_transmission_severity_recent [no chain data available],4,False,False,False
+DZA,Algeria,Algeria,-5.5,-16.9,False,9,high,0.4327251888176689,3,0.5247360376383822,0.3666666666666667,0.3542793560701738,,chain_transmission_severity_recent [no chain data available],6,False,True,False
+SAU,Saudi Arabia,Saudi Arabia,-4.1,-11.4,False,10,high,0.1651431005933301,8,0.1979920635147699,0.0,0.3140862912224729,,chain_transmission_severity_recent [no chain data available],2,True,False,False
+QAT,Qatar,Qatar,-3.6,-5.5,False,11,high,0.0549631488273799,13,0.0,0.0,0.2198525953095197,,chain_transmission_severity_recent [no chain data available],2,True,False,False
+JOR,Jordan,Jordan,-1.6,-8.3,True,12,high,0.1076361375930793,9,0.0,0.0,0.4305445503723175,,chain_transmission_severity_recent [no chain data available],3,True,False,False
+IRN,Iran,Iran,-1.5,-5.5,True,13,low,0.5967533613406075,1,0.5064566544706277,0.9777777777777776,0.2784920778166099,,chain_transmission_severity_recent [no chain data available],12,False,True,False
+EGY,Egypt,Egypt,3.6,-8.0,True,14,high,0.0853477005984132,11,0.0,0.0,0.3413908023936531,,chain_transmission_severity_recent [no chain data available],3,True,False,False

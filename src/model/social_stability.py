@@ -76,6 +76,7 @@ log = logging.getLogger(__name__)
 # ── Paths ───────────────────────────────────────────────────────────────────────
 
 PANEL_PATH      = Path("data/processed/world_bank_panel.csv")
+WEO_PANEL_PATH  = Path("data/processed/imf_weo_panel.csv")
 FOOD_PATH       = Path("data/reference/food_security.csv")
 BREAKEVEN_PATH  = Path("data/reference/fiscal_breakeven.csv")
 FX_CHANNEL_PATH = Path("data/reference/fx_channel.csv")
@@ -199,21 +200,27 @@ def load_food_security(path: Path = FOOD_PATH) -> pd.DataFrame:
 
 # ── Inflation volatility derivation ─────────────────────────────────────────────
 
-def derive_inflation_vol(panel_path: Path = PANEL_PATH) -> pd.DataFrame:
-    """Compute per-country inflation volatility from the WB panel.
+def derive_inflation_vol(
+    panel_path: Path = PANEL_PATH,
+    weo_path:   Path = WEO_PANEL_PATH,
+) -> pd.DataFrame:
+    """Compute per-country inflation volatility.
 
-    Inflation volatility = std(FP_CPI_TOTL_ZG) across all non-null
-    annual observations.  Requires at least 2 years; returns NaN otherwise.
+    Primary source: IMF WEO PCPIPCH (2020-2025) from imf_weo_panel.csv.
+    Fallback per country: World Bank FP_CPI_TOTL_ZG (2000-2024).
 
-    Consistent with the OCVI model's ``inflation_vol`` component —
-    same panel, same column, same formula.
+    A country uses the WEO source when at least 2 PCPIPCH observations are
+    available for 2020-2025.  Otherwise the WB panel std (2000-2024) is used.
+    The ``inflation_source`` column records which source was applied.
 
     Args:
-        panel_path: Path to ``data/processed/world_bank_panel.csv``.
+        panel_path: Path to ``world_bank_panel.csv`` (WB fallback source).
+        weo_path:   Path to ``imf_weo_panel.csv`` (primary WEO source).
 
     Returns:
         DataFrame with columns:
-        ``country_code_a3``, ``inflation_volatility``, ``yrs_inflation``.
+        ``country_code_a3``, ``inflation_volatility``,
+        ``yrs_inflation``, ``inflation_source``.
 
     Raises:
         FileNotFoundError: If *panel_path* does not exist.
@@ -221,19 +228,59 @@ def derive_inflation_vol(panel_path: Path = PANEL_PATH) -> pd.DataFrame:
     if not panel_path.exists():
         raise FileNotFoundError(f"Panel CSV not found: {panel_path}")
 
-    panel = pd.read_csv(panel_path, usecols=["country_code_a3", "FP_CPI_TOTL_ZG"])
+    # --- Load WB panel as per-country fallback ---
+    wb_raw = pd.read_csv(panel_path, usecols=["country_code_a3", "FP_CPI_TOTL_ZG"])
+    wb_by_country: dict[str, pd.Series] = {
+        code: grp["FP_CPI_TOTL_ZG"].dropna()
+        for code, grp in wb_raw.groupby("country_code_a3")
+    }
 
+    # --- Load WEO PCPIPCH as per-country primary (optional) ---
+    weo_by_country: dict[str, pd.Series] = {}
+    if Path(weo_path).exists():
+        try:
+            weo_raw = pd.read_csv(weo_path)
+            required = {"indicator", "year", "country_code_a3", "value"}
+            if not weo_raw.empty and required.issubset(weo_raw.columns):
+                pcpi = weo_raw[
+                    (weo_raw["indicator"] == "PCPIPCH") &
+                    (weo_raw["year"].between(2020, 2025))
+                ]
+                for code, grp in pcpi.groupby("country_code_a3"):
+                    vals = pd.to_numeric(grp["value"], errors="coerce").dropna()
+                    if len(vals) >= 2:
+                        weo_by_country[code] = vals
+            log.info("WEO PCPIPCH loaded: %d countries with ≥2 obs (2020-2025).", len(weo_by_country))
+        except Exception as exc:
+            log.warning("Failed to load WEO panel for inflation vol: %s — using WB fallback.", exc)
+    else:
+        log.info("WEO panel not found at %s — using WB panel for all countries.", weo_path)
+
+    # --- Merge: WEO primary, WB fallback per country ---
     records = []
-    for code, grp in panel.groupby("country_code_a3"):
-        cpi = grp["FP_CPI_TOTL_ZG"].dropna()
+    all_codes = sorted(set(wb_by_country) | set(weo_by_country))
+    for code in all_codes:
+        if code in weo_by_country:
+            cpi    = weo_by_country[code]
+            source = "IMF_WEO_2026"
+        else:
+            cpi    = wb_by_country.get(code, pd.Series(dtype=float))
+            source = "WB_panel_2024"
         records.append({
             "country_code_a3":      code,
             "inflation_volatility": cpi.std() if len(cpi) >= 2 else float("nan"),
             "yrs_inflation":        len(cpi),
+            "inflation_source":     source,
         })
 
     df = pd.DataFrame(records)
-    log.info("Inflation volatility derived for %d countries from panel.", len(df))
+    n_weo = int((df["inflation_source"] == "IMF_WEO_2026").sum())
+    n_wb  = int((df["inflation_source"] == "WB_panel_2024").sum())
+    log.info(
+        "Inflation volatility derived: %d countries "
+        "(WEO primary: %d, WB fallback: %d).",
+        len(df), n_weo, n_wb,
+    )
     return df
 
 
@@ -608,26 +655,28 @@ def run_social_stability(
     breakeven_path: Path = BREAKEVEN_PATH,
     panel_path:     Path = PANEL_PATH,
     fx_path:        Path = FX_CHANNEL_PATH,
+    weo_path:       Path = WEO_PANEL_PATH,
 ) -> dict:
     """End-to-end social stability pipeline.
 
     Args:
         food_path:      Path to ``food_security.csv``.
         breakeven_path: Path to ``fiscal_breakeven.csv``.
-        panel_path:     Path to ``world_bank_panel.csv``.
+        panel_path:     Path to ``world_bank_panel.csv`` (WB fallback for inflation).
         fx_path:        Path to ``fx_channel.csv``.
+        weo_path:       Path to ``imf_weo_panel.csv`` (primary inflation source).
 
     Returns:
         dict with keys:
             ``'brent_live'``      : float
             ``'stress_table'``    : pd.DataFrame
-            ``'stability_table'`` : pd.DataFrame (includes fx_adjusted columns)
+            ``'stability_table'`` : pd.DataFrame (includes fx_adjusted and inflation_source columns)
     """
     breakeven_df  = load_breakeven(breakeven_path)
     brent_live    = fetch_brent_live()
     ytd_prices    = fetch_brent_ytd()
     stress_table  = build_stress_table(breakeven_df, brent_live, ytd_prices)
-    inflation_df  = derive_inflation_vol(panel_path)
+    inflation_df  = derive_inflation_vol(panel_path, weo_path)
     food_df       = load_food_security(food_path)
     fx_df         = load_fx_channel(fx_path)
     stability_tbl = build_stability_table(food_df, stress_table, inflation_df)
@@ -638,3 +687,31 @@ def run_social_stability(
         "stress_table":    stress_table,
         "stability_table": stability_tbl,
     }
+
+
+if __name__ == "__main__":
+    import sys as _sys
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
+
+    result = run_social_stability()
+    table  = result["stability_table"]
+
+    print(f"\nsocial_stability_table: {len(table)} rows, {len(table.columns)} columns")
+    print(f"columns: {list(table.columns)}\n")
+
+    assert "inflation_source" in table.columns, (
+        "FAIL: inflation_source column missing from stability_table"
+    )
+    print("PASS: inflation_source column present")
+    print(table[["country_code_a3", "social_stability_risk", "inflation_source"]].to_string(index=False))
+
+    out_path = Path("outputs/tables/social_stability.csv")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    table.to_csv(out_path, index=False)
+    print(f"\nSaved: {out_path}")
+    _sys.exit(0)

@@ -48,6 +48,7 @@ log = logging.getLogger(__name__)
 # ── Configuration ──────────────────────────────────────────────────────────────
 
 BREAKEVEN_PATH = Path("data/reference/fiscal_breakeven.csv")
+WEO_PANEL_PATH = Path("data/processed/imf_weo_panel.csv")
 
 # USD above breakeven before a country is classified Green (not merely Amber).
 _AMBER_BUFFER = 15.0
@@ -190,30 +191,40 @@ def compute_stress_days(
 # ── Stress table assembly ──────────────────────────────────────────────────────
 
 def build_stress_table(
-    breakeven_df: pd.DataFrame,
-    brent_live: float,
-    ytd_prices: pd.DataFrame,
+    breakeven_df:   pd.DataFrame,
+    brent_live:     float,
+    ytd_prices:     pd.DataFrame,
+    weo_panel_path: Path = WEO_PANEL_PATH,
 ) -> pd.DataFrame:
     """Assemble the per-country fiscal stress metrics table.
 
     For each country the following columns are added to the breakeven
     reference data:
 
-        brent_live_usd      Current Brent close (USD/bbl)
-        price_gap_usd       brent_live − fiscal_breakeven_usd
-                            (positive = above breakeven; negative = below)
-        stress_status       'Red' / 'Amber' / 'Green' / 'Gray'
-        stress_days_ytd     Trading days this year where Close < breakeven
-        stress_share_ytd    stress_days_ytd / total_trading_days_ytd
-        total_trading_days  Total YTD trading days in the Brent history
+        brent_live_usd         Current Brent close (USD/bbl)
+        price_gap_usd          brent_live − fiscal_breakeven_usd
+                               (positive = above breakeven; negative = below)
+        stress_status          'Red' / 'Amber' / 'Green' / 'Gray'
+        stress_days_ytd        Trading days this year where Close < breakeven
+        stress_share_ytd       stress_days_ytd / total_trading_days_ytd
+        total_trading_days     Total YTD trading days in the Brent history
+        weo_fiscal_balance_2025  IMF WEO GGXCNL_NGDP for 2025 (% GDP);
+                               informational only — does NOT affect classification
 
     Net-importer countries (Gray) receive NaN for price_gap_usd,
     stress_days_ytd, and stress_share_ytd to signal N/A rather than zero.
 
+    The stress classification (Red/Amber/Green/Gray) uses only
+    ``fiscal_breakeven_usd``, ``brent_live``, and ``country_type``.
+    ``weo_fiscal_balance_2025`` is appended purely for dashboard display
+    and is never referenced by :func:`classify_stress`.
+
     Args:
-        breakeven_df: Output of :func:`load_breakeven`.
-        brent_live:   Current Brent price from :func:`fetch_brent_live`.
-        ytd_prices:   YTD daily Brent from :func:`fetch_brent_ytd`.
+        breakeven_df:   Output of :func:`load_breakeven`.
+        brent_live:     Current Brent price from :func:`fetch_brent_live`.
+        ytd_prices:     YTD daily Brent from :func:`fetch_brent_ytd`.
+        weo_panel_path: Path to ``imf_weo_panel.csv``; if absent, the
+                        ``weo_fiscal_balance_2025`` column is all NaN.
 
     Returns:
         DataFrame sorted by country_type then price_gap_usd (ascending),
@@ -223,7 +234,7 @@ def build_stress_table(
     df["brent_live_usd"] = brent_live
     df["price_gap_usd"]  = brent_live - df["fiscal_breakeven_usd"]
 
-    # Classify stress status for every country
+    # Classify stress status — uses ONLY breakeven, brent, country_type
     df["stress_status"] = df.apply(
         lambda r: classify_stress(
             brent_live,
@@ -254,10 +265,38 @@ def build_stress_table(
     df.loc[gray_mask, "stress_share_ytd"] = float("nan")
 
     # Nullify YTD stress metrics when the Brent history fetch returned no data.
-    # Leaving stress_days_ytd=0 would imply "no stress days" rather than "no data".
     no_ytd_mask = (df["total_trading_days"] == 0) & (df["stress_status"] != "Gray")
     df.loc[no_ytd_mask, "stress_days_ytd"]  = pd.NA
     df.loc[no_ytd_mask, "stress_share_ytd"] = float("nan")
+
+    # --- Informational: WEO fiscal balance 2025 (DOES NOT affect classification) ---
+    weo_panel_path = Path(weo_panel_path)
+    if weo_panel_path.exists():
+        try:
+            weo = pd.read_csv(weo_panel_path)
+            required = {"indicator", "year", "country_code_a3", "value"}
+            if not weo.empty and required.issubset(weo.columns):
+                fb_2025 = (
+                    weo[
+                        (weo["indicator"] == "GGXCNL_NGDP") &
+                        (weo["year"] == 2025)
+                    ][["country_code_a3", "value"]]
+                    .rename(columns={"value": "weo_fiscal_balance_2025"})
+                )
+                df = df.merge(fb_2025, on="country_code_a3", how="left")
+                n_wb = int(df["weo_fiscal_balance_2025"].notna().sum())
+                log.info("WEO fiscal balance 2025 merged for %d countries.", n_wb)
+            else:
+                df["weo_fiscal_balance_2025"] = float("nan")
+        except Exception as exc:
+            log.warning("Failed to load WEO fiscal balance 2025: %s", exc)
+            df["weo_fiscal_balance_2025"] = float("nan")
+    else:
+        log.info(
+            "WEO panel not found at %s — weo_fiscal_balance_2025 will be NaN.",
+            weo_panel_path,
+        )
+        df["weo_fiscal_balance_2025"] = float("nan")
 
     # Sort: exporters first, within each group worst gap first
     _type_order = {"exporter": 0, "mixed_importer": 1, "net_importer": 2}
@@ -284,6 +323,7 @@ def build_stress_table(
 
 def run_fiscal_stress(
     breakeven_path: Path = BREAKEVEN_PATH,
+    weo_panel_path: Path = WEO_PANEL_PATH,
 ) -> dict:
     """End-to-end fiscal breakeven stress pipeline.
 
@@ -292,6 +332,7 @@ def run_fiscal_stress(
 
     Args:
         breakeven_path: Path to ``fiscal_breakeven.csv``.
+        weo_panel_path: Path to ``imf_weo_panel.csv`` (informational column only).
 
     Returns:
         dict with keys:
@@ -307,10 +348,37 @@ def run_fiscal_stress(
     breakeven_df = load_breakeven(breakeven_path)
     brent_live   = fetch_brent_live()
     ytd_prices   = fetch_brent_ytd()
-    stress_table = build_stress_table(breakeven_df, brent_live, ytd_prices)
+    stress_table = build_stress_table(
+        breakeven_df, brent_live, ytd_prices,
+        weo_panel_path=Path(weo_panel_path),
+    )
 
     return {
         "brent_live":   brent_live,
         "ytd_prices":   ytd_prices,
         "stress_table": stress_table,
     }
+
+
+if __name__ == "__main__":
+    import sys as _sys
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
+
+    result = run_fiscal_stress()
+    table  = result["stress_table"]
+
+    print(f"\nfiscal_stress_table: {len(table)} rows, columns: {list(table.columns)}\n")
+    print(table[["country_label", "stress_status", "price_gap_usd",
+                 "weo_fiscal_balance_2025"]].to_string(index=False))
+
+    # Confirm: classify_stress uses ONLY breakeven, brent, country_type
+    import inspect as _inspect
+    src = _inspect.getsource(classify_stress)
+    assert "weo" not in src.lower(), "FAIL: classify_stress references WEO data"
+    print("\nPASS: classify_stress is breakeven-only — confirmed")
+    _sys.exit(0)
