@@ -23,6 +23,15 @@ The project answers this by combining four distinct lenses:
 
 ---
 
+## Live Dashboard
+🔗 [Open the live app](https://middle-east-oil-chain-analysis-jvztbvnorw2ijz4cvhmj4x.streamlit.app)
+
+The dashboard updates automatically with the live
+Brent crude price (via Yahoo Finance BZ=F, cached hourly).
+No installation required.
+
+---
+
 ## Right Now Risk formula
 
 ```
@@ -276,21 +285,20 @@ Run the entire pipeline from scratch with a single command:
 python reproduce_all.py
 ```
 
-This executes 11 steps in dependency order, times each one, and prints a
+This executes 10 steps in dependency order, times each one, and prints a
 PASS / FAIL summary.  Individual steps can also be run independently:
 
 ```bash
-python -m src.data.fetch_world_bank        # Step 1 — fetch WB panel
-python -m src.data.clean_world_bank        # Step 2 — clean panel
-python -m src.data.validate_reference --strict  # Step 3 — integrity check
-python -m src.model.vulnerability_index    # Step 4 — OCVI
-python -m src.model.chain_transmission     # Step 5 — chain severity
-python -m src.model.right_now_risk         # Step 6 — composite score
-python -m src.model.backtest               # Step 7 — backtest
-python -m src.model.historical_index       # Step 8 — 2015–2024 panel
-python -m src.model.sensitivity            # Step 9 — OAT sensitivity
-python -m src.model.retrospective          # Step 10 — 2020 retrospective
-python -m src.model.cross_validation       # Step 11 — IMF/WB validation
+python -m src.data.fetch_world_bank              # Step  1 — fetch WB panel
+python -m src.data.clean_world_bank              # Step  2 — clean panel
+python -m src.model.vulnerability_index          # Step  3 — OCVI
+python -m src.model.chain_transmission --fit-ols # Step  4 — chain severity (fit empirical coefficients)
+python -m src.model.historical_index             # Step  5 — 2015–2024 panel
+python -m src.model.right_now_risk               # Step  6 — composite score
+python -m src.model.retrospective                # Step  7 — 2020 retrospective
+python -m src.model.cross_validation             # Step  8 — IMF/WB validation
+python -m src.model.sensitivity                  # Step  9 — OAT sensitivity
+python -m src.data.validate_reference --strict   # Step 10 — integrity check
 ```
 
 ---
@@ -306,15 +314,3 @@ Requirements: `streamlit`, `pandas`, `plotly`, `yfinance`, `numpy`, `pyyaml`.
 
 ---
 
-## Screenshots
-
-> _Add dashboard screenshots here once deployed._
-
-| Tab | Description |
-|-----|-------------|
-| OCVI Rankings | Country vulnerability ranking with radar chart |
-| Oil Rents % GDP | Time-series of oil revenue dependency |
-| Price Shock | First-order fiscal exposure to a price change |
-| GDP Growth vs Inflation | Macro scatter with bubble size = GDP |
-| Chain Transmission | Severity heatmap and stage breakdown |
-| Fiscal Stress | Right Now Risk composite + component detail |
