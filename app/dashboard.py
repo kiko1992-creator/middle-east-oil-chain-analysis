@@ -2212,7 +2212,7 @@ with tab_retro:
                     return "background-color: #fff3cd"
                 return "background-color: #f8d7da"
 
-            _rank_styled = _rank_tbl.style.applymap(
+            _rank_styled = _rank_tbl.style.map(
                 _rank_err_color, subset=["Rank Error"]
             )
             st.dataframe(_rank_styled, hide_index=True, use_container_width=True)
