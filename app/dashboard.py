@@ -42,6 +42,8 @@ HIST_PATH      = _ROOT / "outputs" / "tables" / "historical_risk_index.csv"
 SENS_PATH      = _ROOT / "outputs" / "tables" / "sensitivity_results.csv"
 RETRO_PATH     = _ROOT / "outputs" / "tables" / "retrospective_2020.csv"
 CV_PATH        = _ROOT / "outputs" / "tables" / "cross_validation.csv"
+OUTCOMES_PATH  = _ROOT / "data" / "reference" / "imf_weo_2020_outcomes.csv"
+BENCHMARKS_PATH = _ROOT / "data" / "reference" / "imf_wb_benchmarks.csv"
 
 # Consistent 14-colour palette (one per country)
 _PALETTE = px.colors.qualitative.D3 + px.colors.qualitative.Plotly
@@ -1737,7 +1739,8 @@ with tab_hist:
                 .rename("Rank Today")
             )
             _rank_tbl = _rank_tbl.merge(
-                _r_today.reset_index(), on="Country", how="left"
+                _r_today.reset_index().rename(columns={"country_label": "Country"}),
+                on="Country", how="left"
             )
             _rank_tbl["Shift vs Today"] = (
                 _rank_tbl[f"Rank {_h_yr_min}"] - _rank_tbl["Rank Today"]
@@ -2059,7 +2062,7 @@ Base component scores come from the live Right Now Risk pipeline
 with tab_retro:
     st.header("2020 Oil Crash Retrospective")
     st.caption(
-        "How well did the pre-crisis (2019) model rankings predict actual 2020 economic outcomes?  "
+        "How well did the pre-crisis (2019) model score predict actual 2020 fiscal outcomes?  "
         "Source: IMF World Economic Outlook April 2021 · World Bank Global Economic Prospects Jan 2021."
     )
 
@@ -2076,123 +2079,195 @@ with tab_retro:
         try:
             from src.model.retrospective import summarize_retrospective as _sum_retro
             _retro_summary = _sum_retro(_retro_df)
+            _r_val   = _retro_summary["spearman_r"]
+            _r_label = (
+                "Strong" if abs(_r_val) > 0.6 else
+                "Moderate" if abs(_r_val) >= 0.4 else
+                "Weak"
+            )
+            _top5_tp = int(
+                (_retro_df["model_predicted_top5"] & _retro_df["actually_top5"]).sum()
+            ) if "model_predicted_top5" in _retro_df.columns and "actually_top5" in _retro_df.columns else 0
+
             rk1, rk2, rk3, rk4 = st.columns(4)
-            rk1.metric("Spearman ρ (pre-crisis rank vs outcome)",
-                       f"{_retro_summary['spearman_r']:.3f}",
-                       help="Rank correlation between 2019 model rank and 2020 GDP severity rank. "
-                            "1.0 = perfect prediction.")
-            rk2.metric("Hit rate (±3 rank positions)",
-                       f"{_retro_summary['hit_rate']:.0%}",
-                       help=f"% of countries where |model_rank - outcome_rank| ≤ {_retro_summary['hit_threshold']}")
-            rk3.metric("Mean absolute rank error",
-                       f"{_retro_summary['rank_error_mean']:.1f}",
-                       help="Average |model_rank_2019 − outcome_severity_rank_2020|")
-            rk4.metric("Top-5 precision / recall",
-                       f"{_retro_summary['top5_precision']:.0%} / {_retro_summary['top5_recall']:.0%}",
-                       help="Among countries model placed in top-5 highest risk, how many were actually "
-                            "in the worst-5 outcomes (precision); and of the actual worst-5, how many "
-                            "did the model flag (recall).")
+            rk1.metric(
+                "Spearman ρ (model score vs outcome)",
+                f"{_r_val:.3f}  [{_r_label}]",
+                help="Rank correlation between 2019 model score and 2020 fiscal deficit rank. "
+                     ">0.6 = Strong · 0.4–0.6 = Moderate · <0.4 = Weak",
+            )
+            rk2.metric(
+                "p-value",
+                f"{_retro_summary['spearman_p']:.4f}",
+                help="Two-tailed p-value for the Spearman ρ (Fisher z-transform approximation). "
+                     "<0.05 = statistically significant.",
+            )
+            rk3.metric(
+                "Correct top-5 predictions",
+                f"{_top5_tp} / 5",
+                help="Countries the model placed in its top-5 highest risk that were also in "
+                     "the 5 worst actual 2020 outcomes.",
+            )
+            rk4.metric(
+                "Mean absolute rank error",
+                f"{_retro_summary['rank_error_mean']:.1f}",
+                help="Average |model_rank_2019 − outcome_severity_rank_2020| across all 14 countries.",
+            )
         except Exception:
-            pass
+            _retro_summary = {}
 
         st.markdown("---")
 
-        # ── Scatter: model rank 2019 vs outcome severity rank 2020 ────────────
-        st.subheader("Pre-Crisis Model Rank vs 2020 Outcome Severity")
+        # ── Scatter: 2019 model score vs 2020 fiscal deficit ──────────────────
+        st.subheader("2019 Model Score vs 2020 Fiscal Deficit")
         st.caption(
-            "Each bubble is a country.  X-axis = model's 2019 Right Now Risk rank "
-            "(1 = most at-risk predicted).  Y-axis = actual 2020 GDP severity rank "
-            "(1 = worst outcome, e.g. Libya −59.7%).  "
-            "Points on the diagonal = perfect prediction."
+            "X-axis = model's 2019 Right Now Risk composite score (higher = more at risk).  "
+            "Y-axis = actual 2020 fiscal balance (% GDP) — axis inverted so larger deficits "
+            "appear at the top.  OLS regression line shows the linear fit."
         )
 
-        _r_have = "model_rank_precris" in _retro_df.columns and "outcome_severity_rank" in _retro_df.columns
-        if _r_have:
-            _label_col = "country_label" if "country_label" in _retro_df.columns else "country_code_a3"
+        _s_have = (
+            "right_now_risk_score" in _retro_df.columns
+            and "fiscal_balance_2020_pct_gdp" in _retro_df.columns
+        )
+        if _s_have:
+            _sdf = _retro_df.dropna(subset=["right_now_risk_score", "fiscal_balance_2020_pct_gdp"]).copy()
+            _label_col = "country_label" if "country_label" in _sdf.columns else "country_code_a3"
+
+            _xs = _sdf["right_now_risk_score"].values
+            _ys = _sdf["fiscal_balance_2020_pct_gdp"].values
+            _m_ols, _b_ols = np.polyfit(_xs, _ys, 1)
+            _x_line = np.array([float(_xs.min()), float(_xs.max())])
+            _y_line = _m_ols * _x_line + _b_ols
+
             fig_scatter = go.Figure()
             fig_scatter.add_trace(go.Scatter(
-                x=_retro_df["model_rank_precris"],
-                y=_retro_df["outcome_severity_rank"],
+                x=_sdf["right_now_risk_score"],
+                y=_sdf["fiscal_balance_2020_pct_gdp"],
                 mode="markers+text",
-                text=_retro_df[_label_col],
+                text=_sdf[_label_col],
                 textposition="top center",
                 textfont=dict(size=10),
                 marker=dict(
                     size=14,
-                    color=_retro_df["rank_error"] if "rank_error" in _retro_df.columns else "#1f77b4",
+                    color=_sdf["rank_error"] if "rank_error" in _sdf.columns else "#1f77b4",
                     colorscale="RdYlGn_r",
                     colorbar=dict(title="Rank error", thickness=12),
                     showscale=True,
                 ),
                 hovertemplate=(
                     "<b>%{text}</b><br>"
-                    "Model rank 2019: %{x}<br>"
-                    "Outcome rank 2020: %{y}<br>"
+                    "Model score 2019: %{x:.3f}<br>"
+                    "Fiscal balance 2020: %{y:.1f}% GDP<br>"
                     "<extra></extra>"
                 ),
+                name="Countries",
             ))
-            # Perfect prediction diagonal
-            _max_r = max(
-                _retro_df["model_rank_precris"].max(),
-                _retro_df["outcome_severity_rank"].max(),
-            ) + 0.5
             fig_scatter.add_trace(go.Scatter(
-                x=[0.5, _max_r], y=[0.5, _max_r],
+                x=_x_line.tolist(),
+                y=_y_line.tolist(),
                 mode="lines",
-                line=dict(dash="dash", color="grey", width=1),
-                showlegend=False,
+                line=dict(color="#1f77b4", width=2, dash="dot"),
+                name="OLS fit",
                 hoverinfo="skip",
             ))
             fig_scatter.update_layout(
                 height=480,
-                xaxis=dict(title="Model rank 2019 (1 = highest predicted risk)", dtick=1),
-                yaxis=dict(title="Actual 2020 outcome severity rank (1 = worst)", dtick=1),
-                margin=dict(l=10, r=10, t=10, b=60),
+                xaxis=dict(title="Model Right Now Risk score 2019", range=[0, 0.75]),
+                yaxis=dict(
+                    title="Fiscal balance 2020 (% GDP)",
+                    autorange="reversed",
+                ),
+                legend=dict(orientation="h", y=-0.15),
+                margin=dict(l=10, r=10, t=10, b=70),
             )
             st.plotly_chart(fig_scatter, use_container_width=True)
 
         st.markdown("---")
 
-        # ── Data table ─────────────────────────────────────────────────────────
-        with st.expander("Full retrospective data table"):
-            _retro_show = {
-                "country_label":           "Country",
-                "outcome_severity_rank":   "Outcome Rank 2020",
-                "gdp_growth_2020_pct":     "GDP Growth 2020 (%)",
-                "fiscal_balance_2020_pct_gdp": "Fiscal Balance 2020 (% GDP)",
-                "imf_emergency_program":   "IMF Emergency Program",
-                "model_rank_precris":      "Model Rank 2019",
-                "right_now_risk_score":    "Model Score 2019",
-                "rank_error":              "Rank Error",
-                "hit":                     "Hit (±3)",
-                "confidence":              "Confidence",
+        # ── Rank comparison table with coloured rank_error ────────────────────
+        st.subheader("Rank Comparison — Model 2019 vs Outcome 2020")
+
+        if "model_rank_precris" in _retro_df.columns and "outcome_severity_rank" in _retro_df.columns:
+            _rank_cols = {
+                "country_label":        "Country",
+                "model_rank_precris":   "Model Rank 2019",
+                "outcome_severity_rank":"Outcome Rank 2020",
+                "rank_error":           "Rank Error",
             }
-            _retro_show = {k: v for k, v in _retro_show.items() if k in _retro_df.columns}
-            _retro_disp = (
-                _retro_df[list(_retro_show.keys())]
-                .rename(columns=_retro_show)
-                .round({"GDP Growth 2020 (%)": 1, "Model Score 2019": 3, "Rank Error": 1})
+            _rank_cols = {k: v for k, v in _rank_cols.items() if k in _retro_df.columns}
+            _rank_tbl = (
+                _retro_df[list(_rank_cols.keys())]
+                .rename(columns=_rank_cols)
+                .sort_values("Outcome Rank 2020")
+                .reset_index(drop=True)
             )
-            st.dataframe(_retro_disp, hide_index=True, use_container_width=True)
-            make_csv_download_button(_retro_disp, "retrospective_2020.csv", "Download as CSV")
+
+            def _rank_err_color(val):
+                if pd.isna(val):
+                    return ""
+                if val <= 2:
+                    return "background-color: #c3e6c3"
+                if val <= 4:
+                    return "background-color: #fff3cd"
+                return "background-color: #f8d7da"
+
+            _rank_styled = _rank_tbl.style.applymap(
+                _rank_err_color, subset=["Rank Error"]
+            )
+            st.dataframe(_rank_styled, hide_index=True, use_container_width=True)
+            make_csv_download_button(_rank_tbl, "retrospective_rank_comparison.csv",
+                                     "Download rank comparison as CSV")
+
+        st.markdown("---")
+
+        # ── Structural misses expander ─────────────────────────────────────────
+        with st.expander("Structural misses (|rank error| ≥ 3)"):
+            if "rank_error" in _retro_df.columns:
+                _miss_df = _retro_df[_retro_df["rank_error"] >= 3].copy()
+                if _miss_df.empty:
+                    st.info("No structural misses found — all rank errors < 3.")
+                else:
+                    _outcomes_raw = pd.read_csv(OUTCOMES_PATH) if OUTCOMES_PATH.exists() else pd.DataFrame()
+                    if not _outcomes_raw.empty and "notes" in _outcomes_raw.columns:
+                        _miss_df = _miss_df.merge(
+                            _outcomes_raw[["country_code_a3", "notes"]],
+                            on="country_code_a3", how="left",
+                        )
+                    _miss_cols = {
+                        "country_label":   "Country",
+                        "model_rank_precris": "Model Rank 2019",
+                        "outcome_severity_rank": "Outcome Rank 2020",
+                        "rank_error":      "Rank Error",
+                        "notes":           "Notes",
+                    }
+                    _miss_cols = {k: v for k, v in _miss_cols.items() if k in _miss_df.columns}
+                    st.dataframe(
+                        _miss_df[list(_miss_cols.keys())].rename(columns=_miss_cols)
+                        .sort_values("Rank Error", ascending=False).reset_index(drop=True),
+                        hide_index=True, use_container_width=True,
+                    )
+            else:
+                st.info("rank_error column not present in retrospective data.")
 
         # ── Methodology ────────────────────────────────────────────────────────
         with st.expander("Methodology — 2020 Retrospective"):
             st.markdown("""
 **Pre-crisis snapshot year:** 2019 (last full year before the crisis).
 
-**Outcome measure:** GDP growth rate (%) from IMF WEO April 2021 Table A7.
-Countries ranked 1 (worst, e.g. Libya −59.7%) to 14 (best, Egypt +3.6%).
+**Scatter axes:** X = model Right Now Risk composite score (2019);
+Y = actual fiscal balance (% GDP) from IMF WEO April 2021 — axis inverted
+so larger deficits appear at the top.  OLS regression line added.
 
-**Correlation metric:** Spearman rank correlation ρ between the model's 2019
-Right Now Risk rank and the 2020 outcome severity rank.  A perfect model would
-produce ρ = 1.0.
+**Rank comparison:** model_rank_2019 derived from right_now_risk_score
+(rank 1 = highest predicted risk); outcome_severity_rank from GDP growth
+severity (rank 1 = worst, e.g. Libya −59.7%).
 
-**Hit rate:** Proportion of countries where |model_rank_2019 − outcome_rank_2020| ≤ 3.
+**Interpretation labels:** Spearman ρ > 0.6 = Strong · 0.4–0.6 = Moderate · < 0.4 = Weak.
 
-**Important caveat:** The 2020 shock was driven partly by factors the model
+**Important caveat:** The 2020 shock included factors the model
 could not have predicted from structural data alone:
-- Libya's oil export blockade (Jan–Sep 2020) amplified an already high-risk score.
+- Libya's oil export blockade (Jan–Sep 2020) was a geopolitical event.
 - Lebanon's financial collapse pre-dated COVID and was not primarily oil-driven.
 - Morocco's drought compounded the COVID shock.
 - Kuwait's fiscal hit was severe but buffered by KIA SWF assets.
@@ -2220,113 +2295,208 @@ with tab_cv:
             "Run: `python -m src.model.cross_validation`"
         )
     else:
-        # ── KPI row ────────────────────────────────────────────────────────────
-        _cv_n_div = int(_cv_df.get("any_divergence", pd.Series([False] * len(_cv_df))).sum()) \
-            if "any_divergence" in _cv_df.columns else None
-        _cv_imf_r = _cv_df[["model_rank", "imf_fm_ordinal"]].dropna() \
+        import math as _math
+
+        def _kendall_tau_b(x: list, y: list) -> float:
+            """Kendall tau-b without scipy."""
+            n = len(x)
+            if n < 2:
+                return float("nan")
+            nc = nd = tx = ty = 0
+            for i in range(n):
+                for j in range(i + 1, n):
+                    dx = x[i] - x[j]
+                    dy = y[i] - y[j]
+                    prod = dx * dy
+                    if prod > 0:
+                        nc += 1
+                    elif prod < 0:
+                        nd += 1
+                    if dx == 0:
+                        tx += 1
+                    if dy == 0:
+                        ty += 1
+            n_pairs = n * (n - 1) / 2
+            denom = ((n_pairs - tx) * (n_pairs - ty)) ** 0.5
+            return (nc - nd) / denom if denom > 0 else float("nan")
+
+        # ── Pre-compute KPIs ───────────────────────────────────────────────────
+        _cv_imf_valid = _cv_df.dropna(subset=["model_rank", "imf_fm_ordinal"]) \
             if "model_rank" in _cv_df.columns and "imf_fm_ordinal" in _cv_df.columns \
             else pd.DataFrame()
-        _cv_wb_r  = _cv_df[["model_rank", "wb_mpo_ordinal"]].dropna() \
+        _cv_wb_valid  = _cv_df.dropna(subset=["model_rank", "wb_mpo_ordinal"]) \
             if "model_rank" in _cv_df.columns and "wb_mpo_ordinal" in _cv_df.columns \
             else pd.DataFrame()
 
-        import math as _math
-        import numpy as _np
+        _tau_imf = _kendall_tau_b(
+            _cv_imf_valid["model_rank"].tolist(),
+            _cv_imf_valid["imf_fm_ordinal"].tolist(),
+        ) if not _cv_imf_valid.empty else float("nan")
+        _tau_wb  = _kendall_tau_b(
+            _cv_wb_valid["model_rank"].tolist(),
+            _cv_wb_valid["wb_mpo_ordinal"].tolist(),
+        ) if not _cv_wb_valid.empty else float("nan")
 
-        def _sr(x, y):
+        _exact_imf_pct = float("nan")
+        if "model_tier" in _cv_df.columns and "imf_fm_risk_tier" in _cv_df.columns:
+            _exact_imf_pct = (_cv_df["model_tier"] == _cv_df["imf_fm_risk_tier"]).mean() * 100
+
+        _top5_overlap = 0
+        if "model_rank" in _cv_df.columns and "imf_fm_ordinal" in _cv_df.columns:
+            _model_top5  = set(_cv_df[_cv_df["model_rank"] <= 5]["country_code_a3"].tolist()) \
+                if "country_code_a3" in _cv_df.columns else set()
+            _imf_high    = set(_cv_df[_cv_df["imf_fm_risk_tier"] == "High"]["country_code_a3"].tolist()) \
+                if "imf_fm_risk_tier" in _cv_df.columns else set()
+            _top5_overlap = len(_model_top5 & _imf_high)
+
+        # ── KPI row ────────────────────────────────────────────────────────────
+        cv1, cv2, cv3, cv4 = st.columns(4)
+        cv1.metric(
+            "Kendall τ vs IMF FM tier",
+            f"{_tau_imf:.3f}" if not _math.isnan(_tau_imf) else "N/A",
+            help="Kendall tau-b between model rank (1=highest risk) and IMF FM tier ordinal. "
+                 "Negative = model ranks higher-risk countries in higher IMF tiers (expected).",
+        )
+        cv2.metric(
+            "Kendall τ vs WB MPO status",
+            f"{_tau_wb:.3f}" if not _math.isnan(_tau_wb) else "N/A",
+            help="Kendall tau-b between model rank and WB MPO status ordinal.",
+        )
+        cv3.metric(
+            "% Exact tier match (IMF)",
+            f"{_exact_imf_pct:.0f}%" if not _math.isnan(_exact_imf_pct) else "N/A",
+            help="Share of countries where model tertile tier exactly matches IMF FM tier (Low/Medium/High).",
+        )
+        cv4.metric(
+            "Top-5 overlap vs IMF High",
+            f"{_top5_overlap} / 5",
+            help="Countries in model's top-5 highest risk that IMF FM also classifies as High.",
+        )
+
+        st.markdown("---")
+
+        # ── Rank table with row colouring ──────────────────────────────────────
+        st.subheader("Country Tier Comparison — Model vs IMF FM vs WB MPO")
+        st.caption(
+            "Row colour: 🟢 Green = model tier agrees with both benchmarks · "
+            "🟡 Amber = 1-tier difference · 🔴 Red = 2+ tier difference."
+        )
+
+        _tier_cols = {
+            "country_label":    "Country",
+            "model_rank":       "Model Rank",
+            "model_tier":       "Model Tier",
+            "imf_fm_risk_tier": "IMF FM Tier",
+            "wb_mpo_status":    "WB Stress",
+        }
+        _tier_cols = {k: v for k, v in _tier_cols.items() if k in _cv_df.columns}
+        _tier_tbl  = (
+            _cv_df.sort_values("model_rank" if "model_rank" in _cv_df.columns else "right_now_risk_score")
+            [list(_tier_cols.keys())]
+            .rename(columns=_tier_cols)
+            .reset_index(drop=True)
+        )
+
+        def _row_color(row: pd.Series) -> list[str]:
+            dist_imf = _cv_df.loc[
+                _cv_df["model_rank"] == row.get("Model Rank", -1),
+                "imf_ordinal_distance"
+            ].values
+            dist_wb  = _cv_df.loc[
+                _cv_df["model_rank"] == row.get("Model Rank", -1),
+                "wb_ordinal_distance"
+            ].values
+            max_dist = max(
+                int(dist_imf[0]) if len(dist_imf) else 0,
+                int(dist_wb[0])  if len(dist_wb)  else 0,
+            )
+            colour = (
+                "background-color: #c3e6c3" if max_dist == 0 else
+                "background-color: #fff3cd" if max_dist == 1 else
+                "background-color: #f8d7da"
+            )
+            return [colour] * len(row)
+
+        if "imf_ordinal_distance" in _cv_df.columns and "wb_ordinal_distance" in _cv_df.columns:
+            _tier_styled = _tier_tbl.style.apply(_row_color, axis=1)
+            st.dataframe(_tier_styled, hide_index=True, use_container_width=True)
+        else:
+            st.dataframe(_tier_tbl, hide_index=True, use_container_width=True)
+        make_csv_download_button(_tier_tbl, "cross_validation_tiers.csv",
+                                 "Download tier comparison as CSV")
+
+        st.markdown("---")
+
+        # ── Divergence spotlight expander ─────────────────────────────────────
+        with st.expander("Divergence spotlight (model ≠ benchmark)"):
+            if "any_divergence" in _cv_df.columns:
+                _div_rows = _cv_df[_cv_df["any_divergence"]].copy()
+                if _div_rows.empty:
+                    st.info("No divergences found.")
+                else:
+                    _bench_raw = pd.read_csv(BENCHMARKS_PATH) \
+                        if BENCHMARKS_PATH.exists() else pd.DataFrame()
+                    if not _bench_raw.empty and "notes" in _bench_raw.columns:
+                        _div_rows = _div_rows.merge(
+                            _bench_raw[["country_code_a3", "notes"]],
+                            on="country_code_a3", how="left",
+                        )
+                    _div_show = {
+                        "country_label":        "Country",
+                        "model_tier":           "Model Tier",
+                        "imf_fm_risk_tier":     "IMF FM Tier",
+                        "wb_mpo_status":        "WB Stress",
+                        "imf_ordinal_distance": "IMF Dist",
+                        "wb_ordinal_distance":  "WB Dist",
+                        "notes":                "Structural Reason",
+                    }
+                    _div_show = {k: v for k, v in _div_show.items() if k in _div_rows.columns}
+                    st.dataframe(
+                        _div_rows[list(_div_show.keys())].rename(columns=_div_show)
+                        .reset_index(drop=True),
+                        hide_index=True, use_container_width=True,
+                    )
+            else:
+                st.info("Divergence flags not available.")
+
+        # ── Correlation summary table ─────────────────────────────────────────
+        st.subheader("Correlation Summary")
+        def _spearman_r_cv(x: list, y: list) -> float:
             rx = pd.Series(x, dtype=float).rank()
             ry = pd.Series(y, dtype=float).rank()
-            return float(_np.corrcoef(rx.values, ry.values)[0, 1]) if len(x) > 2 else float("nan")
+            return float(np.corrcoef(rx.values, ry.values)[0, 1]) if len(x) > 2 else float("nan")
 
-        _r_imf = _sr(_cv_imf_r["model_rank"].tolist(), _cv_imf_r["imf_fm_ordinal"].tolist()) \
-            if not _cv_imf_r.empty else float("nan")
-        _r_wb  = _sr(_cv_wb_r["model_rank"].tolist(),  _cv_wb_r["wb_mpo_ordinal"].tolist()) \
-            if not _cv_wb_r.empty else float("nan")
-
-        cv1, cv2, cv3, cv4 = st.columns(4)
-        cv1.metric("Spearman ρ vs IMF FM tier",
-                   f"{_r_imf:.3f}" if not _math.isnan(_r_imf) else "N/A",
-                   help="Rank correlation between model rank and IMF Fiscal Monitor risk tier ordinal. "
-                        "Positive = model agrees with IMF on relative ordering.")
-        cv2.metric("Spearman ρ vs WB MPO status",
-                   f"{_r_wb:.3f}" if not _math.isnan(_r_wb) else "N/A",
-                   help="Rank correlation between model rank and WB Macro Poverty Outlook status ordinal.")
-        cv3.metric("Countries with divergence",
-                   f"{_cv_n_div} / {len(_cv_df)}" if _cv_n_div is not None else "N/A",
-                   help="Countries where model tier disagrees with IMF FM or WB MPO classification.")
-        cv4.metric("Reference year", "2023",
-                   help="IMF Fiscal Monitor Oct 2023 · WB Macro Poverty Outlook Fall 2023")
-
-        st.markdown("---")
-
-        # ── Tier comparison table ──────────────────────────────────────────────
-        st.subheader("Tier Comparison — Model vs IMF FM vs WB MPO")
-
-        _cv_show = {
-            "country_label":      "Country",
-            "right_now_risk_score": "Model Score",
-            "model_rank":         "Model Rank",
-            "model_tier":         "Model Tier",
-            "imf_fm_risk_tier":   "IMF FM Tier",
-            "wb_mpo_status":      "WB MPO Status",
-            "imf_divergence":     "IMF Divergence",
-            "wb_divergence":      "WB Divergence",
-        }
-        _cv_show = {k: v for k, v in _cv_show.items() if k in _cv_df.columns}
-        _cv_disp = (
-            _cv_df.sort_values("model_rank" if "model_rank" in _cv_df.columns else "right_now_risk_score")
-            [list(_cv_show.keys())]
-            .rename(columns=_cv_show)
-        )
-        if "Model Score" in _cv_disp.columns:
-            _cv_disp["Model Score"] = _cv_disp["Model Score"].round(3)
-
-        st.dataframe(
-            _cv_disp,
-            hide_index=True,
-            use_container_width=True,
-            column_config={
-                "Model Score": st.column_config.ProgressColumn(
-                    "Model Score", format="%.3f", min_value=0.0, max_value=1.0,
-                ),
-                "IMF Divergence": st.column_config.CheckboxColumn(
-                    "IMF Divergence",
-                    help="Model tier ≠ IMF Fiscal Monitor tier",
-                ),
-                "WB Divergence": st.column_config.CheckboxColumn(
-                    "WB Divergence",
-                    help="Model tier ≠ WB MPO status",
-                ),
-            },
-        )
-        make_csv_download_button(_cv_disp, "cross_validation.csv", "Download comparison as CSV")
-
-        st.markdown("---")
-
-        # ── Divergence detail ─────────────────────────────────────────────────
-        if "any_divergence" in _cv_df.columns:
-            _div_rows = _cv_df[_cv_df["any_divergence"]].copy()
-            if not _div_rows.empty:
-                st.subheader(f"Divergence Detail ({len(_div_rows)} countries)")
-                st.caption(
-                    "These countries have at least one benchmark tier that differs from "
-                    "the model's tertile-based tier.  Review the notes column for context."
+        _corr_rows = []
+        for _bench_lbl, _col, _valid_sub in [
+            ("IMF FM (Oct 2023)", "imf_fm_ordinal", _cv_imf_valid),
+            ("WB MPO (Fall 2023)", "wb_mpo_ordinal", _cv_wb_valid),
+        ]:
+            if _valid_sub.empty:
+                _corr_rows.append({
+                    "Benchmark": _bench_lbl,
+                    "Spearman ρ": float("nan"),
+                    "Kendall τ": float("nan"),
+                    "n": 0,
+                })
+            else:
+                _sp = _spearman_r_cv(
+                    _valid_sub["model_rank"].tolist(),
+                    _valid_sub[_col].tolist(),
                 )
-                _div_show = {
-                    "country_label":        "Country",
-                    "model_tier":           "Model Tier",
-                    "imf_fm_risk_tier":     "IMF FM Tier",
-                    "wb_mpo_status":        "WB MPO Status",
-                    "imf_ordinal_distance": "IMF Distance",
-                    "wb_ordinal_distance":  "WB Distance",
-                    "right_now_risk_score": "Model Score",
-                }
-                _div_show = {k: v for k, v in _div_show.items() if k in _div_rows.columns}
-                st.dataframe(
-                    _div_rows[list(_div_show.keys())].rename(columns=_div_show).round(3),
-                    hide_index=True,
-                    use_container_width=True,
+                _kt = _kendall_tau_b(
+                    _valid_sub["model_rank"].tolist(),
+                    _valid_sub[_col].tolist(),
                 )
+                _corr_rows.append({
+                    "Benchmark": _bench_lbl,
+                    "Spearman ρ": round(_sp, 3) if not _math.isnan(_sp) else float("nan"),
+                    "Kendall τ":  round(_kt, 3)  if not _math.isnan(_kt)  else float("nan"),
+                    "n": len(_valid_sub),
+                })
+        _corr_summary = pd.DataFrame(_corr_rows)
+        st.dataframe(_corr_summary, hide_index=True, use_container_width=True)
+        make_csv_download_button(_corr_summary, "cross_validation_correlations.csv",
+                                 "Download correlation summary as CSV")
 
         # ── Methodology ────────────────────────────────────────────────────────
         with st.expander("Methodology — Cross-Validation"):
@@ -2347,17 +2517,24 @@ distribution), giving roughly equal-sized groups:
 Both benchmarks carry `source_id_primary = IMF_FM_OCT2023` or `WB_MPO_2023`
 in `data/reference/imf_wb_benchmarks.csv`.
 
-**Correlation metric**
+**Correlation metrics**
 
-Spearman rank correlation ρ between model rank (1 = highest risk) and benchmark
-tier ordinal (Low=1, Medium=2, High=3 for IMF FM; Stable=1, Watch=2, Stressed=3
-for WB MPO).  A positive ρ means the model broadly agrees with the benchmark
-on which countries are more vs less at risk.
+- **Spearman ρ**: rank correlation between model rank (1 = highest risk) and benchmark
+  tier ordinal (Low=1, Medium=2, High=3 for IMF FM; Stable=1, Watch=2, Stressed=3 for WB MPO).
+- **Kendall τ-b**: concordance-based correlation, robust to ties.
+
+Negative values indicate the model assigns high ranks to countries the benchmarks
+also rate as high risk — the expected direction given rank 1 = highest risk and ordinal 3 = High.
+
+**Row colouring**
+
+Green = model tier matches both benchmarks; Amber = 1-tier ordinal difference;
+Red = 2+ tiers apart on at least one benchmark.
 
 **Divergences**
 
 A divergence is recorded when model_tier ≠ imf_fm_risk_tier or model_tier ≠ wb_mpo_status.
-The ordinal distance (|model_ordinal − benchmark_ordinal|) measures severity.
+Notes from `data/reference/imf_wb_benchmarks.csv` explain structural reasons.
 
 **Regenerate:** `python -m src.model.cross_validation`
 """)
