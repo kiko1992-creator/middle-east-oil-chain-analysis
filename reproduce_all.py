@@ -32,16 +32,17 @@ class Step(NamedTuple):
 
 
 _STEPS: list[Step] = [
-    Step(" 1. Fetch World Bank panel",        "src.data.fetch_world_bank"),
-    Step(" 2. Clean World Bank panel",         "src.data.clean_world_bank"),
-    Step(" 3. OCVI vulnerability index",       "src.model.vulnerability_index"),
-    Step(" 4. Chain transmission severity",    "src.model.chain_transmission", ["--fit-ols"]),
-    Step(" 5. Historical risk index 2015–2024","src.model.historical_index"),
-    Step(" 6. Right Now Risk composite",       "src.model.right_now_risk"),
-    Step(" 7. 2020 oil crash retrospective",   "src.model.retrospective"),
-    Step(" 8. IMF/WB cross-validation",        "src.model.cross_validation"),
-    Step(" 9. Sensitivity analysis (OAT)",     "src.model.sensitivity"),
-    Step("10. Validate reference data",        "src.data.validate_reference", ["--strict"]),
+    Step(" 1. Fetch World Bank panel",         "src.data.fetch_world_bank"),
+    Step(" 2. Fetch IMF WEO panel",            "src.data.fetch_imf_weo"),
+    Step(" 3. Clean World Bank panel",         "src.data.clean_world_bank"),
+    Step(" 4. OCVI vulnerability index",       "src.model.vulnerability_index"),
+    Step(" 5. Chain transmission severity",    "src.model.chain_transmission", ["--fit-ols"]),
+    Step(" 6. Historical risk index 2015–2024", "src.model.historical_index"),
+    Step(" 7. Right Now Risk composite",       "src.model.right_now_risk"),
+    Step(" 8. 2020 oil crash retrospective",   "src.model.retrospective"),
+    Step(" 9. IMF/WB cross-validation",        "src.model.cross_validation"),
+    Step("10. Sensitivity analysis (OAT)",     "src.model.sensitivity"),
+    Step("11. Validate reference data",        "src.data.validate_reference", ["--strict"]),
 ]
 
 

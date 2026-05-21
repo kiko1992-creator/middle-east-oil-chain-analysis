@@ -217,8 +217,9 @@ norm_inflation_vol = (inflation_vol_winsorized - min_winsorized)
                    / (max_winsorized - min_winsorized)
 ```
 
-**Data source:** `data/processed/world_bank_panel.csv`
-(World Bank Open Data API, fetched by `src/data/fetch_world_bank.py`).
+**Data sources:**
+- `data/processed/imf_weo_panel.csv` (IMF WEO April 2026 PCPIPCH, 2020-2025 window, preferred when available)
+- `data/processed/world_bank_panel.csv` (World Bank Open Data API, fallback via `FP_CPI_TOTL_ZG`)
 
 ---
 
@@ -543,3 +544,9 @@ covers 1–14 with no duplicates).
 The GitHub Actions weekly refresh workflow (`refresh_data.yml`) runs
 `validate_reference --strict` as the final gate — if validation fails,
 no data is committed.
+
+
+## 9.1 Additional Forecast Limitation
+
+IMF WEO 2026 values for 2025-2026 include projection uncertainty; risk outputs
+should be interpreted as scenario-consistent estimates rather than final outcomes.

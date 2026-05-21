@@ -76,6 +76,7 @@ log = logging.getLogger(__name__)
 # ── Paths ───────────────────────────────────────────────────────────────────────
 
 PANEL_PATH      = Path("data/processed/world_bank_panel.csv")
+IMF_WEO_PATH    = Path("data/processed/imf_weo_panel.csv")
 FOOD_PATH       = Path("data/reference/food_security.csv")
 BREAKEVEN_PATH  = Path("data/reference/fiscal_breakeven.csv")
 FX_CHANNEL_PATH = Path("data/reference/fx_channel.csv")
@@ -199,41 +200,54 @@ def load_food_security(path: Path = FOOD_PATH) -> pd.DataFrame:
 
 # ── Inflation volatility derivation ─────────────────────────────────────────────
 
-def derive_inflation_vol(panel_path: Path = PANEL_PATH) -> pd.DataFrame:
-    """Compute per-country inflation volatility from the WB panel.
+def derive_inflation_vol(panel_path: Path = PANEL_PATH, imf_weo_path: Path = IMF_WEO_PATH) -> pd.DataFrame:
+    """Compute per-country inflation volatility with IMF WEO priority.
 
-    Inflation volatility = std(FP_CPI_TOTL_ZG) across all non-null
-    annual observations.  Requires at least 2 years; returns NaN otherwise.
+    Priority per country:
+      1) IMF WEO PCPIPCH values for 2020-2025
+      2) WB panel FP_CPI_TOTL_ZG fallback
 
-    Consistent with the OCVI model's ``inflation_vol`` component —
-    same panel, same column, same formula.
-
-    Args:
-        panel_path: Path to ``data/processed/world_bank_panel.csv``.
-
-    Returns:
-        DataFrame with columns:
-        ``country_code_a3``, ``inflation_volatility``, ``yrs_inflation``.
-
-    Raises:
-        FileNotFoundError: If *panel_path* does not exist.
+    Returns columns: country_code_a3, inflation_volatility, yrs_inflation, inflation_source
+    where inflation_source is either IMF_WEO_2026 or WB_panel_2024.
     """
     if not panel_path.exists():
         raise FileNotFoundError(f"Panel CSV not found: {panel_path}")
 
     panel = pd.read_csv(panel_path, usecols=["country_code_a3", "FP_CPI_TOTL_ZG"])
 
+    weo = pd.DataFrame(columns=["country_code_a3", "year", "indicator", "value"])
+    if imf_weo_path.exists():
+        try:
+            weo = pd.read_csv(imf_weo_path, usecols=["country_code_a3", "year", "indicator", "value"])
+            weo = weo[(weo["indicator"] == "PCPIPCH") & (weo["year"].between(2020, 2025))].copy()
+            weo["value"] = pd.to_numeric(weo["value"], errors="coerce")
+        except Exception as exc:  # noqa: BLE001
+            log.warning("Failed loading IMF WEO panel for inflation volatility: %s", exc)
+            weo = pd.DataFrame(columns=["country_code_a3", "year", "indicator", "value"])
+
     records = []
-    for code, grp in panel.groupby("country_code_a3"):
-        cpi = grp["FP_CPI_TOTL_ZG"].dropna()
+    all_codes = sorted(set(panel["country_code_a3"].dropna().unique()) | set(weo["country_code_a3"].dropna().unique()))
+    for code in all_codes:
+        cpi_weo = weo.loc[weo["country_code_a3"] == code, "value"].dropna()
+        if len(cpi_weo) >= 2:
+            records.append({
+                "country_code_a3": code,
+                "inflation_volatility": cpi_weo.std(),
+                "yrs_inflation": len(cpi_weo),
+                "inflation_source": "IMF_WEO_2026",
+            })
+            continue
+
+        cpi_wb = panel.loc[panel["country_code_a3"] == code, "FP_CPI_TOTL_ZG"].dropna()
         records.append({
-            "country_code_a3":      code,
-            "inflation_volatility": cpi.std() if len(cpi) >= 2 else float("nan"),
-            "yrs_inflation":        len(cpi),
+            "country_code_a3": code,
+            "inflation_volatility": cpi_wb.std() if len(cpi_wb) >= 2 else float("nan"),
+            "yrs_inflation": len(cpi_wb),
+            "inflation_source": "WB_panel_2024",
         })
 
     df = pd.DataFrame(records)
-    log.info("Inflation volatility derived for %d countries from panel.", len(df))
+    log.info("Inflation volatility derived for %d countries (IMF WEO priority).", len(df))
     return df
 
 

@@ -27,6 +27,9 @@ jobs:
       - name: Fetch World Bank panel
         run: python -m src.data.fetch_world_bank
 
+      - name: Fetch IMF WEO data
+        run: python -m src.data.fetch_imf_weo
+
       - name: Clean World Bank panel
         run: python -m src.data.clean_world_bank
 

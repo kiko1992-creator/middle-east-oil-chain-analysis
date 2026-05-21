@@ -48,6 +48,7 @@ log = logging.getLogger(__name__)
 # ── Configuration ──────────────────────────────────────────────────────────────
 
 BREAKEVEN_PATH = Path("data/reference/fiscal_breakeven.csv")
+WEO_PANEL_PATH = Path("data/processed/imf_weo_panel.csv")
 
 # USD above breakeven before a country is classified Green (not merely Amber).
 _AMBER_BUFFER = 15.0
@@ -252,6 +253,20 @@ def build_stress_table(
     df.loc[gray_mask, "price_gap_usd"]    = float("nan")
     df.loc[gray_mask, "stress_days_ytd"]  = pd.NA
     df.loc[gray_mask, "stress_share_ytd"] = float("nan")
+
+    # Optional IMF WEO 2025 fiscal balance context (informational only).
+    df["weo_fiscal_balance_2025"] = float("nan")
+    if WEO_PANEL_PATH.exists():
+        try:
+            weo = pd.read_csv(WEO_PANEL_PATH, usecols=["country_code_a3", "year", "indicator", "value"])
+            weo = weo[(weo["indicator"] == "GGXCNL_NGDP") & (weo["year"] == 2025)][["country_code_a3", "value"]]
+            weo = weo.rename(columns={"value": "weo_fiscal_balance_2025"})
+            df = df.merge(weo, on="country_code_a3", how="left", suffixes=("", "_weo"))
+            if "weo_fiscal_balance_2025_weo" in df.columns:
+                df["weo_fiscal_balance_2025"] = df["weo_fiscal_balance_2025_weo"]
+                df = df.drop(columns=["weo_fiscal_balance_2025_weo"])
+        except Exception as exc:  # noqa: BLE001
+            log.warning("Could not attach WEO fiscal balance context: %s", exc)
 
     # Nullify YTD stress metrics when the Brent history fetch returned no data.
     # Leaving stress_days_ytd=0 would imply "no stress days" rather than "no data".
